@@ -62,10 +62,11 @@ export default function ProjectFour() {
           <div className="section-title__tagline-box">
             <span className="section-title__tagline">latest gallery</span>
           </div>
-          <h2 className="section-title__title">
-            Top-Notch <span>Roof Solutions</span>
-            <br /> Sheltering Dreams
-          </h2>
+         <h2 className="section-title__title">
+  Empowering <span>Spiritual Growth</span>
+  <br /> with Gieogita
+</h2>
+
         </div>
         <div className="row">
           {projects.map((project) => (
