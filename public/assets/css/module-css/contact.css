@@ -1,0 +1,864 @@
+/*--------------------------------------------------------------
+# Contact One
+--------------------------------------------------------------*/
+.contact-one {
+    position: relative;
+    display: block;
+}
+
+.contact-one__wrap {
+    position: relative;
+    display: block;
+    background: linear-gradient(144.24deg, #E63A27 -2.01%, rgba(0, 0, 0, 0.92) 63.45%);
+    border-radius: 50px;
+    max-width: 1760px;
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contact-one__left {
+    position: relative;
+    display: block;
+    margin-top: 110px;
+    z-index: 1;
+}
+
+.contact-one__left .section-title__tagline {
+    color: var(--maroof-white);
+}
+
+.contact-one__left .section-title {
+    margin-bottom: 38px;
+}
+
+.contact-one__left .section-title__title {
+    color: var(--maroof-white);
+}
+
+.contact-one__form {
+    position: relative;
+    display: block;
+    background-color: rgba(var(--maroof-white-rgb), .10);
+    border-radius: 20px;
+    padding: 40px 40px 40px;
+}
+
+.contact-one__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-one__input-box input[type="text"],
+.contact-one__input-box input[type="email"] {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(var(--maroof-black-rgb), .33);
+    border: 2px solid rgba(var(--maroof-white-rgb), .20);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--maroof-white);
+    display: block;
+    border-radius: 30px;
+}
+
+.contact-one__input-box .select-box {
+    width: 100%;
+}
+.contact-one__input-box .select-box select.selectmenu.wide {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(var(--maroof-black-rgb), .33);
+    border: 2px solid rgba(var(--maroof-white-rgb), .20);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-white);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    line-height: 60px;
+    float: none;
+}
+
+.contact-one__input-box .nice-select {
+    height: 60px;
+    width: 100%;
+    background-color: rgba(var(--maroof-black-rgb), .33);
+    border: 2px solid rgba(var(--maroof-white-rgb), .20);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-white);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    line-height: 60px;
+    float: none;
+}
+
+.contact-one__input-box .nice-select:after {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--maroof-white);
+    border-right: 2px solid var(--maroof-white);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.contact-one__input-box .nice-select .option {
+    color: var(--maroof-black);
+}
+
+.contact-one__input-box textarea {
+    position: relative;
+    height: 130px;
+    width: 100%;
+    background-color: rgba(var(--maroof-black-rgb), .33);
+    border: 2px solid rgba(var(--maroof-white-rgb), .20);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-white);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    margin-bottom: 0;
+}
+
+.contact-one__input-box.text-message-box {
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.contact-one__btn-box {
+    position: relative;
+    display: block;
+}
+
+.contact-one__btn {
+    border: none !important;
+    background-color: var(--maroof-white) !important;
+}
+
+.contact-one__right {
+    position: relative;
+    display: block;
+    margin-left: 50px;
+    margin-right: -47px;
+}
+
+.contact-one__img {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.contact-one__img img {
+    width: 100%;
+}
+
+.contact-one__shape-1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: .10;
+    z-index: -1;
+}
+
+.contact-one__shape-1 img {
+    width: auto;
+}
+
+.contact-one__shape-2 {
+    position: absolute;
+    bottom: 70px;
+    left: 13px;
+    z-index: -1;
+}
+
+.contact-one__shape-2 img {
+    width: auto;
+}
+
+.contact-one__shape-3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    opacity: .20;
+    z-index: -1;
+}
+
+.contact-one__shape-3 img {
+    width: auto;
+}
+
+.contact-one__shape-4 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contact-one__shape-4 img {
+    width: auto;
+}
+
+/*--------------------------------------------------------------
+# Contact Two
+--------------------------------------------------------------*/
+.contact-two {
+    position: relative;
+    display: block;
+    padding: 0 0 120px;
+    z-index: 1;
+}
+
+.contact-two__left {
+    position: relative;
+    display: block;
+}
+
+.contact-two__left .section-title {
+    margin-bottom: 20px;
+}
+
+.contact-two__contact-list {
+    position: relative;
+    display: block;
+    margin-top: 33px;
+}
+
+.contact-two__contact-list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-two__contact-list li+li {
+    margin-top: 23px;
+}
+
+.contact-two__contact-list li .icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--maroof-base);
+    border-radius: 50%;
+}
+
+.contact-two__contact-list li .icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: var(--maroof-base);
+}
+
+.contact-two__contact-list li .content {
+    position: relative;
+    display: block;
+}
+
+.contact-two__contact-list li .content h4 {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.contact-two__contact-list li .content h4 a {
+    color: var(--maroof-black);
+}
+
+.contact-two__contact-list li .content h4 a:hover {
+    color: var(--maroof-base);
+}
+
+.contact-two__right {
+    position: relative;
+    display: block;
+    border: 1px solid var(--maroof-bdr-color);
+    border-radius: 20px;
+    padding: 39px 39px 39px;
+}
+
+.contact-two__right-title {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 59px;
+    margin-bottom: 39px;
+}
+
+.contact-two__form {
+    position: relative;
+    display: block;
+}
+
+.contact-two__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.contact-two__input-box input[type="text"],
+.contact-two__input-box input[type="email"] {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--maroof-gray);
+    display: block;
+    border-radius: 30px;
+}
+
+.contact-two__input-box .select-box {
+    width: 100%;
+}
+
+.contact-two__input-box select.selectmenu.wide {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-gray);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    line-height: 60px;
+    float: none;
+}
+
+.contact-two__input-box .nice-select:after {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--maroof-black);
+    border-right: 2px solid var(--maroof-black);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.contact-two__input-box .nice-select .option {
+    color: var(--maroof-white);
+}
+
+.contact-two__input-box .nice-select .list {
+    background-color: var(--maroof-base);
+}
+
+.contact-two__input-box .nice-select .option:hover,
+.contact-two__input-box .nice-select .option.focus,
+.contact-two__input-box .nice-select .option.selected.focus {
+    color: var(--maroof-white);
+    background-color: var(--maroof-black);
+}
+
+.contact-two__input-box textarea {
+    position: relative;
+    height: 130px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-gray);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    margin-bottom: 0;
+}
+
+.contact-two__input-box.text-message-box {
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.contact-two__btn-box {
+    position: relative;
+    display: block;
+}
+
+.contact-two__btn {
+    border: none !important;
+    color: var(--maroof-white) !important;
+}
+
+.contact-two__btn span {
+    color: var(--maroof-white) !important;
+}
+
+/*--------------------------------------------------------------
+# Contact Three
+--------------------------------------------------------------*/
+.contact-three {
+    position: relative;
+    display: block;
+    padding: 120px 0 120px;
+    z-index: 1;
+}
+
+.contact-three__left {
+    position: relative;
+    display: block;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+.contact-three__left .section-title {
+    margin-bottom: 30px;
+}
+
+.contact-three__img {
+    position: relative;
+    display: block;
+}
+
+.contact-three__img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.contact-three__points {
+    position: relative;
+    display: block;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-three__points li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.contact-three__points li+li {
+    margin-top: 15px;
+}
+
+.contact-three__points li .icon {
+    position: relative;
+    display: inline-block;
+}
+
+.contact-three__points li .icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: var(--maroof-base);
+}
+
+.contact-three__right {
+    position: relative;
+    display: block;
+    padding: 40px 40px 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 20px;
+    z-index: 1;
+}
+
+.contact-three__shape-1 {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
+
+.contact-three__shape-1 img {
+    width: auto;
+}
+
+.contact-three__right-title {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 59px;
+    margin-bottom: 29px;
+}
+
+.contact-three__form {
+    position: relative;
+    display: block;
+}
+
+.contact-three__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 31px;
+}
+
+.contact-three__input-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    margin-bottom: 9px;
+    padding-left: 30px;
+}
+
+.contact-three__input-box input[type="text"],
+.contact-three__input-box input[type="email"] {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--maroof-gray);
+    display: block;
+    border-radius: 30px;
+}
+
+.contact-three__input-box .select-box {
+    width: 100%;
+}
+.contact-three__input-box select.selectmenu.wide {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-gray);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    line-height: 60px;
+    float: none;
+}
+
+.contact-three__input-box .nice-select {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-gray);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    line-height: 60px;
+    float: none;
+}
+
+.contact-three__input-box .nice-select:after {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--maroof-black);
+    border-right: 2px solid var(--maroof-black);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.contact-three__input-box .nice-select .option {
+    color: var(--maroof-white);
+}
+
+.contact-three__input-box .nice-select .list {
+    background-color: var(--maroof-base);
+}
+
+.contact-three__input-box .nice-select .option:hover,
+.contact-three__input-box .nice-select .option.focus,
+.contact-three__input-box .nice-select .option.selected.focus {
+    color: var(--maroof-white);
+    background-color: var(--maroof-black);
+}
+
+.contact-three__input-box textarea {
+    position: relative;
+    height: 130px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-top: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-gray);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    margin-bottom: 0;
+}
+
+.contact-three__input-box.text-message-box {
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.contact-three__btn-box-two {
+    position: relative;
+    display: block;
+}
+
+.contact-three__btn-two {
+    border: none !important;
+    color: var(--maroof-white) !important;
+}
+
+.contact-three__btn-two span {
+    color: var(--maroof-white) !important;
+}
+
+
+/*--------------------------------------------------------------
+# Contact Page
+--------------------------------------------------------------*/
+.contact-page {
+    position: relative;
+    display: block;
+    z-index: 2;
+    margin-top: -174px;
+}
+
+.contact-page__inner {
+    position: relative;
+    display: block;
+    padding: 54px 60px 60px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    text-align: center;
+}
+
+.contact-page__sub-title {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 22px;
+    letter-spacing: 1.5px;
+    color: var(--maroof-base);
+    text-transform: uppercase;
+}
+
+.contact-page__title {
+    color: var(--maroof-black);
+    font-size: 59px;
+    line-height: 57px;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: -1.2px;
+    margin-top: 7px;
+    margin-bottom: 30px;
+}
+
+.contact-page__form {
+    position: relative;
+    display: block;
+}
+
+.contact-page__input-box {
+    position: relative;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.contact-page__input-box input[type="text"],
+.contact-page__input-box input[type="email"] {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--maroof-gray);
+    display: block;
+    border-radius: 30px;
+}
+
+.contact-page__input-box .select-box {
+    width: 100%;
+}
+
+.contact-page__input-box select.selectmenu.wide {
+    height: 60px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-gray);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    line-height: 60px;
+    float: none;
+}
+
+.contact-page__input-box .nice-select:after {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    width: 8px;
+    height: 8px;
+    border-bottom: 2px solid var(--maroof-gray);
+    border-right: 2px solid var(--maroof-gray);
+    margin-top: 0px;
+    z-index: 10;
+}
+
+.contact-page__input-box .nice-select .option {
+    color: var(--maroof-white);
+}
+
+.contact-page__input-box .nice-select .list {
+    background-color: var(--maroof-black);
+}
+
+.contact-page__input-box .nice-select .option:hover,
+.contact-page__input-box .nice-select .option.focus,
+.contact-page__input-box .nice-select .option.selected.focus {
+    color: var(--maroof-white);
+}
+
+.contact-page__input-box textarea {
+    position: relative;
+    height: 130px;
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid var(--maroof-bdr-color);
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    outline: none;
+    font-size: 16px;
+    color: var(--maroof-gray);
+    display: block;
+    font-weight: 300;
+    border-radius: 30px;
+    margin-bottom: 0;
+}
+
+.contact-page__input-box.text-message-box {
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.contact-page__btn-box {
+    position: relative;
+    display: block;
+}
+
+.contact-page__btn {
+    border: none !important;
+    color: var(--maroof-white) !important;
+}
+
+.contact-page__btn span {
+    color: var(--maroof-white) !important;
+}
+
+.contact-page__contact-list {
+    position: relative;
+    display: block;
+    padding: 120px 0 120px;
+    z-index: 1;
+}
+
+.contact-page__contact-list-single {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    border: 1px solid var(--maroof-bdr-color);
+    border-radius: 20px;
+    padding: 17px 40px 19px;
+    margin-bottom: 30px;
+}
+
+.contact-page__contact-list-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background-color: var(--maroof-primary);
+    border-radius: 50%;
+}
+
+.contact-page__contact-list-icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 23px;
+    color: var(--maroof-base);
+}
+
+.contact-page__contact-list-content {
+    position: relative;
+    display: block;
+}
+
+.contact-page__contact-list-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    margin-bottom: 6px;
+}
+
+.contact-page__contact-list-content p {
+    color: var(--maroof-gray);
+}
+
+.contact-page__contact-list-content p a {
+    color: var(--maroof-gray);
+}
+
+.contact-page__contact-list-content p a:hover {
+    color: var(--maroof-base);
+}
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

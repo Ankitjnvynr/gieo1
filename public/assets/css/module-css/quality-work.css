@@ -1,0 +1,129 @@
+/*--------------------------------------------------------------
+# Quality Work
+--------------------------------------------------------------*/
+.quality-work {
+    position: relative;
+    display: block;
+    padding: 120px 0 120px;
+    z-index: 1;
+}
+
+.quality-work__inner {
+    position: relative;
+    display: block;
+    background-color: var(--maroof-primary);
+    padding: 60px 40px 60px;
+    border-radius: 20px;
+}
+
+.quality-work__left {
+    position: relative;
+    display: block;
+}
+
+.quality-work__left .section-title {
+    margin-bottom: 20px;
+}
+
+.quality-work__right {
+    position: relative;
+    display: block;
+    margin-left: -13px;
+    margin-top: 47px;
+}
+
+.quality-work__progress-box {
+    position: relative;
+    display: block;
+}
+
+.quality-work__progress-box li {
+    position: relative;
+    display: block;
+}
+
+.quality-work__progress-box li+li {
+    margin-top: 21px;
+}
+
+.quality-work__progress {
+    position: relative;
+    display: block;
+}
+
+.quality-work__progress-title {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    color: var(--maroof-black);
+    margin-bottom: 3px;
+    padding-left: 4px;
+}
+
+.quality-work__progress .bar {
+    position: relative;
+    width: 100%;
+    height: 5px;
+    background-color: rgba(var(--maroof-bdr-color-rgb), .50);
+    border-radius: 3px;
+}
+
+.quality-work__progress .bar-inner {
+    position: relative;
+    display: block;
+    width: 0px;
+    height: 5px;
+    border-radius: 3px;
+    background-color: var(--maroof-base);
+    -webkit-transition: all 1500ms ease;
+    -ms-transition: all 1500ms ease;
+    -o-transition: all 1500ms ease;
+    -moz-transition: all 1500ms ease;
+    transition: all 1500ms ease;
+}
+
+.quality-work__progress .count-text {
+    position: absolute;
+    right: -14px;
+    bottom: 8px;
+    color: var(--maroof-black);
+    line-height: 26px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 300;
+    opacity: 1;
+    -webkit-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.quality-work__progress .bar-inner.counted .count-text {
+    opacity: 1;
+}
+
+.quality-work__progress .bar.marb-0 {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

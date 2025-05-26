@@ -1,0 +1,55 @@
+/*--------------------------------------------------------------
+# Brand One
+--------------------------------------------------------------*/
+.brand-one {
+    position: relative;
+    display: block;
+    padding: 0 0 114px;
+    z-index: 1;
+}
+
+.brand-one__carousel {
+    position: relative;
+    display: block;
+}
+
+.brand-one__single {
+    position: relative;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand-one__img {
+    position: relative;
+    z-index: 10;
+}
+
+.brand-one__img>img {
+    position: relative;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    width: auto !important;
+}
+
+/*--------------------------------------------------------------
+# Brand Two
+--------------------------------------------------------------*/
+.brand-two {
+    padding: 103px 0 114px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
