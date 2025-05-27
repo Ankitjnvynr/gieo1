@@ -28,13 +28,12 @@ export default function AboutThree() {
                     <img src="/assets/images/resources/about-three-img-2.jpg" alt="About Image 2" />
                   </div>
                   <div className="circle-text__rounded-text">
-                    <Link href="/testimonials" className="circle-text__curved-circle-box">
+                    <Link href="/contact" className="circle-text__curved-circle-box">
                       <div className="curved-circle">
                         <span className="curved-circle--item">
-                        contact us contact us contact us contact us 
+                          contact us contact us contact us contact us
                         </span>
                       </div>
-                      {/* /.curved-circle */}
                     </Link>
                     <div className="circle-text__icon">
                       <a href="#"><span className="icon-down-arrow"></span></a>
@@ -47,10 +46,10 @@ export default function AboutThree() {
               <div className="about-three__right">
                 <div className="section-title text-left">
                   <div className="section-title__tagline-box">
-                    <span className="section-title__tagline">About Us</span>
+                    <span className="section-title__tagline">Our Services</span>
                   </div>
                   <h2 className="section-title__title">
-                    Trust the <span>experts</span> in the <br /> roofing services
+                    Empowering Lives through <span>Spiritual Knowledge</span> <br /> and Cultural Education
                   </h2>
                 </div>
                 <ul className="about-three__icon-list list-unstyled">
@@ -59,7 +58,7 @@ export default function AboutThree() {
                       <div className="about-three__icon">
                         <span className="icon-paint"></span>
                       </div>
-                      <h3 className="about-three__title">Roof Masters</h3>
+                      <h3 className="about-three__title">Gita Classes</h3>
                     </div>
                   </li>
                   <li>
@@ -67,7 +66,7 @@ export default function AboutThree() {
                       <div className="about-three__icon">
                         <span className="icon-tools"></span>
                       </div>
-                      <h3 className="about-three__title">Roof Care</h3>
+                      <h3 className="about-three__title">Bal Sanskar Programs</h3>
                     </div>
                   </li>
                   <li>
@@ -75,7 +74,7 @@ export default function AboutThree() {
                       <div className="about-three__icon">
                         <span className="icon-robotic-arm"></span>
                       </div>
-                      <h3 className="about-three__title">Roof Repairs</h3>
+                      <h3 className="about-three__title">Spiritual Workshops</h3>
                     </div>
                   </li>
                 </ul>
@@ -84,24 +83,24 @@ export default function AboutThree() {
                     <div className="icon">
                       <span className="icon-cheack"></span>
                     </div>
-                    <p>Rise Above the Roof Service Professional roof services encompass</p>
+                    <p>In-depth Bhagavad Gita study with modern applications</p>
                   </li>
                   <li>
                     <div className="icon">
                       <span className="icon-cheack"></span>
                     </div>
-                    <p>Premier Roofing Specialists Roofing Excellence Every Time</p>
+                    <p>Value-based education for children through stories and activities</p>
                   </li>
                   <li>
                     <div className="icon">
                       <span className="icon-cheack"></span>
                     </div>
-                    <p>Safeguard Pro Surveillance a variety of offerings designed to maintain</p>
+                    <p>Retreats and satsangs for inner peace and spiritual growth</p>
                   </li>
                 </ul>
                 <div className="about-three__btn-box">
-                  <Link href="/about" className="about-three__btn thm-btn">
-                    Read more<span className="icon-dubble-arrow-right"></span>
+                  <Link href="/services" className="about-three__btn thm-btn">
+                    Explore Services<span className="icon-dubble-arrow-right"></span>
                   </Link>
                 </div>
               </div>

@@ -1,6 +1,5 @@
 import Link from 'next/link';
 
-
 export default function WhyWe() {
   return (
     <>
@@ -13,48 +12,48 @@ export default function WhyWe() {
                 <div className="why-we-are__left">
                   <div className="section-title text-left">
                     <div className="section-title__tagline-box">
-                      <span className="section-title__tagline">why we are the best</span>
+                      <span className="section-title__tagline">why we are different</span>
                     </div>
                     <h2 className="section-title__title">
-                      Reach for the <span>Roof Service</span><br /> Stars Trust Roof
+                      Spreading <span>Spiritual Wisdom</span><br /> through the Gita
                     </h2>
                   </div>
                   <ul className="why-we-are__list list-unstyled">
                     <li>
                       <div className="why-we-are__list-content">
-                        <h3><Link href="/reliable-roof-repair">Reliable Roofing Pros</Link></h3>
+                        <h3><Link href="/gita-classes">Gita Learning Programs</Link></h3>
                         <p>
-                          Roof service involves the installation maintenance<br /> and repair of roofs for the residential
+                          Structured lessons based on the Bhagavad Gita,<br /> designed for seekers of all ages.
                         </p>
                       </div>
                       <div className="why-we-are__list-arrow">
-                        <Link href="/reliable-roof-repair">
+                        <Link href="/gita-classes">
                           <span className="icon-arrow-right-2"></span>
                         </Link>
                       </div>
                     </li>
                     <li>
                       <div className="why-we-are__list-content">
-                        <h3><Link href="/sure-guard-roofing-services">Ridgeguard Roofing</Link></h3>
+                        <h3><Link href="/bal-sanskar">Bal Sanskar for Kids</Link></h3>
                         <p>
-                          Roof service involves the installation maintenance<br /> and repair of roofs for the residential
+                          Fun and educational activities to instill moral<br /> and spiritual values from an early age.
                         </p>
                       </div>
                       <div className="why-we-are__list-arrow">
-                        <Link href="/sure-guard-roofing-services">
+                        <Link href="/bal-sanskar">
                           <span className="icon-arrow-right-2"></span>
                         </Link>
                       </div>
                     </li>
                     <li>
                       <div className="why-we-are__list-content">
-                        <h3><Link href="/top-notch-roofing-restoration">Overhead Guardian Services</Link></h3>
+                        <h3><Link href="/spiritual-events">Satsangs & Events</Link></h3>
                         <p>
-                          Roof service involves the installation maintenance<br /> and repair of roofs for the residential
+                          Join us for spiritual gatherings, kirtans,<br /> and life-transforming discourses.
                         </p>
                       </div>
                       <div className="why-we-are__list-arrow">
-                        <Link href="/top-notch-roofing-restoration">
+                        <Link href="/spiritual-events">
                           <span className="icon-arrow-right-2"></span>
                         </Link>
                       </div>
