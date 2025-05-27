@@ -12,7 +12,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                             <div className="main-menu-three__left">
                                 <div className="main-menu-three__logo">
                                     <Link href="/">
-                                        <img src="/assets/images/resources/logo-3.png" alt="Logo" />
+                                        <img src="/assets/images/resources/logo-1.png" alt="Logo" />
                                     </Link>
                                 </div>
                                 <div className="main-menu-three__main-menu-box">
@@ -55,7 +55,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 <div className="main-menu-three__left">
                                     <div className="main-menu-three__logo">
                                         <Link href="/">
-                                            <img src="/assets/images/resources/logo-3.png" alt="Logo" />
+                                            <img src="/assets/images/resources/logo-1.png" alt="Logo" />
                                         </Link>
                                     </div>
                                     <div className="main-menu-three__main-menu-box">
