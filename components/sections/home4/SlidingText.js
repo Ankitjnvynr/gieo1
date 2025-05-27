@@ -72,7 +72,7 @@ export default function SlidingText() {
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
               <h2 data-hover="ApexGuard" className="sliding-text__title">
-                ApexGuard
+                GIEO
               </h2>
             </li>
           </ul>
@@ -82,7 +82,7 @@ export default function SlidingText() {
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
               <h2 data-hover="Crestview" className="sliding-text__title">
-                Crestview
+                Gita
               </h2>
             </li>
           </ul>
@@ -92,7 +92,7 @@ export default function SlidingText() {
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
               <h2 data-hover="Summit" className="sliding-text__title">
-                Summit
+                GIEO
               </h2>
             </li>
           </ul>
@@ -102,7 +102,7 @@ export default function SlidingText() {
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
               <h2 data-hover="Elite Roof Care" className="sliding-text__title">
-              Elite Roof
+               Gita
               </h2>
             </li>
           </ul>
@@ -112,7 +112,7 @@ export default function SlidingText() {
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
               <h2 data-hover="Elite Roof" className="sliding-text__title">
-                Elite Roof
+                Gita
               </h2>
             </li>
           </ul>
