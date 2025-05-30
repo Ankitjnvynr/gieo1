@@ -27,13 +27,13 @@ export default function Home() {
                 <ProjectFour />
                 <SlidingText />
                 <AboutThree/>
-                <ContactThree  />
+                {/* <ContactThree  />
                 <WhyWe />
-                <VideoOne />
-                <WhyWe1/>
+                <VideoOne /> */}
+                {/* <WhyWe1/>
                 <QualityWork />
                 <TestimonialThree />
-                <BlogThree />
+                <BlogThree /> */}
             </Layout>
         </>
     )
