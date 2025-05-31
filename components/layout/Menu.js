@@ -7,22 +7,22 @@ export default function Menu() {
     return (
         <>
         <ul className="main-menu__list">
-            <li className="dropdown">
+            <li >
                 <Link href="/">Home</Link>
                 <ul>
-                <li>
+                {/* <li>
                     <Link href="/">Home One</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <Link href="/index-2">Home Two</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <Link href="/index-3">Home Three</Link>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                     <Link href="/index-4">Home Four</Link>
-                </li>
-                <li className="dropdown">
+                </li> */}
+                {/* <li className="dropdown">
                     <a href="#">Header Styles</a>
                     <ul>
                     <li>
@@ -38,8 +38,8 @@ export default function Menu() {
                         <Link href="/index-4">Header Four</Link>
                     </li>
                     </ul>
-                </li>
-                <li className="dropdown">
+                </li> */}
+                {/* <li className="dropdown">
                     <a href="#">One Page Styles</a>
                     <ul>
                     <li>
@@ -55,15 +55,15 @@ export default function Menu() {
                         <Link href="/index4-one-page">One Page Styles Four</Link>
                     </li>
                     </ul>
-                </li>
+                </li> */}
                 </ul>
             </li>
             <li>
                 <Link href="/about">About Us</Link>
             </li>
-            <li className="dropdown">
+            <li >
                 <a href="#">Pages</a>
-                <ul>
+                {/* <ul>
                 <li>
                     <Link href="/team">Team</Link>
                 </li>
@@ -79,11 +79,11 @@ export default function Menu() {
                 <li>
                     <Link href="/404">404 Error</Link>
                 </li>
-                </ul>
+                </ul> */}
             </li>
-            <li className="dropdown">
+            <li >
                 <a href="#">Services</a>
-                <ul>
+                {/* <ul>
                 <li>
                     <Link href="/services">Services</Link>
                 </li>
@@ -106,22 +106,22 @@ export default function Menu() {
                     Top Notch Roofing Restoration
                     </Link>
                 </li>
-                </ul>
+                </ul> */}
             </li>
-            <li className="dropdown">
+            <li>
                 <a href="#">Projects</a>
-                <ul>
+                {/* <ul>
                 <li>
                     <Link href="/project">Projects</Link>
                 </li>
                 <li>
                     <Link href="/project-details">Project Details</Link>
                 </li>
-                </ul>
+                </ul> */}
             </li>
-            <li className="dropdown">
+            <li >
                 <a href="#">Blog</a>
-                <ul>
+                {/* <ul>
                 <li>
                     <Link href="/blog">Blog</Link>
                 </li>
@@ -131,7 +131,7 @@ export default function Menu() {
                 <li>
                     <Link href="/blog-details">Blog Details</Link>
                 </li>
-                </ul>
+                </ul> */}
             </li>
             <li>
                 <Link href="/contact">Contact</Link>
