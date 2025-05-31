@@ -4,33 +4,33 @@ import Link from 'next/link';
 const footerData = {
   logo: '/assets/images/resources/footer-logo-4.png',
   socialLinks: [
-    { href: '#', icon: 'icon-facebook-f', name: 'Facebook' },
-    { href: '#', icon: 'icon-twitter', name: 'Twitter' },
-    { href: '#', icon: 'icon-linkedin-in', name: 'Linkedin' },
-    { href: '#', icon: 'icon-pinterest', name: 'Pinterest' },
-  ],
-  contact: {
-    email: 'debra.holt@example.com',
-    phones: ['01245789321', '012457895146'],
-  },
-  services: [
-    { href: '/skyline-roofing-solutions', text: 'Roof Renewal' },
-    { href: '/peak-performance-roofing', text: 'Peak Protection' },
-    { href: '/skyline-roofing-solutions', text: 'Skyline Roof Care' },
-    { href: '/sure-guard-roofing-services', text: 'Guardian Roof' },
-  ],
-  pages: [
-    { href: '/about', text: 'About Us' },
-    { href: '/services', text: 'Service' },
-    { href: '/project', text: 'Portfolio' },
-    { href: '/contact', text: 'Contact' },
-    { href: '/testimonials', text: 'Testimonial' },
-  ],
-  bottomMenu: [
-    { href: '/terms', text: 'Terms & Conditions' },
-    { href: '/privacy-policy', text: 'Privacy Policy' },
-    { href: '/contact', text: 'Contact Us' },
-  ],
+  { href: '#', icon: 'icon-facebook-f', name: 'Facebook' },
+  { href: '#', icon: 'icon-twitter', name: 'Twitter' },
+  { href: '#', icon: 'icon-linkedin-in', name: 'LinkedIn' },
+  { href: '#', icon: 'icon-youtube', name: 'YouTube' },
+],
+contact: {
+  email: 'info@gieogita.org',
+  phones: ['08000000000', '08000000001'],
+},
+services: [
+  { href: '/bhagavad-gita-classes', text: 'Gita Classes' },
+  { href: '/spiritual-counseling', text: 'Spiritual Counseling' },
+  { href: '/meditation-sessions', text: 'Meditation Sessions' },
+  { href: '/vedic-education', text: 'Vedic Education' },
+],
+pages: [
+  { href: '/about', text: 'About Gieo Gita' },
+  { href: '/services', text: 'Programs & Services' },
+  { href: '/gallery', text: 'Gallery' },
+  { href: '/contact', text: 'Contact' },
+  { href: '/testimonials', text: 'Testimonials' },
+],
+bottomMenu: [
+  { href: '/terms', text: 'Terms & Conditions' },
+  { href: '/privacy-policy', text: 'Privacy Policy' },
+  { href: '/donate', text: 'Donate' },
+],
 };
 
 export default function Footer4() {

@@ -27,9 +27,9 @@ export default function Home() {
                 <ProjectFour />
                 <SlidingText />
                 <AboutThree/>
-                {/* <ContactThree  />
-                <WhyWe />
-                <VideoOne /> */}
+                <ContactThree  />
+                {/* <WhyWe /> */}
+                {/* <VideoOne /> */}
                 {/* <WhyWe1/>
                 <QualityWork />
                 <TestimonialThree />
