@@ -59,7 +59,7 @@ export default function Menu() {
                 </ul>
             </li>
             <li>
-                <Link href="/about">About Us</Link>
+                <Link href="/">About Us</Link>
             </li>
             <li >
                 <a href="#">Pages</a>
@@ -85,7 +85,7 @@ export default function Menu() {
                 <a href="#">Services</a>
                 {/* <ul>
                 <li>
-                    <Link href="/services">Services</Link>
+                    <Link href="/">Services</Link>
                 </li>
                 <li>
                     <Link href="/peak-performance-roofing">Peak Performance Roofing</Link>
@@ -134,7 +134,7 @@ export default function Menu() {
                 </ul> */}
             </li>
             <li>
-                <Link href="/contact">Contact</Link>
+                <Link href="/">Contact</Link>
             </li>
         </ul>
 
