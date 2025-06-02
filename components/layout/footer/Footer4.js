@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 // Example footer data (replace with actual dynamic data)
 const footerData = {
-  logo: '/assets/images/resources/footer-logo-4.png',
+  logo: '/assets/images/resources/logo-1.png',
   socialLinks: [
   { href: '#', icon: 'icon-facebook-f', name: 'Facebook' },
   { href: '#', icon: 'icon-twitter', name: 'Twitter' },
