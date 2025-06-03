@@ -30,12 +30,12 @@ export default function Home() {
                 <SlidingText />
                 <AboutThree/>
                 <ContactThree  />
-                {/* <WhyWe /> */}
-                {/* <VideoOne /> */}
-                {/* <WhyWe1/>
-                <QualityWork />
-                <TestimonialThree />
-                <BlogThree /> */}
+                <WhyWe />
+                <VideoOne />
+                <WhyWe1/>
+                {/* <QualityWork /> */}
+                {/* <TestimonialThree /> */}
+                {/* <BlogThree /> */}
             </Layout>
         </>
     )

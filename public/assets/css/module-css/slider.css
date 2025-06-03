@@ -57,7 +57,7 @@
     height: 1287px;
     left: -255px;
     top: -823px;
-    /* background: #464038; */
+    /* background: #a59069; */
     /* filter: blur(444.506px); */
     border-radius: 50%;
     z-index: 1;
@@ -1147,7 +1147,7 @@ button.video-popup {
     left: 98px;
     width: 258px;
     height: 880px;
-    background: linear-gradient(188.79deg, #464038 -60.65%, rgba(230, 58, 39, 0) 62.78%);
+    background: linear-gradient(188.79deg, #a59069 -60.65%, rgba(230, 58, 39, 0) 62.78%);
     border-radius: 133px;
     transform: rotate(-154.04deg);
     z-index: -1;
@@ -1159,7 +1159,7 @@ button.video-popup {
     right: 78px;
     width: 258px;
     height: 880px;
-    background: linear-gradient(178.73deg, #464038 -36.87%, rgba(230, 58, 39, 0) 56.32%);
+    background: linear-gradient(178.73deg, #a59069 -36.87%, rgba(230, 58, 39, 0) 56.32%);
     border-radius: 133px;
     transform: rotate(25.96deg);
     z-index: -1;
