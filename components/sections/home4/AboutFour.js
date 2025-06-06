@@ -9,7 +9,7 @@ export default function AboutFour() {
       <section className="about-four">
         <div
           className="about-four__bg"
-          style={{ backgroundImage: 'url(assets/images/backgrounds/about-four-bg.jpg)' }}
+          style={{ backgroundImage: 'url(assets/images/backgrounds/1.jpg)' }}
         ></div>
         <div className="container">
           <div className="row">

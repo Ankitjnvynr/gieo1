@@ -33,9 +33,9 @@ export default function Home() {
                 <WhyWe />
                 <VideoOne />
                 <WhyWe1/>
-                {/* <QualityWork /> */}
-                {/* <TestimonialThree /> */}
-                {/* <BlogThree /> */}
+                <QualityWork />
+                <TestimonialThree />
+                <BlogThree />
             </Layout>
         </>
     )
