@@ -65,7 +65,7 @@ export default function WhyWe() {
                 <div className="why-we-are__right wow slideInRight" data-wow-delay="100ms" data-wow-duration="2500ms">
                   <div className="why-we-are__img-box">
                     <div className="why-we-are__img">
-                      <img  src="/assets/images/resources/why-we-are-img-1.jpg" alt="Why We Are Image 1" />
+                      <img  src="/assets/images/resources/spritual copy.jpg" alt="Why We Are Image 1" />
                     </div>
                     <div className="why-we-are__img-2">
                       <img height={205} src="/assets/images/resources/why-we-are-img-2.jpg" alt="Why We Are Image 2" />
