@@ -27,7 +27,7 @@ export default function AboutThree() {
                   <div className="about-three__img-2">
                     <img height={318} src="/assets/images/resources/about-three-img-2.jpg" alt="About Image 2" />
                   </div>
-                  <div className="circle-text__rounded-text">
+                  {/* <div className="circle-text__rounded-text">
                     <Link href="/contact" className="circle-text__curved-circle-box">
                       <div className="curved-circle">
                         <span className="curved-circle--item">
@@ -38,7 +38,7 @@ export default function AboutThree() {
                     <div className="circle-text__icon">
                       <a href="#"><span className="icon-down-arrow"></span></a>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
