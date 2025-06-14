@@ -23,7 +23,9 @@ export default function VideoOne() {
           <div className="video-two__inner">
             <div
               className="video-two__bg"
-              style={{ backgroundImage: "url(/assets/images/backgrounds/video-two-bg.jpg)" }}
+              style={{ backgroundImage: "url(/assets/images/backgrounds/abcd.jpg)", border
+                : '2px solid #fff', borderRadius: '10px'
+               }}
             ></div>
             <div className="video-two__video-link">
               <button
