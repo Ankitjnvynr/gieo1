@@ -6,7 +6,7 @@ const MainBanner = () => {
       className="main-banner"
       style={{
         position: "relative",
-        height: "100vh",
+        height: "80vh",
         width: "100vw",
         overflow: "hidden",
         backgroundImage: "url('/assets/images/backgrounds/aaa.jpg')", // update path if needed
@@ -29,7 +29,7 @@ const MainBanner = () => {
           textShadow: "2px 2px 8px rgba(0, 0, 0, 0.7)",
         }}
       >
-        Welcome to Our Website
+ 
       </div>
     </section>
   );
