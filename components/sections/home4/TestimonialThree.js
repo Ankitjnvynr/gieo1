@@ -67,7 +67,7 @@ export default function TestimonialThree() {
   return (
     <section className="testimonial-four">
       <div className="testimonial-four__bg"
-        style={{ backgroundImage: 'url(/assets/images/backgrounds/testimonial-four-bg.jpg)' }}>
+        style={{ backgroundImage: 'url(/assets/images/backgrounds/aaaa.jpeg)' }}>
       </div>
       <div className="container">
         <div className="row">
@@ -86,9 +86,9 @@ export default function TestimonialThree() {
                     <SwiperSlide key={testimonial.id}>
                       <div className="testimonial-four__thumb-item">
                         <div className="testimonial-four__img-holder-box">
-                          <div className="testimonial-four__img-holder">
+                          {/* <div className="testimonial-four__img-holder">
                             <img src={testimonial.clientImg} alt={testimonial.clientName} />
-                          </div>
+                          </div> */}
                         </div>
                       </div>
                     </SwiperSlide>
