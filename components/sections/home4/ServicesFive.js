@@ -126,9 +126,9 @@ return (
                 <div className="services-five__img">
                   <img src={service.imgSrc} alt={service.title} />
                 </div>
-                <div className="services-five__icon">
+                {/* <div className="services-five__icon">
                   <span className={service.iconClass}></span>
-                </div>
+                </div> */}
               </div>
               <div className="services-five__content">
                 <h3 className="services-five__title">
