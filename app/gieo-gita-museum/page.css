@@ -163,6 +163,39 @@
   font-weight: 600;
 }
 
+.gallery-section {
+  background-color: #fefce8;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.gallery-title {
+  font-size: 2rem;
+  color: #92400e;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.05);
+}
 /* .contact-section {
   background-color: #fef9c3;
   padding: 2rem 1rem;
@@ -284,11 +317,8 @@
 
 .gallery-section {
   background-color: #fefce8;
-  padding: 1rem;
+  padding: 2rem 1rem;
   text-align: center;
-  overflow: hidden;
-  /* max-height: 16rem; */
-  width: 100%;
 }
 
 .gallery-title {
@@ -296,21 +326,19 @@
   color: #92400e;
   margin-bottom: 2rem;
   font-weight: bold;
-  text-align: center;
 }
 
 .gallery-grid {
-  display: inline-flex;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: hidden;
 }
 
 .gallery-image {
-  width: 15rem;
-  height: 15rem;
+  width: 100%;
+  height: 220px;
   object-fit: cover;
   border-radius: 12px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -340,6 +368,17 @@
     flex-direction: row;
     justify-content: space-between;
   }
+}
+
+.welcome-image {
+  flex: 1;
+}
+
+.welcome-img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
 }
 
 .welcome-text {
@@ -554,7 +593,7 @@
   min-height: 300px;
 }
 .welcome-section {
-  padding: 5.5rem 1rem;
+  padding: 3rem 1rem;
   background-color: #fff7ed;
 }
 
@@ -644,7 +683,7 @@
   max-width: 600px;
   margin: 2rem auto;
   position: relative;
-  height: 200px;
+  height: 350px;
 }
 
 .experience-slider-inner {
@@ -679,11 +718,11 @@
   color: #92400e;
   border: none;
   font-size: 1.5rem;
-  padding: 0.8rem 1rem;
+  padding: 0.6rem 1rem;
   cursor: pointer;
   border-radius: 50%;
   position: absolute;
-  top: 45%;
+  top: 50%;
   transform: translateY(-50%);
   transition: background 0.3s ease;
 }
@@ -699,24 +738,4 @@
 
 .right-arrow {
   right: 1rem;
-}
-.hero-marquee {
-  background-color: #fff8dc;
-  border-top: 1px solid #facc15;
-  border-bottom: 1px solid #facc15;
-  padding: 12px 0; /* Increase top/bottom padding */
-  margin: 0; /* Remove any margin */
-  width: 100vw; /* Ensure full width */
-  overflow: hidden; /* Prevent cut-off */
-  box-sizing: border-box;
-  position: relative;
-  z-index: 2;
-}
-
-.marquee-text {
-  font-size: 16px;
-  color: #7c4700;
-  font-weight: 500;
-  margin: 0 40px;
-  white-space: nowrap;
 }
