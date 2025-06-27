@@ -37,7 +37,7 @@ export default function RoomBooking_Auditorium() {
       {/* <NavBar /> */}
       <header className="rba-hero">
         <Image
-          src="/assets/images/backgrounds/bgrba.jpg"
+          src="/assets/images/backgrounds/bgrba2.jpg"
           alt="Gita Museum"
           fill
           className="hero-bg"
