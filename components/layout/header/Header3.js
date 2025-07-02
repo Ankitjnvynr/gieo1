@@ -98,7 +98,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 </div>
                             </div>
 
-                            <div className="main-menu-three__right">
+                            {/* <div className="main-menu-three__right">
                                 <div className="main-menu-three__call-and-btn-box">
                                     <div className="main-menu-three__call">
                                         <div className="main-menu-three__call-number">
@@ -114,7 +114,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                         </Link>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>
@@ -157,7 +157,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                     </div>
                                 </div>
 
-                                <div className="main-menu-three__right">
+                                {/* <div className="main-menu-three__right">
                                     <div className="main-menu-three__call-and-btn-box">
                                         <div className="main-menu-three__call">
                                             <div className="main-menu-three__call-number">
@@ -173,7 +173,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                             </Link>
                                         </div>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
