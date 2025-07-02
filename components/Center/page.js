@@ -7,6 +7,7 @@ export default function App() {
         <Layout headerStyle={3} footerStyle={4}>
             <div className="main">
                 <Center />
+                
             </div>
         </Layout>
     );
