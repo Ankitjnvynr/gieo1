@@ -48,7 +48,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                 </div>
             </nav>
 
-            <div className={`stricky-header stricked-menu main-menu main-menu-three ${scroll ? "stricky-fixed" : ""}`}>
+            <div className={`stricky-header stricked-menu main-menu main-menu-two ${scroll ? "stricky-fixed" : ""}`}>
                 <div className="sticky-header__content" />
                 <nav className="main-menu main-menu-three">
                     <div className="main-menu-three__wrapper">
@@ -57,7 +57,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 <div className="main-menu-three__left">
                                     <div className="main-menu-three__logo">
                                         <Link href="/">
-                                            <img src="/assets/images/resources/logo-1.png" alt="Logo" />
+                                            <img src="/assets/images/resources/logo-7.png" alt="Logo" />
                                         </Link>
                                     </div>
                                     <div className="main-menu-three__main-menu-box">
