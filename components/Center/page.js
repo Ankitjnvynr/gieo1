@@ -9,9 +9,7 @@ export default function App() {
                 <div className="main">
                     <Center />
                 </div>
-
-
-            </Layout>
+             </Layout>
 
 
 
