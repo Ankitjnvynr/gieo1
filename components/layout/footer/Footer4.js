@@ -49,7 +49,7 @@ export default function Footer4() {
               <div className="site-footer-four__social">
                 {footerData.socialLinks.map((social, index) => (
                   <a href={social.href} key={index}>
-                    <span className={social.icon}></span>
+                    <span className={social.icon} style={{color:"white"}}></span>
                     {social.name}
                   </a>
                 ))}

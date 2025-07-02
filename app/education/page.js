@@ -1,6 +1,8 @@
+
 import React from "react"
 import Layout from "@/components/layout/Layout.js"
-import Center from "@/components/Center/Center.jsx"
+import Education from "@/components/Education/Education"
+
 
 
 export default function page() {
@@ -8,7 +10,7 @@ export default function page() {
         <>
             <Layout headerStyle={3} footerStyle={4} >
                 <div className="main">
-                    <Center />
+                    <Education />
                 </div></Layout>
 
 
