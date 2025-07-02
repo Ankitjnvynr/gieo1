@@ -1,30 +1,30 @@
 import Link from 'next/link';
 
-// Example data (replace with actual data fetching logic)
+// Medanta-specific blog content
 const examplePosts = [
   {
     id: '1',
     image: '/assets/images/blog/blog-3-1.jpg',
-    title: 'Trust the experts for all your roof service needs',
-    author: 'admin',
-    date: '23 December 2023',
-    excerpt: 'Roof service involves the maintenance and repair of roofs commercial',
+    title: 'Transforming Rural Healthcare Through Medanta Camps',
+    author: 'Medanta Foundation',
+    date: '10 June 2024',
+    excerpt: 'Medanta’s outreach camps bring critical healthcare services to underserved villages across India, offering diagnostics and consultations at no cost.',
   },
   {
     id: '2',
     image: '/assets/images/blog/blog-3-2.jpg',
-    title: 'Enhance the functionality of your our service',
-    author: 'admin',
-    date: '23 December 2023',
-    excerpt: 'Roof service involves the maintenance and repair of roofs commercial',
+    title: 'Free Surgeries Change Lives of Hundreds in Need',
+    author: 'Dr. A.K. Sharma',
+    date: '25 May 2024',
+    excerpt: 'From heart procedures to cataract removal, Medanta provides lifesaving surgeries to patients who lack access to quality medical care.',
   },
   {
     id: '3',
     image: '/assets/images/blog/blog-3-3.jpg',
-    title: 'Functionality of your roof with our service',
-    author: 'admin',
-    date: '23 December 2023',
-    excerpt: 'Roof service involves the maintenance and repair of roofs commercial',
+    title: 'Empowering Communities with Health Education',
+    author: 'Community Outreach Team',
+    date: '14 May 2024',
+    excerpt: 'Medanta’s awareness programs educate families about hygiene, nutrition, preventive care, and early detection of diseases.',
   },
 ];
 
@@ -37,15 +37,15 @@ export default function BlogThree() {
           <div className="blog-three__top">
             <div className="section-title text-left">
               <div className="section-title__tagline-box">
-                <span className="section-title__tagline">blog & News</span>
+                <span className="section-title__tagline">News & Updates</span>
               </div>
               <h2 className="section-title__title">
-                Quality roofing <span>solutions</span><br /> every time
+                Medanta Foundation <span>In Action</span><br /> Stories that Inspire
               </h2>
             </div>
             <div className="blog-three__btn-box">
               <Link href="/blog" className="blog-three__btn thm-btn-two">
-                View All Post<span className="icon-dubble-arrow-right"></span>
+                View All Posts<span className="icon-dubble-arrow-right"></span>
               </Link>
             </div>
           </div>
@@ -53,29 +53,28 @@ export default function BlogThree() {
             {examplePosts.map((post, index) => (
               <div
                 key={post.id || index}
-                className={`col-xl-4 col-lg-4 wow ${index % 3 === 0 ? 'fadeInLeft' : index % 3 === 1 ? 'fadeInUp' : 'fadeInRight'}`}
+                className={`col-xl-4 col-lg-4 wow ${
+                  index % 3 === 0 ? 'fadeInLeft' : index % 3 === 1 ? 'fadeInUp' : 'fadeInRight'
+                }`}
                 data-wow-delay={`${(index + 1) * 100}ms`}
               >
                 <div className="blog-three__single">
                   <div className="blog-three__img-box">
                     <div className="blog-three__img">
-                      {/* Replacing Next.js Image with standard HTML img tag */}
                       <img src={post.image} alt={post.title} />
                     </div>
                   </div>
                   <div className="blog-three__content">
                     <ul className="blog-three__meta list-unstyled">
                       <li>
-                        <span className="icon-user"></span>{post.author}
+                        <span className="icon-user"></span> {post.author}
                       </li>
                       <li>
-                        <span className="icon-callender"></span>{post.date}
+                        <span className="icon-callender"></span> {post.date}
                       </li>
                     </ul>
                     <h3 className="blog-three__title">
-                      <Link href={`/blog/${post.id}`}>
-                        {post.title}
-                      </Link>
+                      <Link href={`/blog/${post.id}`}>{post.title}</Link>
                     </h3>
                     <p className="blog-three__text">{post.excerpt}</p>
                   </div>

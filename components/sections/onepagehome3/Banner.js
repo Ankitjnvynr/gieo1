@@ -1,4 +1,3 @@
-// Add this at the very top of your file
 "use client";
 
 import React, { useState } from 'react';
@@ -7,9 +6,9 @@ import ModalVideo from 'react-modal-video';
 import CountUp from 'react-countup';
 
 export default function Banner({
-  subTitle = 'FinTech Fusion',
-  title = 'Top-Quality Roofing Services for Home',
-  text = 'As an AI language model, I don’t have personal opinions or points of However I can tell you that design is a multifaceted field',
+  subTitle = 'Medanta Foundation',
+  title = 'Advancing Healthcare with Compassion and Innovation',
+  text = 'Medanta Foundation is committed to delivering high-quality, affordable healthcare to communities across India. Through a collaborative initiative with Gieo Gita and RJ, we aim to combine medical excellence with spiritual and emotional well-being.',
   videoUrl = 'https://www.youtube.com/watch?v=Get7rqXYrbQ',
   trustedClientsCount = 4000,
   trustedClientsImages = [

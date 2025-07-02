@@ -14,6 +14,7 @@ export default function CounterTwo() {
       <section className="contact-two" id="contact">
         <div className="container">
           <div className="row">
+            {/* Left Side Info */}
             <div className="col-xl-6 col-lg-6">
               <div className="contact-two__left">
                 <div className="section-title text-left">
@@ -21,12 +22,12 @@ export default function CounterTwo() {
                     <span className="section-title__tagline">Talk to us</span>
                   </div>
                   <h2 className="section-title__title">
-                    Peak Protection Roofing Trust the experts
+                    Medanta Foundation<br /> Reach Out to Us
                   </h2>
                 </div>
                 <p className="contact-two__text">
-                  Construction is an essential industry that involves building
-                  and designing structures such as buildings, roads, bridges
+                  We are committed to providing healthcare support, awareness campaigns,
+                  and medical outreach programs. Get in touch for collaboration or assistance.
                 </p>
                 <ul className="contact-two__contact-list list-unstyled">
                   <li>
@@ -35,7 +36,7 @@ export default function CounterTwo() {
                     </div>
                     <div className="content">
                       <p>Address</p>
-                      <h4>66 Broklyant, India</h4>
+                      <h4>Gieo Gita Gyan Sansthanam, Kurukshetra, Haryana</h4>
                     </div>
                   </li>
                   <li>
@@ -63,6 +64,8 @@ export default function CounterTwo() {
                 </ul>
               </div>
             </div>
+
+            {/* Right Side Form */}
             <div className="col-xl-6 col-lg-6">
               <div
                 className="contact-two__right wow slideInRight"
@@ -114,15 +117,16 @@ export default function CounterTwo() {
                             className="selectmenu wide"
                             value={selectedOption}
                             onChange={handleChange}
+                            required
                           >
                             <option value="" disabled>
                               Choose an Option
                             </option>
-                            <option value="service1">Type Of Service 01</option>
-                            <option value="service2">Type Of Service 02</option>
-                            <option value="service3">Type Of Service 03</option>
-                            <option value="service4">Type Of Service 04</option>
-                            <option value="service5">Type Of Service 05</option>
+                            <option value="service1">General Inquiry</option>
+                            <option value="service2">Collaboration</option>
+                            <option value="service3">Volunteer</option>
+                            <option value="service4">Medical Help</option>
+                            <option value="service5">Awareness Programs</option>
                           </select>
                         </div>
                       </div>

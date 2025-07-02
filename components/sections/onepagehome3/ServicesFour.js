@@ -8,7 +8,6 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// Swiper options
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 2,
@@ -60,71 +59,71 @@ const swiperOptions = {
   },
 };
 
-// Sample service data
+// ✅ Medanta-themed services
 const services = [
   {
-    imgSrc: 'assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-paint',
-    title: 'Reliable Roofing Pros',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
+    imgSrc: '/assets/images/services/services-4-1.jpg',
+    iconClass: 'icon-heartbeat',
+    title: 'Free Health Checkups',
+    description: 'Providing free medical screenings and diagnostics to underserved communities.',
+    link: 'free-health-checkups',
   },
   {
-    imgSrc: 'assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-crane',
-    title: 'Roof service involves',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'sure-guard-roofing-services'
+    imgSrc: '/assets/images/services/services-4-2.jpg',
+    iconClass: 'icon-hospital',
+    title: 'Mobile Medical Vans',
+    description: 'Bringing essential healthcare to rural and remote areas through mobile clinics.',
+    link: 'mobile-medical-vans',
   },
   {
-    imgSrc: 'assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-crane-3',
-    title: 'roofs for the residential',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'skyline-roofing-solutions'
+    imgSrc: '/assets/images/services/services-4-3.jpg',
+    iconClass: 'icon-awareness',
+    title: 'Health Awareness Programs',
+    description: 'Conducting education drives on hygiene, nutrition, and preventive healthcare.',
+    link: 'health-awareness',
   },
   {
-    imgSrc: 'assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-paint',
-    title: 'Reliable Roofing Pros',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
+    imgSrc: '/assets/images/services/services-4-1.jpg',
+    iconClass: 'icon-family',
+    title: 'Women & Child Care',
+    description: 'Focused programs for maternal health, vaccinations, and nutrition for children.',
+    link: 'women-child-care',
   },
   {
-    imgSrc: 'assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-crane',
-    title: 'Roof service involves',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'skyline-roofing-solutions'
+    imgSrc: '/assets/images/services/services-4-2.jpg',
+    iconClass: 'icon-stethoscope',
+    title: 'Specialist Consultations',
+    description: 'Access to expert doctors from Medanta across multiple specialties.',
+    link: 'specialist-consultations',
   },
   {
-    imgSrc: 'assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-crane-3',
-    title: 'roofs for the residential',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'top-notch-roofing-restoration'
+    imgSrc: '/assets/images/services/services-4-3.jpg',
+    iconClass: 'icon-spiritual',
+    title: 'Spiritual Wellness Camps',
+    description: 'In collaboration with Gieo Gita and RJ to promote inner peace and healing.',
+    link: 'spiritual-wellness',
   },
   {
-    imgSrc: 'assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-paint',
-    title: 'Reliable Roofing Pros',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
+    imgSrc: '/assets/images/services/services-4-1.jpg',
+    iconClass: 'icon-medical-kit',
+    title: 'Free Medicine Distribution',
+    description: 'Supplying essential medicines to economically weaker sections.',
+    link: 'medicine-distribution',
   },
   {
-    imgSrc: 'assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-crane',
-    title: 'Roof service involves',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'skyline-roofing-solutions'
+    imgSrc: '/assets/images/services/services-4-2.jpg',
+    iconClass: 'icon-support',
+    title: 'Patient Support Services',
+    description: 'Guidance and financial aid support for critical treatments.',
+    link: 'patient-support',
   },
   {
-    imgSrc: 'assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-crane-3',
-    title: 'roofs for the residential',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
-  }
+    imgSrc: '/assets/images/services/services-4-3.jpg',
+    iconClass: 'icon-mental-health',
+    title: 'Mental Health Counseling',
+    description: 'Emotional and psychological support by trained counselors.',
+    link: 'mental-health',
+  },
 ];
 
 export default function ServicesFour() {
@@ -134,9 +133,11 @@ export default function ServicesFour() {
         <div className="container">
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
-              <span className="section-title__tagline">latest service</span>
+              <span className="section-title__tagline">Our Initiatives</span>
             </div>
-            <h2 className="section-title__title">Quality roofing <span>solutions</span><br /> every time</h2>
+            <h2 className="section-title__title">
+              Serving with <span>Compassion</span><br /> and Care
+            </h2>
           </div>
           <Swiper {...swiperOptions}>
             {services.map((service, index) => (
@@ -148,26 +149,23 @@ export default function ServicesFour() {
                     </div>
                   </div>
                   <div className="services-four__content">
-                    <div className="services-four__icon">
+                    {/* <div className="services-four__icon">
                       <span className={service.iconClass}></span>
-                    </div>
+                    </div> */}
                     <h4 className="services-four__title">
                       <Link href={`/${service.link}`}>{service.title}</Link>
                     </h4>
                     <p className="services-four__text">{service.description}</p>
                     <div className="services-four__btn-box">
-                      <Link href={`/${service.link}`} className="services-four__btn thm-btn">
+                      {/* <Link href={`/${service.link}`} className="services-four__btn thm-btn">
                         Read more<span className="icon-dubble-arrow-right"></span>
-                      </Link>
+                      </Link> */}
                     </div>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-          {/* Navigation buttons */}
-          {/* Pagination bullets */}
-          
         </div>
       </div>
     </section>
