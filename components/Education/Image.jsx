@@ -8,23 +8,24 @@ const BannerImage = () => {
     <div className="banner-container">
       
       <div className="banner-image">
-        <div className="image-overlay"></div>
+        <div className="image-overlay">
+          <img src='/assets/images/education/gurukul.jpeg' alt="Banner" width={"100%"} height={"400px"} />
+        </div>
       </div>
       
       
      
     </div>
-
-    {/* <div id='divsection'><Programs /></div> */}
-    <div className="banner-content">
-    <div className="banner-text">
-      <h1>Empowering Futures Through Education</h1>
-      <p>
-        Join us in our mission to provide quality education and resources to
-        those in need. Together, we can make a difference.</p>
-      <button className="learn-more-button">Learn More</button>
+    
+  <div className="containers">
+      <h1 className="main-heading">GIEO Gita Education Program</h1>
+      <p className="subheading"> Discover timeless wisdom from the Bhagavad Gita and transform your life through spiritual education.</p>
+      <div className="button-group">
+        <a href='#divsection'><button className="btn primary">Explore More</button></a>
+        <a href='#textsection'><button className="btn secondary">Learn More</button></a>
+      </div>
     </div>
-    </div>
+   
     </>
   );
 };

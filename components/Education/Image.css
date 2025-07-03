@@ -41,113 +41,82 @@ html{
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: fit-content;
   background: linear-gradient(135deg, rgba(90, 56, 22, 0.7) 0%, rgba(165, 144, 96, 0.5) 100%);
   z-index: 2;
 }
-
-.banner-content {
-  position: absolute;
-  left: 0;
-  z-index: 3;
+.containers {
+  max-width: 800px;
+  margin: 0rem auto;
+  padding: 2rem 1rem;
   text-align: center;
-  color: var(--text-light);
-  padding: 2rem;
-  max-width: 1200px;
-  margin: 0 ;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-.banner-title {
-  font-size: 3.5rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
-  line-height: 1.2;
-  color: white;
+.main-heading {
+  font-size: 2.5rem;
+  color: #5a3816;
+  margin-bottom: 0.5rem;
 }
 
-.banner-subtitle {
-  font-size: 1.5rem;
+.subheading {
+  font-size: 1.25rem;
+  color: #a59060;
   margin-bottom: 2rem;
-  max-width: 700px;
- 
-  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
 }
 
-.banner-cta {
+.button-group {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.primary-btn {
-  background-color: var(--secondary-color);
-  color: var(--text-light);
-  border: none;
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 4px;
+.btn {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: 2px solid transparent;
+  border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  min-width: 130px;
 }
 
-.primary-btn:hover {
-  background-color: var(--primary-color);
-  transform: translateY(-2px);
+/* Primary button */
+.btn.primary {
+  background-color: #5a3816;
+  color: #fff;
 }
 
-.secondary-btn {
+.btn.primary:hover {
+  background-color: #442a11;
+}
+
+/* Secondary button */
+.btn.secondary {
   background-color: transparent;
-  color: var(--text-light);
-  border: 2px solid var(--text-light);
-  padding: 0.8rem 2rem;
-  font-size: 1.1rem;
-  font-weight: 600;
-  border-radius: 4px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  color: #5a3816;
+  border: 2px solid #5a3816;
 }
 
-.secondary-btn:hover {
-  background-color: rgba(255, 255, 255, 0.1);
-  transform: translateY(-2px);
+.btn.secondary:hover {
+  background-color: #f8f5f0;
 }
 
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .banner-container {
-    height: 60vh;
-    min-height: 400px;
-  }
-  
-  .banner-title {
-    font-size: 2.5rem;
-  }
-  
-  .banner-subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .banner-cta {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .primary-btn, .secondary-btn {
-    width: 100%;
-    max-width: 250px;
-  }
-}
-
-@media (max-width: 480px) {
-  .banner-title {
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .main-heading {
     font-size: 2rem;
   }
-  
-  .banner-subtitle {
+
+  .subheading {
     font-size: 1rem;
   }
-}
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 0.65rem 1.2rem;
+  }
+} 

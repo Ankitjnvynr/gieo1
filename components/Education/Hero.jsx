@@ -11,7 +11,7 @@ const styles = {
     flexWrap: 'wrap',
     paddingLeft: '10rem',
     paddingRight: '10rem',
-
+    marginTop: '-120px',
   },
   text: {
     flex: 1,
