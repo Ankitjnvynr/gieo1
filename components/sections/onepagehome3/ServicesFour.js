@@ -28,101 +28,66 @@ const swiperOptions = {
     clickable: true,
   },
   breakpoints: {
-    0: {
-      spaceBetween: 0,
-      slidesPerView: 1,
-    },
-    375: {
-      spaceBetween: 30,
-      slidesPerView: 1,
-    },
-    575: {
-      spaceBetween: 30,
-      slidesPerView: 1,
-    },
-    768: {
-      spaceBetween: 30,
-      slidesPerView: 1,
-    },
-    992: {
-      spaceBetween: 30,
-      slidesPerView: 2,
-    },
-    1200: {
-      spaceBetween: 30,
-      slidesPerView: 3,
-    },
-    1320: {
-      spaceBetween: 30,
-      slidesPerView: 3,
-    },
+    0: { slidesPerView: 1 },
+    375: { slidesPerView: 1 },
+    575: { slidesPerView: 1 },
+    768: { slidesPerView: 1 },
+    992: { slidesPerView: 2 },
+    1200: { slidesPerView: 3 },
+    1320: { slidesPerView: 3 },
   },
 };
 
-// ✅ Medanta-themed services
+// ✅ Medanta OPD Services with Original Image Paths
 const services = [
   {
     imgSrc: '/assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-heartbeat',
-    title: 'Free Health Checkups',
-    description: 'Providing free medical screenings and diagnostics to underserved communities.',
-    link: 'free-health-checkups',
-  },
-  {
-    imgSrc: '/assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-hospital',
-    title: 'Mobile Medical Vans',
-    description: 'Bringing essential healthcare to rural and remote areas through mobile clinics.',
-    link: 'mobile-medical-vans',
-  },
-  {
-    imgSrc: '/assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-awareness',
-    title: 'Health Awareness Programs',
-    description: 'Conducting education drives on hygiene, nutrition, and preventive healthcare.',
-    link: 'health-awareness',
-  },
-  {
-    imgSrc: '/assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-family',
-    title: 'Women & Child Care',
-    description: 'Focused programs for maternal health, vaccinations, and nutrition for children.',
-    link: 'women-child-care',
-  },
-  {
-    imgSrc: '/assets/images/services/services-4-2.jpg',
     iconClass: 'icon-stethoscope',
-    title: 'Specialist Consultations',
-    description: 'Access to expert doctors from Medanta across multiple specialties.',
-    link: 'specialist-consultations',
-  },
-  {
-    imgSrc: '/assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-spiritual',
-    title: 'Spiritual Wellness Camps',
-    description: 'In collaboration with Gieo Gita and RJ to promote inner peace and healing.',
-    link: 'spiritual-wellness',
-  },
-  {
-    imgSrc: '/assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-medical-kit',
-    title: 'Free Medicine Distribution',
-    description: 'Supplying essential medicines to economically weaker sections.',
-    link: 'medicine-distribution',
+    title: 'Cardiac Consultation',
+    description: 'Heart health evaluation, risk assessment, and lifestyle guidance by expert cardiologists.',
+    link: 'cardiac-consultation',
   },
   {
     imgSrc: '/assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-support',
-    title: 'Patient Support Services',
-    description: 'Guidance and financial aid support for critical treatments.',
-    link: 'patient-support',
+    iconClass: 'icon-doctor',
+    title: 'General Medical Consultation',
+    description: 'Comprehensive health check-ups and treatment plans by experienced physicians.',
+    link: 'general-consultation',
   },
   {
     imgSrc: '/assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-mental-health',
-    title: 'Mental Health Counseling',
-    description: 'Emotional and psychological support by trained counselors.',
-    link: 'mental-health',
+    iconClass: 'icon-tooth',
+    title: 'Dental Consultation',
+    description: 'Oral exams, scaling, and upcoming services like fillings, RCT, and extractions.',
+    link: 'dental-consultation',
+  },
+  {
+    imgSrc: '/assets/images/services/services-4-1.jpg',
+    iconClass: 'icon-diagnosis',
+    title: 'Diagnostic Services',
+    description: 'Digital X-ray, ECG, ECHO, TMT, and PFT available for accurate diagnosis.',
+    link: 'diagnostic-services',
+  },
+  {
+    imgSrc: '/assets/images/services/services-4-2.jpg',
+    iconClass: 'icon-lungs',
+    title: 'Pulmonary Function Test (PFT)',
+    description: 'Essential test for assessing lung capacity and diagnosing asthma and COPD.',
+    link: 'pulmonary-function',
+  },
+  {
+    imgSrc: '/assets/images/services/services-4-3.jpg',
+    iconClass: 'icon-telemedicine',
+    title: 'Telemedicine Consultation',
+    description: 'Online consultation services for remote, elderly, and immobile patients.',
+    link: 'telemedicine',
+  },
+  {
+    imgSrc: '/assets/images/services/services-4-1.jpg',
+    iconClass: 'icon-ultrasound',
+    title: 'Ultrasound (Coming Soon)',
+    description: 'Future service for soft tissue, abdominal, and pelvic imaging.',
+    link: 'ultrasound',
   },
 ];
 
@@ -133,34 +98,36 @@ export default function ServicesFour() {
         <div className="container">
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
-              <span className="section-title__tagline">Our Initiatives</span>
+              <span className="section-title__tagline">Our Healthcare Offerings</span>
             </div>
             <h2 className="section-title__title">
-              Serving with <span>Compassion</span><br /> and Care
+              Compassionate <span>Medical Care</span><br /> for Every Individual
             </h2>
           </div>
           <Swiper {...swiperOptions}>
             {services.map((service, index) => (
               <SwiperSlide key={index} className="item">
-                <div className="services-four__single">
+                <div className="services-four__single" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <div className="services-four__img-box">
                     <div className="services-four__img">
                       <img src={service.imgSrc} alt={service.title} />
                     </div>
                   </div>
-                  <div className="services-four__content">
-                    {/* <div className="services-four__icon">
-                      <span className={service.iconClass}></span>
-                    </div> */}
+                  <div
+                    className="services-four__content"
+                    style={{
+                      flexGrow: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      minHeight: '220px',
+                      paddingTop: '20px',
+                    }}
+                  >
                     <h4 className="services-four__title">
                       <Link href={`/${service.link}`}>{service.title}</Link>
                     </h4>
                     <p className="services-four__text">{service.description}</p>
-                    <div className="services-four__btn-box">
-                      {/* <Link href={`/${service.link}`} className="services-four__btn thm-btn">
-                        Read more<span className="icon-dubble-arrow-right"></span>
-                      </Link> */}
-                    </div>
                   </div>
                 </div>
               </SwiperSlide>

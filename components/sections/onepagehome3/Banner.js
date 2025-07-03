@@ -6,9 +6,9 @@ import ModalVideo from 'react-modal-video';
 import CountUp from 'react-countup';
 
 export default function Banner({
-  subTitle = 'Medanta Foundation',
-  title = 'Advancing Healthcare with Compassion and Innovation',
-  text = 'Medanta Foundation is committed to delivering high-quality, affordable healthcare to communities across India. Through a collaborative initiative with Gieo Gita and RJ, we aim to combine medical excellence with spiritual and emotional well-being.',
+  subTitle = 'Medanta Foundation OPD Centre',
+  title = 'Delivering Compassionate Healthcare to the Underserved',
+  text = 'In collaboration with Gita Gyan Sansthanam and RJ Foundation, Medanta Foundation OPD Centre was inaugurated on 05/09/2024. As part of our CSR initiative, we offer advanced yet accessible medical services, bridging the healthcare gap for underprivileged communities. From cardiac and general consultation to telemedicine and diagnostic services, our mission is to ensure “Every Life is Precious.”',
   videoUrl = 'https://www.youtube.com/watch?v=Get7rqXYrbQ',
   trustedClientsCount = 4000,
   trustedClientsImages = [

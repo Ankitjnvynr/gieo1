@@ -16,22 +16,22 @@ export default function WhyWe() {
                       <span className="section-title__tagline">why choose medanta</span>
                     </div>
                     <h2 className="section-title__title">
-                      Trusted for <span>Compassionate</span><br /> and Quality Healthcare
+                      Driven by <span>Care</span><br /> Guided by Purpose
                     </h2>
                   </div>
                   <ul className="why-we-are__list list-unstyled">
                     <li>
                       <div className="why-we-are__list-content">
                         <h3>
-                          <Link href="/medical-outreach-programs">Rural Health Outreach</Link>
+                          <Link href="/accessible-healthcare">Accessible Healthcare for All</Link>
                         </h3>
                         <p>
-                          Delivering medical care to underserved villages<br />
-                          through mobile clinics and wellness camps.
+                          Bridging the healthcare gap with affordable<br />
+                          medical services for underserved communities.
                         </p>
                       </div>
                       <div className="why-we-are__list-arrow">
-                        <Link href="/medical-outreach-programs">
+                        <Link href="/accessible-healthcare">
                           <span className="icon-arrow-right-2"></span>
                         </Link>
                       </div>
@@ -39,15 +39,15 @@ export default function WhyWe() {
                     <li>
                       <div className="why-we-are__list-content">
                         <h3>
-                          <Link href="/free-treatment-initiatives">Free Treatment Initiatives</Link>
+                          <Link href="/specialist-consultations">Expert Consultations & Diagnostics</Link>
                         </h3>
                         <p>
-                          Supporting economically weaker sections<br />
-                          with advanced diagnostics and surgeries at no cost.
+                          Cardiac, general, dental, and diagnostic services<br />
+                          under one roof with advanced facilities.
                         </p>
                       </div>
                       <div className="why-we-are__list-arrow">
-                        <Link href="/free-treatment-initiatives">
+                        <Link href="/specialist-consultations">
                           <span className="icon-arrow-right-2"></span>
                         </Link>
                       </div>
@@ -55,15 +55,15 @@ export default function WhyWe() {
                     <li>
                       <div className="why-we-are__list-content">
                         <h3>
-                          <Link href="/awareness-campaigns">Health Awareness Campaigns</Link>
+                          <Link href="/csr-initiatives">A Mission Rooted in CSR</Link>
                         </h3>
                         <p>
-                          Educating communities on preventive care,<br />
-                          nutrition, and lifestyle diseases.
+                          Inspired by the belief that “Every Life is Precious” —<br />
+                          making healthcare a right, not a privilege.
                         </p>
                       </div>
                       <div className="why-we-are__list-arrow">
-                        <Link href="/awareness-campaigns">
+                        <Link href="/csr-initiatives">
                           <span className="icon-arrow-right-2"></span>
                         </Link>
                       </div>
@@ -81,15 +81,21 @@ export default function WhyWe() {
                 >
                   <div className="why-we-are__img-box">
                     <div className="why-we-are__img">
-                      <img src="/assets/images/resources/why-we-are-img-1.jpg" alt="Medanta Outreach" />
+                      <img
+                        src="/assets/images/resources/why-we-are-img-1.jpg"
+                        alt="Medanta Outreach"
+                      />
                     </div>
                     <div className="why-we-are__img-2">
-                      <img src="/assets/images/resources/why-we-are-img-2.jpg" alt="Healthcare Service" />
+                      <img
+                        src="/assets/images/resources/why-we-are-img-2.jpg"
+                        alt="Healthcare Service"
+                      />
                     </div>
                   </div>
                 </div>
               </div>
-              
+
             </div>
           </div>
         </div>

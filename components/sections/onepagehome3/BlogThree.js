@@ -1,30 +1,30 @@
 import Link from 'next/link';
 
-// Medanta-specific blog content
+// Medanta-specific blog content based on actual initiatives
 const examplePosts = [
   {
     id: '1',
     image: '/assets/images/blog/blog-3-1.jpg',
-    title: 'Transforming Rural Healthcare Through Medanta Camps',
+    title: 'Inauguration of Medanta OPD Centre at Kurukshetra',
     author: 'Medanta Foundation',
-    date: '10 June 2024',
-    excerpt: 'Medanta’s outreach camps bring critical healthcare services to underserved villages across India, offering diagnostics and consultations at no cost.',
+    date: '05 Sept 2024',
+    excerpt: 'The Medanta OPD Centre, launched in collaboration with Gieo Gita and RJ Foundation, marks a new era of accessible and affordable healthcare for underserved communities.',
   },
   {
     id: '2',
     image: '/assets/images/blog/blog-3-2.jpg',
-    title: 'Free Surgeries Change Lives of Hundreds in Need',
-    author: 'Dr. A.K. Sharma',
-    date: '25 May 2024',
-    excerpt: 'From heart procedures to cataract removal, Medanta provides lifesaving surgeries to patients who lack access to quality medical care.',
+    title: 'Telemedicine: Bridging Distance with Care',
+    author: 'Dr. Neha Kapoor',
+    date: '12 June 2024',
+    excerpt: 'Our telemedicine initiative enables virtual consultations for elderly and rural patients, ensuring continuity of care from Medanta experts through secure digital platforms.',
   },
   {
     id: '3',
     image: '/assets/images/blog/blog-3-3.jpg',
-    title: 'Empowering Communities with Health Education',
-    author: 'Community Outreach Team',
-    date: '14 May 2024',
-    excerpt: 'Medanta’s awareness programs educate families about hygiene, nutrition, preventive care, and early detection of diseases.',
+    title: 'Delivering Free Dental and Diagnostic Services',
+    author: 'Community Health Team',
+    date: '28 May 2024',
+    excerpt: 'Routine check-ups, X-rays, ECG, and PFT are now available at the Medanta OPD Centre, supporting early diagnosis and preventive health management.',
   },
 ];
 

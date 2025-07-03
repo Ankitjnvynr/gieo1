@@ -77,32 +77,32 @@ export default function ProjectThree() {
             {[
               {
                 imgSrc: '/assets/images/project/project-3-1.jpg',
-                subTitle: 'Medical Camp',
-                title: 'Free Health Checkup Drive',
+                subTitle: 'Inauguration',
+                title: 'Launch of Medanta OPD Centre – 05/09/2024',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-2.jpg',
-                subTitle: 'Outreach Program',
-                title: 'Mobile Medical Van Services',
+                subTitle: 'Consultations',
+                title: 'Cardiac, General & Dental Check-ups',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-3.jpg',
-                subTitle: 'Awareness',
-                title: 'Health & Hygiene Campaign',
+                subTitle: 'Diagnostics',
+                title: 'ECG, ECHO, TMT, PFT & X-Ray Services',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-4.jpg',
-                subTitle: 'Collaboration',
-                title: 'Wellness Camp with Gieo Gita',
+                subTitle: 'Virtual Care',
+                title: 'Telemedicine for Rural & Elderly',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-1.jpg',
-                subTitle: 'Community Care',
-                title: 'Free Medicine Distribution',
+                subTitle: 'Community Impact',
+                title: 'Every Life is Precious – CSR Commitment',
                 link: '/project-details',
               },
             ].map((project, index) => (
