@@ -1,0 +1,221 @@
+.section {
+  background: linear-gradient(135deg, #fef7cd 0%, #fef3c7 100%);
+  padding: 4rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.bgCircleOne {
+  position: absolute;
+  top: 10%;
+  left: -5%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 6s ease-in-out infinite;
+}
+
+.bgCircleTwo {
+  position: absolute;
+  bottom: 10%;
+  right: -5%;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(251, 191, 36, 0.08) 0%, transparent 70%);
+  border-radius: 50%;
+  animation: float 8s ease-in-out infinite reverse;
+}
+
+.wrapper {
+  position: relative;
+  z-index: 2;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+/* .title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #92400e, #d97706);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+} */
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  background: linear-gradient(135deg, #92400e, #d97706);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.025em;
+  display: inline-block; /* ensures background-clip works on text */
+}
+
+
+.underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+  margin: 0 auto;
+  border-radius: 2px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 280px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.innerCarousel {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+
+.reviewCard {
+  flex: 0 0 100%;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.95);
+  margin: 1rem;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.topBorder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #fbbf24, #f59e0b);
+}
+
+.stars {
+  margin-bottom: 1.5rem;
+}
+
+.star {
+  font-size: 1.25rem;
+  margin-right: 2px;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.reviewText {
+  font-size: 1.2rem;
+  color: #374151;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+  position: relative;
+}
+
+.quoteMark {
+  font-size: 3rem;
+  color: #fbbf24;
+  opacity: 0.3;
+  position: absolute;
+  font-family: serif;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.userName {
+  font-weight: 600;
+  color: #1f2937;
+  font-size: 1.1rem;
+}
+
+.navButton {
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: #92400e;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+.navButton:hover {
+  background: #92400e;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.dot {
+  height: 12px;
+  border-radius: 6px;
+  border: none;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
