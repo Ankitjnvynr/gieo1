@@ -3,6 +3,7 @@
 import React from "react";
 import Link from "next/link";
 import MobileMenu from "../MobileMenu";
+import { Topbar } from "../Topbar";
 
 // Full Menu Array with Submenus
 const menuItems = [
@@ -61,9 +62,9 @@ const menuItems = [
 export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handleSidebar }) {
     return (
         <header className={`main-header-three ${scroll ? "fixed-header" : ""}`}>
-         
 
             <nav className="main-menu main-menu-three">
+                <Topbar />
                 <div className="main-menu-three__wrapper">
                     <div className="container">
                         <div className="main-menu-three__wrapper-inner">
