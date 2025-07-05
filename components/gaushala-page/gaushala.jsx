@@ -1,12 +1,11 @@
 
-import HeroAboutSection from './HeroAbout/heroAboutSection';
-import GallerySection from './Gallery/GallerySection';
-import MissionSection from './Mission/MissionSection';
-import HelpSection from './Help/HelpSection';
+import HeroAboutSection from './heroabout/heroAboutSection';
+import GallerySection from './gallery/GallerySection';
+import MissionSection from './mission/MissionSection';
 import TestimonialSection from './Testimonials/TestimonialSection';
-import StatsSection from './Stats/StatsSection';
-import SupportSection from './Support/SupportingSection';
-import ContactSection from './Contact/Contactsection';
+import StatsSection from './stats/StatsSection';
+import SupportSection from './support/supportingSection';
+import ContactSection from './contact/contactsection';
 
 export default function GaushalaPage() {
   return (
@@ -14,7 +13,6 @@ export default function GaushalaPage() {
       <HeroAboutSection />
       <GallerySection />
       <MissionSection />
-      {/* <HelpSection /> */}
       <TestimonialSection />
       <StatsSection />
       <SupportSection />

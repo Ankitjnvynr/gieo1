@@ -1,7 +1,7 @@
 "use client";
-import Layout from "../../components/layout/Layout";
+import Layout from "../../../components/layout/Layout";
 import { motion } from "framer-motion";
-import GaushalaPage from "../../components/gaushala-page/gaushala";
+import GaushalaPage from "../../../components/gaushala-page/gaushala";
 
 export default function Gaushala() {
   return (
