@@ -1,0 +1,390 @@
+/* =============================
+   Support Section Styles
+============================= */
+/* 
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+  text-align: center;
+  position: relative;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.supportGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.supportContent {
+  text-align: left;
+}
+
+.supportContent p {
+  color: var(--text-light);
+  margin-bottom: 30px;
+}
+
+.supportOptions {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.optionCard {
+  background: #fff;
+  padding: 25px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+  text-align: center;
+}
+
+.optionIcon {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: var(--primary-color);
+}
+
+.optionCard h3 {
+  margin: 10px 0;
+  color: var(--secondary-color);
+}
+
+.optionCard p {
+  color: var(--text-light);
+  margin-bottom: 15px;
+}
+
+.optionCard button {
+  background: var(--primary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.optionCard button:hover {
+  background: var(--primary-dark);
+} */
+
+/* Support Form 
+.supportForm {
+  background: #fafafa;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+}*/
+/* 
+.supportForm h3 {
+  margin-bottom: 20px;
+  color: var(--secondary-color);
+}
+
+.supportForm form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.supportForm input,
+.supportForm select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.supportForm button {
+  background: var(--primary-color);
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.supportForm button:hover {
+  background: var(--primary-dark);
+} */
+
+/* Responsive 
+@media (max-width: 768px) {
+  .supportGrid {
+    grid-template-columns: 1fr;
+  }
+}*/
+
+
+
+
+/* =============================
+   Support Section Variables
+============================= */
+.section {
+  --primary-color: #8e6c3a;
+  --primary-dark: #6e552d;
+  --secondary-color: #5a3921;
+  --light-bg: #f9f5ee;
+  --light-text: #f0e5d0;
+  --text-color: #333;
+  --text-light: #666;
+  --border-radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --box-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --option-color: var(--primary-color);
+}
+
+/* =============================
+   Base Section Styles
+============================= */
+.section {
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  background-color: var(--light-bg);
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 2rem);
+}
+
+/* =============================
+   Typography & Headings
+============================= */
+.sectionTitle {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--secondary-color);
+  text-align: left;
+  margin-bottom: 1rem;
+  position: relative;
+  line-height: 1.2;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 0;
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.sectionSubtitle {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--text-light);
+  margin-bottom: clamp(2rem, 4vw, 3rem);
+  line-height: 1.6;
+}
+
+/* =============================
+   Support Grid Layout
+============================= */
+.supportGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+
+.supportContent {
+  position: relative;
+}
+
+/* =============================
+   Support Options Cards
+============================= */
+.supportOptions {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+}
+
+.optionCard {
+  background: white;
+  padding: clamp(1.5rem, 2vw, 2rem);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  border-left: 4px solid var(--option-color);
+  text-align: left;
+}
+
+.optionCard:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.optionIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--option-color);
+  transition: var(--transition);
+}
+
+.optionCard:hover .optionIcon {
+  transform: scale(1.1);
+}
+
+.optionCard h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+}
+
+.optionCard p {
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.optionCard button {
+  background: var(--option-color);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: var(--border-radius);
+  cursor: pointer;
+  font-weight: 600;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.optionCard button:hover {
+  background: var(--secondary-color);
+}
+
+/* =============================
+   Support Form Styles
+============================= */
+.supportForm {
+  background: white;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 2rem;
+}
+
+.supportForm h3 {
+  font-size: 1.5rem;
+  color: var(--secondary-color);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.supportForm form {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.formGroup {
+  position: relative;
+}
+
+.supportForm input,
+.supportForm select {
+  width: 100%;
+  padding: 0.9rem 1.25rem;
+  border: 1px solid #e0e0e0;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  transition: var(--transition);
+  background-color: #f9f9f9;
+}
+
+.supportForm input:focus,
+.supportForm select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(142, 108, 58, 0.2);
+}
+
+.supportForm select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: right 1rem center;
+  background-size: 1rem;
+}
+
+.submitButton {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  margin-top: 0.5rem;
+}
+
+.submitButton:hover {
+  background: var(--primary-dark);
+}
+
+/* =============================
+   Responsive Adjustments
+============================= */
+@media (max-width: 992px) {
+  .supportGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .supportForm {
+    position: static;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .sectionTitle {
+    text-align: center;
+  }
+  
+  .sectionTitle::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .supportOptions {
+    grid-template-columns: 1fr;
+  }
+  
+  .supportForm {
+    padding: 1.5rem;
+  }
+}

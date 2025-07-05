@@ -1,0 +1,335 @@
+/* =============================
+   Contact Section Styles
+============================= */
+/* 
+.section {
+  padding: 80px 0;
+}
+
+.section h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+  text-align: center;
+  position: relative;
+}
+
+.section h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  margin-top: 40px;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.infoItem {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.infoIcon {
+  font-size: 1.5rem;
+  color: var(--primary-color);
+  margin-bottom: 8px;
+}
+
+.infoItem h3 {
+  margin: 0 0 5px;
+  color: var(--secondary-color);
+}
+
+.infoItem p {
+  margin: 0;
+  color: var(--text-light);
+}
+
+.contactMap {
+  height: 300px;
+  border-radius: 10px;
+  background: #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  font-weight: bold;
+  text-align: center;
+} */
+
+/* Responsive 
+@media (max-width: 768px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}*/
+
+
+
+/* =============================
+   Contact Section Variables
+============================= */
+.section {
+  --primary-color: #8e6c3a;
+  --primary-dark: #6e552d;
+  --secondary-color: #5a3921;
+  --light-bg: #f9f5ee;
+  --light-text: #f0e5d0;
+  --text-color: #333;
+  --text-light: #666;
+  --border-radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --box-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --info-color: var(--primary-color);
+}
+
+/* =============================
+   Base Section Styles
+============================= */
+.section {
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  background-color: var(--light-bg);
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 2rem);
+}
+
+/* =============================
+   Typography & Headings
+============================= */
+.sectionTitle {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  line-height: 1.2;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.sectionSubtitle {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--text-light);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  line-height: 1.6;
+}
+
+/* =============================
+   Contact Grid Layout
+============================= */
+.contactGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(2rem, 4vw, 3rem);
+  align-items: start;
+}
+
+/* =============================
+   Contact Info Cards
+============================= */
+.contactInfo {
+  display: grid;
+  gap: clamp(1.25rem, 2vw, 1.75rem);
+}
+
+.infoItem {
+  background: white;
+  padding: clamp(1.5rem, 2vw, 2rem);
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  transition: var(--transition);
+  border-left: 4px solid var(--info-color);
+}
+
+.infoItem:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--box-shadow-hover);
+}
+
+.infoIcon {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: var(--info-color);
+  transition: var(--transition);
+}
+
+.infoItem:hover .infoIcon {
+  transform: scale(1.1);
+}
+
+.infoItem h3 {
+  color: var(--secondary-color);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.infoItem p,
+.infoLink {
+  color: var(--text-light);
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+  transition: var(--transition);
+}
+
+.infoLink {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+
+.infoLink::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--info-color);
+  transition: var(--transition);
+}
+
+.infoLink:hover {
+  color: var(--info-color);
+}
+
+.infoLink:hover::after {
+  width: 100%;
+}
+
+/* =============================
+   Map Styles
+============================= */
+.contactMap {
+  height: 100%;
+  min-height: 400px;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 2rem;
+}
+
+.mapIframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  filter: grayscale(20%) sepia(10%);
+  transition: filter 0.3s ease;
+}
+
+.mapIframe:hover {
+  filter: grayscale(0%) sepia(0%);
+}
+
+
+
+@keyframes shimmer {
+  0% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* =============================
+   Responsive Adjustments
+============================= */
+@media (max-width: 992px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .contactMap {
+    min-height: 350px;
+    position: static;
+    order: -1;
+  }
+  
+  .contactInfo {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .contactInfo {
+    grid-template-columns: 1fr;
+  }
+  
+  .mapButton {
+    padding: 1rem;
+    width: 80%;
+    max-width: 250px;
+  }
+}
+
+
+
+/* =============================
+   new updates ============================= */
+  
+.contactMap {
+  height: 100%;
+  min-height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  background-color: #eee;
+}
+
+.mapFrame {
+  width: 100%;
+  height: 100%;
+  border: none;
+  display: block;
+}
+
+/* responsive adjustments */
+
+@media (max-width: 992px) {
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactMap {
+    order: -1;
+    margin-bottom: 2rem;
+  }
+}

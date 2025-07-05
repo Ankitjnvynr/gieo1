@@ -1,0 +1,276 @@
+/* =============================
+   Mission Section Styles
+============================= */
+/* 
+.section {
+  padding: 80px 0;
+  background-color: #f9f5ee;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.sectionTitle {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 15px;
+  color: #5a3921;
+  text-align: center;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: #8e6c3a;
+}
+
+.sectionSubtitle {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  max-width: 700px;
+  margin: 0 auto 50px;
+  color: #666;
+  text-align: center;
+}
+
+.missionGrid {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.missionCard {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.missionCard:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.missionImage {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.missionCard h3 {
+  color: #5a3921;
+  margin-bottom: 10px;
+}
+
+.missionCard p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 576px) {
+  .missionGrid {
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+/* =============================
+   Mission Section Variables
+============================= */
+.section {
+  --primary-color: #8e6c3a;
+  --primary-light: #f0e5d0;
+  --secondary-color: #5a3921;
+  --text-color: #333;
+  --text-light: #666;
+  --light-bg: #f9f5ee;
+  --card-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  --card-shadow-hover: 0 8px 24px rgba(0, 0, 0, 0.12);
+  --border-radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --icon-size: 3rem;
+}
+
+/* =============================
+   Base Section Styles
+============================= */
+.section {
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  background-color: var(--light-bg);
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 2rem);
+}
+
+/* =============================
+   Typography & Headings
+============================= */
+.sectionTitle {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--secondary-color);
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  line-height: 1.2;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.sectionSubtitle {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: var(--text-light);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  line-height: 1.6;
+}
+
+/* =============================
+   Mission Grid & Cards
+============================= */
+.missionGrid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+}
+
+.missionCard {
+  background: white;
+  border-radius: var(--border-radius);
+  box-shadow: var(--card-shadow);
+  transition: var(--transition);
+  padding: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardIcon {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.imageContainer {
+  position: relative;
+  border-radius: var(--border-radius);
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  margin-bottom: 1.5rem;
+}
+
+.missionImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.cardContent {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.missionCard h3 {
+  color: var(--secondary-color);
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.missionCard p {
+  color: var(--text-light);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+/* =============================
+   Hover Effects
+============================= */
+.missionCard:hover {
+  transform: translateY(-0.5rem);
+  box-shadow: var(--card-shadow-hover);
+}
+
+.missionCard:hover .missionImage {
+  transform: scale(1.05);
+}
+
+/* =============================
+   Decorative Elements
+============================= */
+.missionCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-color);
+}
+
+/* =============================
+   Responsive Adjustments
+============================= */
+@media (max-width: 768px) {
+  .missionGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  
+  .missionCard {
+    padding: 1.25rem;
+  }
+  
+  .imageContainer {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 3rem 0;
+  }
+  
+  .missionGrid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .missionCard h3 {
+    font-size: 1.2rem;
+  }
+}

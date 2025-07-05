@@ -1,0 +1,76 @@
+.goshevaContainer {
+  padding: 2rem;
+  background: #fffef6;
+  border-radius: 12px;
+  color: #3a2f0b;
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.title {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #704800;
+}
+
+.intro {
+  font-size: 1.1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #5a4321;
+}
+
+.section {
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fffaf0;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-top: 0.5rem;
+  color: #5e3e00;
+}
+
+.section p {
+  margin: 0.5rem 0;
+  line-height: 1.6;
+}
+
+.section ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+}
+
+.image {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 2rem;
+}
+
+.donateButton {
+  margin-top: 1rem;
+  padding: 0.8rem 1.6rem;
+  background-color: #f3bf16;
+  color: #3a2f0b;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.donateButton:hover {
+  background-color: #f0a500;
+}
