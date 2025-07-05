@@ -2,7 +2,7 @@ import React from 'react';
 import './Image.css'; 
 
 
-const Image = () => {
+const ImageBanner = () => {
   return (
     <div className="image-container">
       <img
@@ -20,4 +20,4 @@ const Image = () => {
   );
 };
 
-export default Image;
+export default ImageBanner;
