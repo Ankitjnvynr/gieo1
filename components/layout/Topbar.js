@@ -28,7 +28,6 @@ export const Topbar = () => {
                         <li>08am-12pm </li>
                         <li>03pm-04pm </li>
                         <li>05pm-08pm </li>
-                        
                     </ul>
                 </div>
             </div>
