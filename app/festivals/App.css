@@ -1,0 +1,14 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f7f2;
+  color: #222;
+}
+
+.festival-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+}
