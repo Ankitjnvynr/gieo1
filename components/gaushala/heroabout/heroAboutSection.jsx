@@ -158,7 +158,7 @@ import { motion } from 'framer-motion';
 import { useState, useRef } from 'react';
 import styles from './heroAboutSection.module.css';
 import Image from 'next/image';
-import HelpSection from '../Help/HelpSection';
+import HelpSection from '../../gaushala-page/Help/HelpSection';
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },

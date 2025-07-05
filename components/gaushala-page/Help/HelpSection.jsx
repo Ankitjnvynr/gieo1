@@ -7,7 +7,7 @@ import Modal from './Modal'; // adjust the path as needed
 import styles from './HelpSection.module.css';
 
 // Dynamic import for modal content
-const GoshevaContent = dynamic(() => import('./gosheva/GoshevaPage'), { ssr: false });
+const GoshevaContent = dynamic(() => import('../../gaushala/gosheva/GoshevaPage'), { ssr: false });
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 60 },
