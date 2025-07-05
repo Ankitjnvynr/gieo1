@@ -671,18 +671,6 @@
   --text-light: #7a5b3e;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Cormorant Garamond', serif;
-  background: var(--background);
-  color: var(--text-dark);
-  line-height: 1.6;
-}
 
 .festival-journey {
   padding: 80px 20px;

@@ -4,9 +4,9 @@ import FestivalPicker from "./FestivalPicker";
 import FestivalCards from "./FestivalCards";
 // import GieoGitaFooter from "./GieoGitaFooter";
 import Layout from "@/components/layout/Layout";
-import "./App.css";
+import "./Festival.css";
 
-function App() {
+function FestivalPage() {
   return (
     <Layout headerStyle={3} footerStyle={4}>
     <div className="festival-container">
@@ -19,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default FestivalPage;
