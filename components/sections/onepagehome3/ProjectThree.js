@@ -70,39 +70,39 @@ export default function ProjectThree() {
               <span className="section-title__tagline">latest gallery</span>
             </div>
             <h2 className="section-title__title">
-              Quality roofing <span>solutions</span><br /> every time
+              Medanta Foundation <span>initiatives</span><br /> in the community
             </h2>
           </div>
           <Swiper {...swiperOptions}>
             {[
               {
                 imgSrc: '/assets/images/project/project-3-1.jpg',
-                subTitle: 'Roof Renewal',
-                title: 'Expert Roof Layers',
+                subTitle: 'Inauguration',
+                title: 'Launch of Medanta OPD Centre – 05/09/2024',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-2.jpg',
-                subTitle: 'Roof Renewal',
-                title: 'Expert roof expectations',
+                subTitle: 'Consultations',
+                title: 'Cardiac, General & Dental Check-ups',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-3.jpg',
-                subTitle: 'Roof Renewal',
-                title: 'Expert Roof Installation',
+                subTitle: 'Diagnostics',
+                title: 'ECG, ECHO, TMT, PFT & X-Ray Services',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-4.jpg',
-                subTitle: 'Expert Roof Layers',
-                title: 'Expert Roof Renovation',
+                subTitle: 'Virtual Care',
+                title: 'Telemedicine for Rural & Elderly',
                 link: '/project-details',
               },
               {
                 imgSrc: '/assets/images/project/project-3-1.jpg',
-                subTitle: 'Roof Renewal',
-                title: 'Expert Roof Layers',
+                subTitle: 'Community Impact',
+                title: 'Every Life is Precious – CSR Commitment',
                 link: '/project-details',
               },
             ].map((project, index) => (
@@ -110,7 +110,7 @@ export default function ProjectThree() {
                 <div className="project-three__single">
                   <div className="project-three__img-box">
                     <div className="project-three__img">
-                      <img src={project.imgSrc} alt="" />
+                      <img src={project.imgSrc} alt={project.title} />
                     </div>
                   </div>
                   <div className="project-three__content">
