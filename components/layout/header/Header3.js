@@ -129,7 +129,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 <div className="main-menu-three__left">
                                     <div className="main-menu-three__logo">
                                         <Link href="/">
-                                            <img src="/assets/images/resources/logo-7.png" alt="Logo" />
+                                            <img height={70} src="/assets/logos/logo.png" alt="Logo" />
                                         </Link>
                                     </div>
                                     <div className="main-menu-three__main-menu-box">
