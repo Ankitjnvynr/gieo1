@@ -1,7 +1,7 @@
 
 import React from "react"
 import Layout from "@/components/layout/Layout.js"
-import "@/components/education/beginner.css"
+import "@/components/Education/beginner.css"
 
 export default function page() {
     return (
