@@ -31,7 +31,7 @@ const menuItems = [
         subMenu: [
             { name: "Ashrams", path: "/services/ashrams", subMenu: [] },
             { name: "Gaushala", path: "/services/gaushala", subMenu: [] },
-            { name: "Health", path: "/services/health", subMenu: [] },
+            { name: "Health", path: "/services/health/medanta", subMenu: [] },
             { name: "Nature Conservation", path: "/services/nature-conservation", subMenu: [] },
             { name: "Work opportunities", path: "/services/work-opportunities", subMenu: [] },
             { name: "Education", path: "/services/education", subMenu: [] },
