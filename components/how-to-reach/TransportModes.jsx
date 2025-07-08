@@ -15,11 +15,6 @@ import {
 import { motion, AnimatePresence } from "framer-motion";
 import "./page1.css";
 
-// Import images (make sure to have these in your assets folder)
-import trainImage from "./download.jpg";
-import planeImage from "./download (1).jpg";
-import busImage from "./images (4).jpg";
-import carImage from "./images (3).jpg";
 
 const transportData = [
   { 
@@ -28,14 +23,14 @@ const transportData = [
     desc: "Kurukshetra Station – 2.8 km", 
     note: "Shatabdi, Intercity available", 
     icon: <FaTrain className="transport-icon" />,
-    image: trainImage,
+    image: "/assets/images/backgrounds/download.jpg",
     details: [
       { icon: <FaMapMarkerAlt />, text: "Nearest station: Kurukshetra Junction (KKDE)" },
       { icon: <FaRoute />, text: "Distance from campus: 2.8 km (5-10 min by auto)" },
       { icon: <FaClock />, text: "Direct trains from Delhi (2-3 hours journey)" }
     ],
     mapLink: "https://www.google.com/maps/dir/?api=1&origin=Kurukshetra+Junction+Railway+Station&destination=GIEO+Gita+Temple,+Kurukshetra&travelmode=transit",
-    color: "#3498db"
+    
   },
   { 
     id: 2,
@@ -43,14 +38,14 @@ const transportData = [
     desc: "Delhi IGI Airport – 174 km", 
     note: "Taxi & Buses available", 
     icon: <FaPlane className="transport-icon" />,
-    image: planeImage,
+    image: "/assets/images/backgrounds/images4.jpg",
     details: [
       { icon: <FaMapMarkerAlt />, text: "Nearest airport: Indira Gandhi International (DEL)" },
       { icon: <FaRoute />, text: "Travel time: ~3.5 hours by road" },
       { icon: <FaInfoCircle />, text: "Pre-paid taxi service available (~₹2500-3000)" }
     ],
     mapLink: "https://www.google.com/maps/dir/?api=1&origin=Indira+Gandhi+International+Airport&destination=GIEO+Gita+Temple,+Kurukshetra&travelmode=driving",
-    color: "#e74c3c"
+   
   },
   { 
     id: 3,
@@ -58,14 +53,14 @@ const transportData = [
     desc: "Kurukshetra Bus Stand – 4.5 km", 
     note: "Frequent services", 
     icon: <FaBus className="transport-icon" />,
-    image: busImage,
+    image: "/assets/images/backgrounds/images3.jpg",
     details: [
       { icon: <FaMapMarkerAlt />, text: "Haryana Roadways buses from Delhi (ISBT)" },
       { icon: <FaRoute />, text: "Travel time: ~4 hours" },
       { icon: <FaInfoCircle />, text: "Local auto-rickshaws available from bus stand" }
     ],
     mapLink: "https://www.google.com/maps/dir/?api=1&destination=GIEO+Gita+Temple,+Kurukshetra&travelmode=transit",
-    color: "#f39c12"
+   
   },
   { 
     id: 4,
@@ -73,14 +68,14 @@ const transportData = [
     desc: "Via NH-44 (Delhi: 3.5 hrs)", 
     note: "Parking available", 
     icon: <FaCar className="transport-icon" />,
-    image: carImage,
+    image: "/assets/images/backgrounds/download1.jpg",
     details: [
       { icon: <FaMapMarkerAlt />, text: "Route: Delhi → Panipat → Kurukshetra (NH-44)" },
       { icon: <FaRoute />, text: "Distance: ~160 km from Delhi" },
       { icon: <FaParking />, text: "Campus parking facilities available" }
     ],
     mapLink: "https://www.google.com/maps/dir/?api=1&destination=GIEO+Gita+Temple,+Kurukshetra&travelmode=driving",
-    color: "#2ecc71"
+    
   },
 ];
 
@@ -168,25 +163,27 @@ const TransportModes = () => {
               {/* Normal Card View */}
               {expandedCard !== mode.id && (
                 <motion.div
-                  layoutId={`card-${mode.id}`}
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.9 }}
-                  transition={{ duration: 0.3 }}
-                  className={`transport-card ${expandedCard === mode.id ? "expanded" : ""}`}
-                  onClick={() => toggleCard(mode.id)}
-                  style={{ "--card-color": mode.color }}
-                >
-                  <div className="transport-icon-container">
-                    {mode.icon}
-                  </div>
-                  
-                  <div className="transport-content">
-                    <motion.h3 layout="position">{mode.title}</motion.h3>
-                    <motion.p className="desc" layout="position">{mode.desc}</motion.p>
-                    <motion.p className="note" layout="position">{mode.note}</motion.p>
-                  </div>
-                </motion.div>
+  layoutId={`card-${mode.id}`}
+  className={`transport-card ${expandedCard === mode.id ? "expanded" : ""}`}
+  onClick={() => toggleCard(mode.id)}
+  style={{
+    backgroundImage: `url(${mode.image})`,
+    backgroundSize: "cover",
+    backgroundPosition: "center"
+  }}
+>
+  <div className="transport-overlay">
+    <div className="transport-icon-container">
+      {mode.icon}
+    </div>
+    <div className="transport-content">
+      <motion.h3 layout="position">{mode.title}</motion.h3>
+      <motion.p className="desc" layout="position">{mode.desc}</motion.p>
+      <motion.p className="note" layout="position">{mode.note}</motion.p>
+    </div>
+  </div>
+</motion.div>
+
               )}
             </React.Fragment>
           ))}

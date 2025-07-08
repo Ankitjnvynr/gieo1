@@ -9,6 +9,9 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@thednp/dommatrix": "^2.0.6",
     "aos": "^2.3.4",
     "bootstrap-touchspin": "^4.7.3",
@@ -17,7 +20,7 @@
     "isotope-layout": "^3.0.6",
     "jquery": "^3.7.1",
     "lightgallery": "^2.7.2",
-    "next": "^14.2.30",
+    "next": "^15.3.4",
     "react": "^18.3.1",
     "react-countup": "^6.5.3",
     "react-curved-text": "^3.0.1",
