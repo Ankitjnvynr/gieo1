@@ -1,0 +1,110 @@
+/* src/components/LibraryPage.css
+/* .library-page {
+  padding: 20px 0;
+} */
+
+/* .books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 30px 30px;
+}
+
+@media (max-width: 768px) {
+  .books-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}  */
+
+
+/* src/components/LibraryPage.css */
+.library-page {
+  /* padding: 20px 0; */
+  background: linear-gradient(to bottom, #f5f2eb 0%, #e8e1d1 100%);
+  min-height: 100vh;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  padding: 30px 30px;
+}
+
+@media (max-width: 768px) {
+  .books-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    padding: 20px 15px;
+    gap: 20px;
+  }
+}
+
+/* src/components/LibraryPage.css */
+.library-page {
+  /* background: linear-gradient(to bottom, #f8f4e5 0%, #e6dfc6 100%); */
+  min-height: 100vh;
+}
+
+.books-section {
+  padding: 0px 30px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  color: #5d4037;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-header h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: #8d6e63;
+  border-radius: 2px;
+}
+
+.section-header p {
+  font-size: 1.2rem;
+  color: #7e6e5d;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.books-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .books-section {
+    padding: 40px 15px;
+  }
+  
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+  
+  .section-header p {
+    font-size: 1rem;
+  }
+  
+  .books-container {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+}
+
+

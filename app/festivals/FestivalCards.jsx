@@ -354,9 +354,9 @@ const EnhancedFestivalJourney = () => {
       id: 2,
       title: "Sri Krishna Janmashtami",
       date: "August 19",
-      description: "Auspicious night marking Lord Krishna's appearance with bhajans, dramas, and midnight arati.",
+      description: "Auspicious night marking Lord Krishna's appearance with bhajans, dramas, and midnight aarti.",
       details: "Temples resound with celebrations as stories of Krishna's pastimes fill the atmosphere with bliss. Devotees fast until midnight in anticipation.",
-      image: "/assets/krishna.jpg",
+      image: "/assets/festival_images/krishna_ashtami.jpg",
       color: "#5a3816",
       icon: "🪔"
     },
@@ -366,7 +366,7 @@ const EnhancedFestivalJourney = () => {
       date: "September 7",
       description: "Radharani's divine appearance celebrated with loving bhajans and flower offerings.",
       details: "The pinnacle of devotion, Radha's pure love teaches the essence of bhakti. Altars are decorated with special care and devotion.",
-      image: "/assets/radhaashtami.jpg",
+      image: "/assets/festival_images/radha_ashtami.jpg",
       color: "#c19a6b",
       icon: "🌺"
     },
@@ -376,7 +376,7 @@ const EnhancedFestivalJourney = () => {
       date: "December 14",
       description: "Sacred day Lord Krishna imparted the Bhagavad Gita to Arjuna.",
       details: "Recitations, seminars, and study circles deepen understanding of this timeless wisdom. Devotees engage in group readings and discussions.",
-      image: "/assets/gita-jayanti.jpg",
+      image: "/assets/festival_images/Gita_jayanti.jpg",
       color: "#8a7754",
       icon: "📖"
     }

@@ -145,7 +145,7 @@ const CompactSpiritualHero = () => {
     {
       title: "Selfless Service",
       text: "Practice karma yoga through seva initiatives", 
-      image: "https://images.unsplash.com/photo-1549060279-7e168fcee0c2",
+      image: "/assets/festival_images/image1.jpg",
       symbol: "🙏",
       verse: " Work done as sacrifice leads to spiritual freedom"
     }
@@ -161,8 +161,8 @@ const CompactSpiritualHero = () => {
       <div className="spiritual-header">
         <div className="title-container">
           <h1>
-            <span className="sacred-brown">GIEO</span>
-            <span className="sacred-gold">GITA</span>
+            <span className="sacred-brown">GIEO </span>
+            <span className="sacred-gold">GITA </span>
             <span className="sacred-brown">FESTIVALS</span>
           </h1>
           <div className="sacred-divider"></div>
