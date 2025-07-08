@@ -1,8 +1,8 @@
 'use client'
 import React from 'react';
-import ServicesPage from '../../../components/ServicesPage/ServicesPage'
+import ServicesPage from '../../components/ServicesPage/ServicesPage'
 import Layout from "@/components/layout/Layout"
-import CTASection from '../../../components/common/CTASection';
+import CTASection from '../../components/common/CTASection';
 const servicesData = [
     {
       imgSrc: 'assets/images/services/services-1-1.jpg',
@@ -53,7 +53,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={4} breadcrumbTitle="Services">
+            <Layout headerStyle={3} footerStyle={4} breadcrumbTitle="Events">
             <div>
                 {/*Services Page Start*/}
                 <ServicesPage services={servicesData} />
