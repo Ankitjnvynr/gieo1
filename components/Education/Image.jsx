@@ -10,6 +10,7 @@ const BannerImage = () => {
       <div className="banner-image">
         <div className="image-overlay">
           <img src='/assets/images/education/bn.jpg' alt="Banner" width={"100%"} height={"400px"} />
+          <h2 className="centered-education-text">Education</h2>
         </div>
       </div>
       
