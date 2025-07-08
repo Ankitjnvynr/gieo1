@@ -4,16 +4,13 @@ import './Image.css';
 
 const Image = () => {
   return (
-    <div className="image-container">
+    <div className="image-containar">
       <img
         src="/assets/images/Center/mainImg.jpg"
         alt="Campus"
         className="responsive-image"
       />
-      <div className="overlay-text">
-        <h1>"Come home to your true self<br/> — at GIEO GITA Ashram."</h1>
-        
-      </div>
+     
 
      
     </div>

@@ -1,0 +1,9 @@
+.last-section-banner {
+  display: block;
+}
+
+@media (max-width: 900px) {
+  .last-section-banner {
+    display: none;
+  }
+}

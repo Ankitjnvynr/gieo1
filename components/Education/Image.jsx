@@ -1,7 +1,7 @@
 import React from 'react';
 import './Image.css';
 
-import Programs from './Programs';
+
 const BannerImage = () => {
   return (
     <>
@@ -9,7 +9,7 @@ const BannerImage = () => {
       
       <div className="banner-image">
         <div className="image-overlay">
-          <img src='/assets/images/education/gurukul.jpeg' alt="Banner" width={"100%"} height={"400px"} />
+          <img src='/assets/images/education/bn.jpg' alt="Banner" width={"100%"} height={"400px"} />
         </div>
       </div>
       
@@ -25,7 +25,7 @@ const BannerImage = () => {
         <a href='#textsection'><button className="btn secondary">Learn More</button></a>
       </div>
     </div>
-   
+    
     </>
   );
 };
