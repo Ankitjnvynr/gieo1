@@ -1,0 +1,207 @@
+
+
+
+.contact-form,
+.map-container {
+  flex: 1;
+  padding: 1rem;
+  background-color: #fffbea;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-form {
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #3b3b3b;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: #facc15;
+  color: black;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #eab308;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  min-height: 300px;
+}
+
+.contact-location-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.form-toggle-buttons {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.toggle-btn {
+  background-color: #fffbea;
+  /* border: 2px solid #facc15; */
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+  background-color: #eeeae1;
+  color: black;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  border: none;
+}
+
+.contact-location-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 0;
+}
+
+.contact-form,
+.map-container {
+  flex: 1;
+  padding: 1rem;
+  background-color: #eeeae1;
+  border-radius: 0 0 12px 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  min-width: 300px;
+  transition: all 0.5s ease;
+}
+
+/* Transitions */
+.contact-form.hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(0.95);
+  position: absolute;
+}
+
+.contact-form.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
+  position: relative;
+}
+
+.contact-form {
+  text-align: left;
+  flex-basis: 48%;
+}
+
+.map-container {
+  flex-basis: 48%;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #3b3b3b;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.submit-btn {
+  background-color: #a59069;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #8c7a5a;
+}
+
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 12px;
+  min-height: 300px;
+}
+
+
+.contact-extra-info {
+  margin-top: 2rem;
+  text-align: center;
+  background-color: #fdf5e6;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 100%;
+}
+
+.contact-quote {
+  font-style: italic;
+  color: #6a4e18;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.contact-details {
+  font-weight: 500;
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.offline-booking-notice {
+  color: #a03500;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+}

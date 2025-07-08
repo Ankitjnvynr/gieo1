@@ -20,7 +20,7 @@ export default function VideoOne() {
               style={{ backgroundImage: 'url(/assets/images/backgrounds/video-one-bg.jpg)' }}
             ></div>
             <div className="video-one__video-link">
-              <button
+              {/* <button
                 onClick={() => setIsOpen(true)}
                 className="video-popup"
               >
@@ -28,7 +28,7 @@ export default function VideoOne() {
                   <span className="fas fa-play"></span>
                   <i className="ripple"></i>
                 </div>
-              </button>
+              </button> */}
               <ModalVideo
                 channel="youtube"
                 isOpen={isOpen}
