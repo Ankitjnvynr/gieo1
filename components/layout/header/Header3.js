@@ -10,7 +10,7 @@ const menuItems = [
     { name: "GIEO GITA", path: "/", subMenu: [] },
     { name: "Join Gieo Gita", path: "/join-gieo-gita", subMenu: [] },
     {
-        name: "About Us",
+        name: "About",
         path: "/about-us",
         subMenu: [
             { name: "Swami ji", path: "/about-us/swami-ji", subMenu: [] },
@@ -99,23 +99,18 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 </div>
                             </div>
 
-                            {/* <div className="main-menu-three__right">
+                            <div className="main-menu-three__right">
                                 <div className="main-menu-three__call-and-btn-box">
-                                    <div className="main-menu-three__call">
-                                        <div className="main-menu-three__call-number">
-                                            <p>Need help?</p>
-                                            <h5><a href="tel:3075550133">(307) 555-0133</a></h5>
-                                        </div>
-                                    </div>
+                                    
                                     <div className="main-menu-three__btn-box">
-                                        <Link href="/contact">
+                                        <Link href="/donate">
                                             <button className="main-menu-three__btn thm-btn">
-                                                Contact US<span className="icon-dubble-arrow-right"></span>
+                                                Pledge<span className="icon-dubble-arrow-right"></span>
                                             </button>
                                         </Link>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
