@@ -8,27 +8,27 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import Link from 'next/link';
 
-// Data for testimonials
+// Testimonials specific to Medanta
 export const testimonials = [
   {
     id: 1,
-    text: 'Construction is an essential industry that involves building and designing structures such as buildings, roads, bridges, and more. It requires skilled workers, materials, and careful planning to ensure success.',
-    clientName: 'Cameron Williamson',
-    clientTitle: 'Pro Roofing Experts',
+    text: 'Medanta Foundation has been a lifeline for my family. The medical camp they organized in our village offered free checkups and vital medicines we couldn’t otherwise afford.',
+    clientName: 'Suman Devi',
+    clientTitle: 'Beneficiary - Gieo Gita Health Camp',
     clientImg: '/assets/images/testimonial/testimonial-3-1.jpg'
   },
   {
     id: 2,
-    text: 'Construction is an essential industry that involves building and designing structures such as buildings, roads, bridges, and more. It requires skilled workers, materials, and careful planning to ensure success.',
-    clientName: 'Robert Son',
-    clientTitle: 'Pro Roofing Experts',
+    text: 'I collaborated with Medanta for a blood donation drive. Their team was incredibly professional, and the impact we created together saved lives. Highly commendable initiative.',
+    clientName: 'Dr. Rajeev Mehta',
+    clientTitle: 'Medical Volunteer',
     clientImg: '/assets/images/testimonial/testimonial-3-2.jpg'
   },
   {
     id: 3,
-    text: 'Construction is an essential industry that involves building and designing structures such as buildings, roads, bridges, and more. It requires skilled workers, materials, and careful planning to ensure success.',
-    clientName: 'Adam Smith',
-    clientTitle: 'Pro Roofing Experts',
+    text: 'Thanks to Medanta Foundation, we now have regular awareness sessions in Kurukshetra. They’re truly bringing change by reaching the underserved with compassion.',
+    clientName: 'Anjali Sharma',
+    clientTitle: 'Community Organizer',
     clientImg: '/assets/images/testimonial/testimonial-3-3.jpg'
   }
 ];
@@ -93,20 +93,23 @@ export default function TestimonialThree() {
         <div className="container">
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
-              <span className="section-title__tagline">Clients testimonial</span>
+              <span className="section-title__tagline">What people say</span>
             </div>
             <h2 className="section-title__title">
-              Sheltering You with <span>Strength</span>
+              Stories of <span>Hope & Healing</span> with Medanta
             </h2>
           </div>
           <div className="row">
+            {/* Left Image */}
             <div className="col-xl-7 col-lg-6">
               <div className="testimonial-three__left">
                 <div className="testimonial-three__img">
-                  <img src="/assets/images/testimonial/testimonial-three-img-1.jpg" alt="Testimonial Image" />
+                  <img src="/assets/images/testimonial/testimonial-three-img-1.jpg" alt="Testimonial Visual" />
                 </div>
               </div>
             </div>
+
+            {/* Right Swiper Slider */}
             <div className="col-xl-5 col-lg-6">
               <div className="testimonial-three__right">
                 <Swiper {...swiperOptions}>
@@ -139,8 +142,6 @@ export default function TestimonialThree() {
                     </SwiperSlide>
                   ))}
                 </Swiper>
-                {/* Add navigation buttons */}
-                {/* Add pagination */}
               </div>
             </div>
           </div>

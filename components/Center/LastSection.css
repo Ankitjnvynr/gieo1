@@ -1,0 +1,66 @@
+/* Layout container */
+.quote-containerlast {
+  border-top: 2px solid #5a3816;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 1rem;
+  margin-top: 150px;
+  color: #fff;
+  text-align: center;
+}
+
+/* Glass-style quote box */
+.quote-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.8s ease-out;
+}
+
+/* Main quote text */
+.quote-text {
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+/* Author styling */
+.quote-author {
+  font-size: 1rem;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive improvements */
+@media (max-width: 480px) {
+  .quote-text {
+    font-size: 1.2rem;
+  }
+
+  .quote-author {
+    font-size: 0.9rem;
+  }
+
+  .quote-box {
+    padding: 1.5rem;
+  }
+}

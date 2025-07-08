@@ -15,6 +15,7 @@ import VideoOne from "@/components/sections/home4/VideoOne"
 import QualityWork from "@/components/sections/home4/QualityWork"
 import TestimonialThree from "@/components/sections/home4/TestimonialThree"
 import BlogThree from "@/components/sections/home4/BlogThree"
+import RoomBooking_Auditorium from "@/components/room-booking_auditorium/Main_page/RoomBooking_Auditorium";
 
 export default function Home() {
     
@@ -30,6 +31,9 @@ export default function Home() {
                 <ProjectFour />
                 <SlidingText />
                 <AboutThree/>
+
+                {/* <RoomBooking_Auditorium /> */}
+
                 <ContactThree  />
                 <WhyWe />
                 <VideoOne />

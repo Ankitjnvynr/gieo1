@@ -1,0 +1,283 @@
+/* =============================
+   Stats Section Styles
+============================= */
+/* 
+.statsSection {
+  background: var(--secondary-color);
+  color: white;
+  padding: 80px 0;
+}
+
+.sectionTitle {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  margin-bottom: 15px;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary-color);
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.statCard {
+  text-align: center;
+  padding: 20px;
+}
+
+.statCard h3 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--light-text);
+  margin-bottom: 10px;
+}
+
+.statCard p {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  opacity: 0.9;
+} */
+
+/* Responsive 
+@media (max-width: 576px) {
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+} */
+
+
+
+/* =============================
+   Stats Section Variables
+============================= */
+.statsSection {
+  --primary-color: #8e6c3a;
+  --secondary-color: #5a3921;
+  --light-text: #f0e5d0;
+  --dark-bg: #2a1a0f;
+  --card-bg: rgba(255, 255, 255, 0.05);
+  --card-hover-bg: rgba(255, 255, 255, 0.1);
+  --border-radius: 12px;
+  --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  --icon-size: 3rem;
+}
+
+/* =============================
+   Base Section Styles
+============================= */
+.statsSection {
+  padding: clamp(4rem, 6vw, 6rem) 0;
+  background: var(--secondary-color);
+  color: white;
+  position: relative;
+  overflow: hidden;
+  min-height: 550px
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 clamp(1rem, 5vw, 2rem);
+  position: relative;
+  z-index: 2;
+}
+
+/* =============================
+   Typography & Headings
+============================= */
+.sectionTitle {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+  color: var(--light-text);
+  text-align: center;
+  margin-bottom: 1rem;
+  position: relative;
+  line-height: 1.2;
+}
+
+.sectionTitle::after {
+  content: '';
+  position: absolute;
+  bottom: -0.75rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 5rem;
+  height: 0.25rem;
+  background: var(--primary-color);
+  border-radius: 2px;
+}
+
+.sectionSubtitle {
+  font-size: clamp(1rem, 1.5vw, 1.2rem);
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto clamp(2rem, 4vw, 3rem);
+  line-height: 1.6;
+}
+
+/* =============================
+   Stats Grid & Cards
+============================= */
+.statsGrid {
+  display: grid;
+  gap: clamp(1.5rem, 3vw, 2rem);
+  grid-template-columns: repeat(auto-fit, minmax(min(220px, 100%), 1fr));
+}
+
+.statCard {
+  background: var(--card-bg);
+  border-radius: var(--border-radius);
+  padding: 2rem 1.5rem;
+  text-align: center;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.statCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: var(--primary-color);
+}
+
+.statIcon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  transition: var(--transition);
+}
+
+.statContent {
+  position: relative;
+  z-index: 2;
+}
+
+.statCard h3 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  color: var(--light-text);
+  margin-bottom: 0.5rem;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.statCard p {
+  font-size: clamp(1rem, 1.5vw, 1.1rem);
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+  font-weight: 500;
+}
+
+.statDescription {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================
+   Hover Effects
+============================= */
+.statCard:hover {
+  background: var(--card-hover-bg);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.statCard:hover .statIcon {
+  transform: scale(1.2);
+}
+
+/* =============================
+   Decorative Elements
+============================= */
+.statsSection::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('/images/cow-pattern.svg') repeat;
+  opacity: 0.03;
+  pointer-events: none;
+}
+
+/* =============================
+   Responsive Adjustments
+============================= */
+@media (max-width: 768px) {
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .statCard {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .statsSection {
+    padding: 3rem 0;
+  }
+  
+  .statsGrid {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  
+  .statCard h3 {
+    font-size: 2.2rem;
+  }
+}
+
+
+
+/* new updates */
+
+
+.statDescription {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  margin-top: 0;
+  padding-top: 0;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.5;
+  border-top: none;
+}
+
+.statDescription.visible {
+  max-height: 200px; /* Set this based on estimated text length */
+  opacity: 1;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed rgba(255, 255, 255, 0.2);
+}
