@@ -1,0 +1,552 @@
+.rba-navbar {
+  background: #111;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.rba-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+/* .rba-hero {
+  background-color: #f6eec7;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* .rba-hero {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+} */
+
+/* Hero Section with Background Image */
+
+.rba-hero {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+/* Background Image Styling */
+.hero-bg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Overlay Layer */
+.rba-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.01); /* dark overlay */
+  z-index: 1;
+}
+
+/* Text Styling */
+.rba-hero-text {
+  top: 30px;
+  font-size: 4.3rem;
+  font-weight: 700;
+  color: white;
+  z-index: 2;
+  position:absolute;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.rba-auditorium-section {
+  display:flex;
+  padding: 2rem;
+  background: #f5f5f5;
+  gap: 1rem;
+}
+
+.rba-auditorium-image, .rba-auditorium-about {
+  flex: 1;
+  background: #ddd;
+  padding: 1rem;
+}
+
+.rba-booking-section {
+  padding: 2rem;
+  background-color: #fff6d5;
+  text-align: center;
+}
+
+.rba-booking-options {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.rba-box {
+  background-color: #eee;
+  padding: 1rem;
+  width: 100px;
+  border: 1px solid #ccc;
+}
+
+.rba-reviews {
+  background: #f0f0f0;
+  padding: 2rem;
+  text-align: center;
+}
+
+/* .rba-location {
+  background: #f9f9f9;
+  padding: 2rem;
+  text-align: center;
+} */
+
+/* footer Area */
+
+.rba-footer {
+  background: #f2f2f2;
+  color: #333;
+  padding: 2rem 1rem;
+  font-family: sans-serif;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 250px;
+  margin: 1rem;
+}
+
+.footer-section h2,
+.footer-section h3 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-section p,
+.footer-section label {
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.footer-section input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 50px;
+}
+
+.footer-section button {
+  background-color: #f0f0f0;
+  color: rgb(148, 73, 11);
+  border: 2px solid rgb(148, 73, 11);
+  padding: 0.6rem 1rem;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.footer-section button:hover {
+  background-color: rgb(148, 73, 11);
+  color:#f0f0f0;
+  border: 2px solid #f0f0f0;
+}
+
+.footer-section input:focus {
+  outline: none;
+  border-color: #4cafaf;
+}
+
+.copyright {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* BookingSection */
+
+.rba-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.rba-room-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.rba-room-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  padding: 1rem;
+}
+
+.rba-room-image {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.rba-price {
+  color: #007bff;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.rba-stars {
+  font-size: 1.5rem;
+  color: #ffaa00;
+}
+
+/* Reviews */
+
+.rba-reviews-slider {
+  background: white;
+  padding: 1rem 1rem;
+  text-align: center;
+  position: relative;
+}
+
+.review-card {
+  background: #e0d2b8;
+  padding: 2rem;
+  margin: auto;
+  max-width: 600px;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.03);
+  box-shadow: 25px 25px 25px 25px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.review-text {
+  font-size: 1.3rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.review-author {
+  font-weight: bold;
+  margin-top: 1rem;
+  color: #222;
+}
+
+.stars {
+  color: #ffaa00;
+  font-size: 1.5rem;
+}
+
+.arrow {
+  background: #f5f5f5;
+  color: rgb(148, 73, 11);
+  border: none;
+  font-size: 1.5rem;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background 0.3s ease;
+  border-radius: 8px solid rgb(148, 73, 11);
+}
+
+.arrow:hover {
+  background: rgb(148, 73, 11);
+  color: white
+}
+
+.left-arrow {
+  left: 2rem;
+}
+
+.right-arrow {
+  right: 2rem;
+}
+.review-slider-wrapper {
+  overflow: hidden;
+  max-width: 600px;
+  margin: 2rem auto;
+  position: relative;
+  height: 230px; /* adjust based on card height */
+ }
+
+.review-slider-inner {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+  will-change: transform;
+}
+
+.review-card {
+  flex: 0 0 100%;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background: #fff8db;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+ 
+
+
+
+/* Auditorium Details */
+
+.auditorium-showcase-wrapper {
+  background: white;
+  padding-top: 4rem;
+  padding-bottom: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  height: 100rem;
+}
+
+.auditorium-card-group {
+  top: 8rem;
+  position: relative;
+  width: 90%;
+  max-width: 10000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auditorium-name-bar {
+  background: #ccc;
+  padding: 0.5rem 1rem;
+  width: 40rem;
+  height: 7rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  position: absolute;
+  top: -1.2rem;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.auditorium-block {
+  display: flex;
+  gap: 2rem;
+  margin-top: 2rem;
+  position: relative;
+  transition: all 0.4s ease;
+}
+
+.auditorium-block.reverse {
+  flex-direction: row-reverse;
+}
+
+.auditorium-image, .auditorium-about {
+  width: 400px;
+  height: 500px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+  transition: transform 0.4s ease, z-index 0.3s ease;
+  padding: 1rem;
+  position: relative;
+}
+
+.auditorium-image {
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.auditorium-about {
+  background: #fff;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.auditorium-block:hover .auditorium-image {
+  transform: translateY(-20px) scale(1.05);
+  z-index: 3;
+}
+
+.auditorium-block:hover .auditorium-about {
+  transform: translateY(-20px) scale(1.05);
+  z-index: 3;
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Marquee in Booking Section */
+.hero-marquee {
+  background-color: #fff8dc;
+  border-top: 1px solid #facc15;
+  border-bottom: 1px solid #facc15;
+  padding: 12px 0; /* Increase top/bottom padding */
+  margin: 0; /* Remove any margin */
+  width: 100vw; /* Ensure full width */
+  overflow: hidden; /* Prevent cut-off */
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+}
+
+.marquee-text {
+  font-size: 16px;
+  color: #7c4700;
+  font-weight: 500;
+  margin: 0 40px;
+  white-space: nowrap;
+}
+
+
+
+/* Booking Section for background image*/
+.rba-booking-section {
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  overflow: hidden;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Background image fill */
+.booking-bg {
+  object-fit: cover;
+  z-index: 0;
+}
+
+/* Booking content layer above background */
+.booking-content {
+  z-index: 2;
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: rgba(255, 255, 255, 0.85); /* semi-transparent white */
+  border-radius: 20px;
+}
+
+.rba-room-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Optional: For marquee consistency */
+.hero-marquee {
+  background-color: #fff6d5;
+  padding: 0.8rem 0;
+  margin-top: 0;
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+}
+
+.marquee-text {
+  margin-right: 2rem;
+  white-space: nowrap;
+}
+
+.marquee-icon {
+  color: #e69500;
+  font-size: 1.3rem;
+  margin: 0 1.5rem;
+  user-select: none;
+}
+
+
+
+/* Responsive Hero Section */
+@media (max-width: 1024px) {
+  .rba-hero-text {
+    font-size: 3rem;
+    padding: 0 1rem;
+    top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .rba-hero {
+    height: 50vh;
+    padding: 1rem;
+  }
+
+  .rba-hero-text {
+    font-size: 2.2rem;
+    top: 30px;
+    padding: 0 1rem;
+    line-height: 1.3;
+  }
+
+  .rba-hero-text div {
+    font-size: 1rem !important;
+    padding-top: 10px !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .rba-hero {
+    height: 45vh;
+  }
+
+  .rba-hero-text {
+    font-size: 1.6rem;
+    top: 70px;
+    padding: 0 0.5rem;
+  }
+
+  .rba-hero-text div {
+    font-size: 0.85rem !important;
+    padding-top: 8px !important;
+  }
+}

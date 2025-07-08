@@ -1,13 +1,18 @@
 import Link from 'next/link';
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+
 
 // Example footer data (replace with actual dynamic data)
 const footerData = {
-  logo: '/assets/images/resources/logo-1.png',
+  logo: '/assets/images/resources/logo-10.png',
   socialLinks: [
   { href: '#', icon: 'icon-facebook-f', name: 'Facebook' },
   { href: '#', icon: 'icon-twitter', name: 'Twitter' },
   { href: '#', icon: 'icon-linkedin-in', name: 'LinkedIn' },
-  { href: '#', icon: 'icon-youtube', name: 'YouTube' },
+  { href: '#', icon: 'fab fa-youtube', name: 'YouTube' },
 ],
 contact: {
   email: 'info@gieogita.org',
@@ -49,7 +54,7 @@ export default function Footer4() {
               <div className="site-footer-four__social">
                 {footerData.socialLinks.map((social, index) => (
                   <a href={social.href} key={index}>
-                    <span className={social.icon}></span>
+                    <span className={social.icon} style={{color:"white"}}></span>
                     {social.name}
                   </a>
                 ))}
@@ -63,7 +68,7 @@ export default function Footer4() {
       <div className="row">
         <div className="col-xl-7 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
           <div className="footer-widget-four__column footer-widget-four__contact">
-            <h3 className="footer-widget-four__contact-title">Connect With <br /> Gieogita</h3>
+            <h3 className="footer-widget-four__contact-title">Connect With <br /> GIEO Gita</h3>
             <ul className="footer-widget-four__contact-list list-unstyled">
               <li>
                 <div className="icon">

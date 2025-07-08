@@ -1,0 +1,81 @@
+.career-hero {
+    width: 100%;
+    height: 80vh;
+    padding: 1rem;
+    background: #f8fafc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.career-hero__text {
+    opacity: 0;
+    transform: translateX(-60px);
+    animation: slideInLeft 1.8s 0.2s forwards;
+}
+
+@keyframes slideInLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+@keyframes slideInRight {
+    from{
+        opacity: 0;
+        transform: translateX(130px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+.career-hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+}
+
+.career-hero__text {
+    flex: 1;
+    text-align: center;
+}
+
+.career-hero__text h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #1a202c;
+}
+
+.career-hero__text p {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.6;
+}
+
+.career-hero__image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 250px;
+  
+    animation: slideInRight 1.8s 0.2s backwards;
+}
+
+
+
+@media (min-width: 768px) {
+    .career-hero__content {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 3rem;
+    }
+    .career-hero__text {
+        text-align: left;       
+    } }  

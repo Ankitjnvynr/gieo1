@@ -1,0 +1,38 @@
+.text-image-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-content {
+  flex: 1 1 50%;
+  min-width: 300px;
+  padding: 1rem;
+}
+
+.image-container {
+  flex: 1 1 40%;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Reverse the order on smaller screens if reverse prop is true */
+@media (max-width: 768px) {
+  .text-image-container.reverse {
+    flex-direction: column-reverse;
+  }
+}   

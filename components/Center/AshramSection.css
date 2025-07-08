@@ -1,0 +1,102 @@
+/* src/styles/AshramSection.css */
+
+.ashram-container {
+margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 70%;
+  margin: 40px auto;
+  margin-top: 100px;
+  padding: 10px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(90, 56, 22,  1);
+  gap: 30px;
+  animation: fadeInUp 1s ease-in-out;
+  transition: transform 1s ease;
+  border-color: #a59060;
+  border-radius: 30px;
+  border-right: 3px dotted #5a3816;
+  border-left: 3px dotted #5a3816;
+}
+
+
+
+.ashram-container:hover {
+  transform: scale(1.09);
+}
+
+.ashram-img {
+  flex: 1;
+  max-width: 550px;
+  border-right: 2px solid #5a3816;
+
+  
+}
+
+.ashram-img img {
+  width: 100%;
+  /* height: auto; */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.ashram-description {
+  flex: 1.2;
+  animation: slideInRight 2s linear ;
+  
+
+  
+  margin-left: 20px;
+}
+
+.ashram-description h2 {
+    text-align: center;
+  font-size: 38px;
+  margin-bottom: 15px;
+  color: #5a3816;
+}
+
+.ashram-description p {
+  font-size: 22px;
+  line-height: 1.6;
+  color: #555;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateX(-130px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media (max-width: 768px) {
+  .ashram-container {
+    flex-direction: column-reverse;
+    padding: 20px;
+  }
+
+  .ashram-description h2 {
+    font-size: 24px;
+  }
+
+  .ashram-description p {
+    font-size: 16px;
+  }
+}

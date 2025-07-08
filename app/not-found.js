@@ -5,7 +5,7 @@ import Layout from "@/components/layout/Layout";
 export default function Error404() {
     return (
         <>
-            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="404 Error">
+            <Layout headerStyle={3} footerStyle={4} breadcrumbTitle="404 Error">
                 <div>
                     {/* Error Page Start */}
                     <section className="error-page">
