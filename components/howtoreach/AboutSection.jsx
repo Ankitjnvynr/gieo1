@@ -95,7 +95,7 @@ const AboutSection = () => {
             onMouseLeave={() => setIsHovering(false)}
           >
             <img 
-              src="/assets/images/backgrounds/imagest.jpg"
+              src="/assets/images/backgrounds/Imagest.png"
               alt="GIEO Gita Temple" 
               className="temple-img"
               loading="lazy"
