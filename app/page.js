@@ -27,7 +27,7 @@ export default function Home() {
                 <ServicesFive />
                 <AboutFour />
                 <BrandTwo />
-                <Banner2/>
+                {/* <Banner2/> */}
                 <ProjectFour />
                 <SlidingText />
                 <AboutThree/>

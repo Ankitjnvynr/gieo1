@@ -20,7 +20,6 @@ const MainBanner = () => {
         playsInline
         controls={false} // can't interfere with autoplay
         style={{
-         
           top: 0,
           left: 0,
           width: "100%",
@@ -29,7 +28,7 @@ const MainBanner = () => {
           zIndex: -1,
         }}
         aria-label="Background video"
-        preload="auto"  // preload to help with loading
+        preload="auto" // preload to help with loading
       >
         {/* Check your file path, and also consider placing video in public folder */}
         <source src="/assets/images/backgrounds/abc.mp4" type="video/mp4" />
@@ -56,4 +55,3 @@ const MainBanner = () => {
 };
 
 export default MainBanner;
-
