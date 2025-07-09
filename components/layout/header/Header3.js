@@ -10,19 +10,22 @@ const menuItems = [
     { name: "GIEO GITA", path: "/", subMenu: [] },
     { name: "Join Gieo Gita", path: "/join-gieo-gita", subMenu: [] },
     {
-        name: "About Us",
+        name: "About",
         path: "/about-us",
         subMenu: [
             { name: "Swami ji", path: "/about-us/swami-ji", subMenu: [] },
             {
-                name: "History of GieoGita",
+                name: "History of GIEOGita",
                 path: "/about-us/history-of-gieogita",
                 subMenu: [
                     { name: "Shlokas", path: "/about-us/history-of-gieogita/shlokas", subMenu: [] },
                     { name: "Mission & Vision", path: "/about-us/history-of-gieogita/mission-vision", subMenu: [] },
                     { name: "Aims & Objectives", path: "/about-us/history-of-gieogita/aims-objectives", subMenu: [] },
                 ]
-            }
+            },
+            { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
+            { name: "GIEO Museum", path: "/gieo-gita-museum", subMenu: [] },
+            { name: "How To Reach", path: "/how-to-reach", subMenu: [] },
         ]
     },
     {
@@ -31,7 +34,7 @@ const menuItems = [
         subMenu: [
             { name: "Ashrams", path: "/services/ashrams", subMenu: [] },
             { name: "Gaushala", path: "/services/gaushala", subMenu: [] },
-            { name: "Health", path: "/services/health", subMenu: [] },
+            { name: "Health", path: "/services/health/medanta", subMenu: [] },
             { name: "Nature Conservation", path: "/services/nature-conservation", subMenu: [] },
             { name: "Work opportunities", path: "/services/work-opportunities", subMenu: [] },
             { name: "Education", path: "/services/education", subMenu: [] },
@@ -48,15 +51,37 @@ const menuItems = [
         ]
     },
     {
+        name: "Gyan",
+        path: "/gyan",
+        subMenu: [
+            { name: "Gita Shalokas", path: "/gitash", subMenu: [] },
+           
+        ]
+    },
+    {
         name: "Contact",
         path: "/contact",
         subMenu: [
             { name: "Blog", path: "/contact/blog", subMenu: [] }
         ]
     },
-    { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
+
     { name: "Bal Sanskar", path: "/bal-sanskar", subMenu: [] }
 ];
+const renderMenuItems = (items) => {
+    return items.map((item, index) => (
+        <li key={index} className={item.subMenu && item.subMenu.length > 0 ? "has-submenu" : ""}>
+            <Link href={item.path}>{item.name}</Link>
+            {item.subMenu && item.subMenu.length > 0 && (
+                <ul className="submenu">
+                    {renderMenuItems(item.subMenu)}
+                </ul>
+            )}
+        </li>
+    ));
+};
+
+
 
 
 export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handleSidebar }) {
@@ -81,41 +106,24 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
 
                                     {/* Dynamic Menu */}
                                     <ul className="main-menu__list">
-                                        {menuItems.map((item, index) => (
-                                            <li key={index} className={item.subMenu.length > 0 ? "has-submenu" : ""}>
-                                                <Link href={item.path}>{item.name}</Link>
-                                                {item.subMenu.length > 0 && (
-                                                    <ul className="submenu">
-                                                        {item.subMenu.map((subItem, subIndex) => (
-                                                            <li key={subIndex}>
-                                                                <Link href={subItem.path}>{subItem.name}</Link>
-                                                            </li>
-                                                        ))}
-                                                    </ul>
-                                                )}
-                                            </li>
-                                        ))}
+                                        {renderMenuItems(menuItems)}
                                     </ul>
+
                                 </div>
                             </div>
 
-                            {/* <div className="main-menu-three__right">
+                            <div className="main-menu-three__right">
                                 <div className="main-menu-three__call-and-btn-box">
-                                    <div className="main-menu-three__call">
-                                        <div className="main-menu-three__call-number">
-                                            <p>Need help?</p>
-                                            <h5><a href="tel:3075550133">(307) 555-0133</a></h5>
-                                        </div>
-                                    </div>
+
                                     <div className="main-menu-three__btn-box">
-                                        <Link href="/contact">
+                                        <Link href="/donate">
                                             <button className="main-menu-three__btn thm-btn">
-                                                Contact US<span className="icon-dubble-arrow-right"></span>
+                                                Pledge<span className="icon-dubble-arrow-right"></span>
                                             </button>
                                         </Link>
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,43 +146,25 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                             <i className="fa fa-bars"></i>
                                         </div>
 
-                                        {/* Dynamic Menu Again for Sticky Header */}
+                                        {/* Dynamic Menu */}
                                         <ul className="main-menu__list">
-                                            {menuItems.map((item, index) => (
-                                                <li key={index} className={item.subMenu.length > 0 ? "has-submenu" : ""}>
-                                                    <Link href={item.path}>{item.name}</Link>
-                                                    {item.subMenu.length > 0 && (
-                                                        <ul className="submenu">
-                                                            {item.subMenu.map((subItem, subIndex) => (
-                                                                <li key={subIndex}>
-                                                                    <Link href={subItem.path}>{subItem.name}</Link>
-                                                                </li>
-                                                            ))}
-                                                        </ul>
-                                                    )}
-                                                </li>
-                                            ))}
+                                            {renderMenuItems(menuItems)}
                                         </ul>
                                     </div>
                                 </div>
 
-                                {/* <div className="main-menu-three__right">
+                                <div className="main-menu-three__right">
                                     <div className="main-menu-three__call-and-btn-box">
-                                        <div className="main-menu-three__call">
-                                            <div className="main-menu-three__call-number">
-                                                <p>Need help?</p>
-                                                <h5><a href="tel:3075550133">(307) 555-0133</a></h5>
-                                            </div>
-                                        </div>
+
                                         <div className="main-menu-three__btn-box">
-                                            <Link href="/contact">
+                                            <Link href="/donate">
                                                 <button className="main-menu-three__btn thm-btn">
-                                                    Contact US<span className="icon-dubble-arrow-right"></span>
+                                                    Pledge<span className="icon-dubble-arrow-right"></span>
                                                 </button>
                                             </Link>
                                         </div>
                                     </div>
-                                </div> */}
+                                </div>
                             </div>
                         </div>
                     </div>
