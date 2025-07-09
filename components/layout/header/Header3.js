@@ -23,8 +23,9 @@ const menuItems = [
                     { name: "Aims & Objectives", path: "/about-us/history-of-gieogita/aims-objectives", subMenu: [] },
                 ]
             },
-            { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
             { name: "GIEO Museum", path: "/gieo-gita-museum", subMenu: [] },
+            { name: "GIEO Library", path: "/library", subMenu: [] },
+            { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
             { name: "How To Reach", path: "/how-to-reach", subMenu: [] },
         ]
     },
