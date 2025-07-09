@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import HeroSection from '@/components/geetash/HeroSection';
 import AboutSection from '@/components/geetash/AboutSection';
 import ShlokaCard from '@/components/geetash/ShlokaCard';
-import shlokas from '@/components/geetash/shlokas.json';
+import shlokas from '../../components/geetash/Shlokas.json';
 import '@/components/geetash/page3.css';
 
 const Page = () => {

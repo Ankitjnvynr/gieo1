@@ -41,7 +41,10 @@ const menuItems = [
             { name: "Education", path: "/services/education", subMenu: [] },
         ]
     },
-    { name: "Events", path: "/events", subMenu: [] },
+    { name: "Events", path: "/events", subMenu: [
+        { name: "Monthly Events", path: "/events", subMenu: [] },
+        { name: "GIEO Festivals", path: "/festivals", subMenu: [] },
+    ] },
     { name: "Gallery", path: "/gallery", subMenu: [] },
     {
         name: "Download",
