@@ -14,10 +14,10 @@ export default function CTAThree() {
       <section className="cta-three">
         <div className="container">
           <div className="cta-three__inner">
-            <div
+            {/* <div
               className="cta-three__bg"
               style={{ backgroundImage: 'url(/assets/images/backgrounds/cta-three-bg.jpg)' }}
-            ></div>
+            ></div> */}
 
             {/* Left Content */}
             <div className="cta-three__left">
@@ -38,10 +38,10 @@ export default function CTAThree() {
             <div className="cta-three__right">
               <div className="cta-three__icon-and-btn">
                 <div className="cta-three__icon-box">
-                  <div className="cta-three__icon-shape"></div>
-                  <div className="cta-three__icon">
+                  {/* <div className="cta-three__icon-shape"></div> */}
+                  {/* <div className="cta-three__icon">
                     <span className="icon-call"></span>
-                  </div>
+                  </div> */}
                 </div>
                 <div className="cta-three__btn-box">
                   <Link href="/contact" className="cta-three__btn thm-btn-two">

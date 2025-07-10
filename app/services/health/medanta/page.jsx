@@ -22,14 +22,14 @@ export default function Home() {
                 {/* <AboutThree /> */}
                 <ServicesFour />
                 <CTAThree />
-                <ProjectThree />
+                {/* <ProjectThree /> */}
                 <CounterTwo />
                 {/* <SlidingText /> */}
                 <TestimonialThree />
-                <WhyWe />
+                {/* <WhyWe /> */}
                 <VideoOne />
                 <WorkProcess />
-                <BlogThree />
+                {/* <BlogThree /> */}
             </Layout>
         </>
     )
