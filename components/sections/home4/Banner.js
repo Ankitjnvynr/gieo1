@@ -9,7 +9,7 @@ const MainBanner = () => {
         height: "80vh",
         width: "100vw",
         overflow: "hidden",
-        backgroundImage: "url('/assets/images/backgrounds/aaa.jpg')", // update path if needed
+        backgroundImage: "url('/assets/images/backgrounds/hero banner.jpg')", // update path if needed
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
