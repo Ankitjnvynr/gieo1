@@ -104,7 +104,7 @@ export default function TestimonialThree() {
             <div className="col-xl-7 col-lg-6">
               <div className="testimonial-three__left">
                 <div className="testimonial-three__img">
-                  <img src="/assets/images/testimonial/testimonial-three-img-1.jpg" alt="Testimonial Visual" />
+                  <img src="/assets/images/medanta/health-testimonial copy.jpg" alt="Testimonial Visual" />
                 </div>
               </div>
             </div>

@@ -17,7 +17,7 @@ export default function VideoOne() {
           <div className="video-one__inner">
             <div
               className="video-one__bg"
-              style={{ backgroundImage: 'url(/assets/images/backgrounds/video-one-bg.jpg)' }}
+              style={{ backgroundImage: 'url(/assets/images/medanta/health-bannercopy.jpg)' }}
             ></div>
             <div className="video-one__video-link">
               {/* <button
