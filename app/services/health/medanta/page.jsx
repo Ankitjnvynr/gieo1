@@ -29,6 +29,7 @@ export default function Home() {
                 <WhyWe />
                 <VideoOne />
                 <WorkProcess />
+                
                 <BlogThree />
             </Layout>
         </>
