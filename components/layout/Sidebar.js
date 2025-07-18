@@ -4,7 +4,7 @@ export default function Sidebar({ isSidebar, handleSidebar }) {
     return (
         <>
             {/* Start sidebar widget content */}
-            <div className={`xs-sidebar-group info-group info-sidebar ${isSidebar ? "isActive" : "close-sidebar"}`}>
+            <div className={`xs-sidebar-group info-group info-sidebar ${isSidebar ? "isActive" : "close-sidebar"}`} >
                 <div className="xs-overlay xs-bg-black" onClick={handleSidebar} />
                 <div className="xs-sidebar-widget">
                     <div className="sidebar-widget-container">
