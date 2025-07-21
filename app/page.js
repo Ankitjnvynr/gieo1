@@ -18,6 +18,7 @@ import BlogThree from "@/components/sections/home4/BlogThree"
 import RoomBooking_Auditorium from "@/components/room-booking_auditorium/Main_page/RoomBooking_Auditorium";
 
 export default function Home() {
+    
 
     return (
         <>
@@ -26,7 +27,7 @@ export default function Home() {
                 <ServicesFive />
                 <AboutFour />
                 <BrandTwo />
-                <Banner2/>
+                {/* <Banner2/> */}
                 <ProjectFour />
                 <SlidingText />
                 <AboutThree/>

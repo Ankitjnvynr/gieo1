@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import Link from 'next/link';
 import ModalVideo from 'react-modal-video';
 import CountUp from 'react-countup';
+import Image from 'next/image';
 
 export default function Banner({
   subTitle = 'Medanta Foundation OPD Centre',
@@ -17,9 +18,9 @@ export default function Banner({
     '/assets/images/resources/banner-two-trusted-clients-1-3.jpg'
   ],
   imgList = [
-    '/assets/images/resources/banner-two-img-1-1.jpg',
+
     '/assets/images/resources/banner-two-img-1-2.jpg',
-    '/assets/images/resources/banner-two-img-1-3.jpg'
+
   ]
 }) {
   const [isOpen, setIsOpen] = useState(false);
@@ -38,13 +39,9 @@ export default function Banner({
                 </div>
                 <p className="banner-two__text">{text}</p>
                 <div className="banner-two__btn-and-video-box">
-                  <div className="banner-two__btn-box">
-                    <Link href="/about" className="banner-two__btn thm-btn">
-                      Read more<span className="icon-dubble-arrow-right"></span>
-                    </Link>
-                  </div>
+
                   <div className="banner-two__video-link">
-                    <button 
+                    <button
                       className="video-popup"
                       onClick={() => setIsOpen(true)}
                     >
@@ -56,33 +53,25 @@ export default function Banner({
                     <h4 className="banner-two__video-text">See How It Works</h4>
                   </div>
                 </div>
-                <div className="banner-two__trusted-clients">
-                  <ul className="list-unstyled banner-two__trusted-clients-list">
-                    {trustedClientsImages.map((src, index) => (
-                      <li key={index}>
-                        <div className="banner-two__trusted-clients-img">
-                          <img src={src} alt={`Trusted Client ${index + 1}`} />
-                        </div>
-                      </li>
-                    ))}
-                  </ul>
-                  <div className="banner-two__trusted-clients-content">
-                    <div className="banner-two__trusted-clients-count">
-                      <div className="banner-two__count count-box">
-                        <CountUp end={trustedClientsCount} duration={1.5} />
-                        <span>+</span>
-                      </div>
-                      <p className="banner-two__trusted-clients-text">Trusted Clients</p>
-                    </div>
-                  </div>
-                </div>
+
               </div>
             </div>
             <div className="col-xl-6">
               <div className="banner-two__right wow fadeInRight" data-wow-delay="300ms">
                 <div className="banner-two__shape-1"></div>
                 <div className="banner-two__shape-2"></div>
-                <ul className="list-unstyled banner-two__img-list">
+                <Image
+                  width={800}
+                  height={600}
+                  src={'/assets/images/medanta/health1.png'}
+                  style={{
+                    objectFit: 'cover',
+                    borderRadius: '30px',
+                    boxShadow: '0 20px 40px rgba(0, 0, 0, 0.2)'  // Smooth and elegant shadow
+                  }}
+                />
+
+                {/* <ul className="list-unstyled banner-two__img-list">
                   {imgList.map((src, index) => (
                     <li key={index}>
                       <div className="banner-two__img-single">
@@ -90,18 +79,18 @@ export default function Banner({
                       </div>
                     </li>
                   ))}
-                </ul>
+                </ul> */}
               </div>
             </div>
           </div>
         </div>
       </section>
       {/* Banner Two End */}
-      <ModalVideo 
-        channel='youtube' 
-        isOpen={isOpen} 
-        videoId={new URL(videoUrl).searchParams.get('v')} 
-        onClose={() => setIsOpen(false)} 
+      <ModalVideo
+        channel='youtube'
+        isOpen={isOpen}
+        videoId={new URL(videoUrl).searchParams.get('v')}
+        onClose={() => setIsOpen(false)}
       />
     </>
   );

@@ -4,7 +4,7 @@ import Center from "./Center";
 
 export default function App() {
     return (
-        <Layout headerStyle={3} footerStyle={4}>
+        <Layout headerStyle={2} footerStyle={4}>
             <div className="main">
                 <Center />
                 

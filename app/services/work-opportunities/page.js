@@ -1,6 +1,6 @@
 import React from "react"
 import Layout from "@/components/layout/Layout.js"
-import Careers from "@/components/Careers/Careers.jsx"
+import Careers from "@/components/carrers/Careers.jsx"
 
 
 export default function page() {

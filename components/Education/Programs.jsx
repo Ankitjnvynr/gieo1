@@ -4,25 +4,25 @@ import './Programs.css';
 const programs = [
   {
     title: 'Bal Sanskar Camps',
-    description: 'Take a step towards your wellbeing with these yoga programs, designed by Sadhguru and suitable for beginners. With an array of options available.',
+    description: 'Bal Sanskar Camps by GIEO GITA nurture children with values, discipline, and spiritual wisdom through engaging activities, stories, and teachings from the Bhagavad Gita.',
     image: '/assets/images/education/balsanskar.jpg',
     link: '/education/beginner',
   },
   {
     title: 'Advanced Programs',
-    description: 'Isha Yoga Advanced Programs include Bhava Spandana Program, Shoonya Intensive, and Samyama, which allow an individual to experience life beyond the limitations of the body and mind.',
+    description: 'GIEO GITA’s Advanced Programs offer in-depth study and practical application of the Bhagavad Gita, empowering participants to lead with clarity, purpose, and inner strength.',
     image: '/assets/images/education/prog2.avif',
     link: '/education/advance',
   },
   {
-    title: 'Children\'s Yoga',
-    description: 'Specially designed for children, these programs bring focus, balance and inner joy through fun-filled activities and yogic practices.',
+    title: "Children's Yoga",
+    description: 'Children’s Yoga at GIEO GITA blends fun, movement, and mindfulness, helping young minds develop focus, confidence, and a joyful approach to life.',
     image: '/assets/images/education/prog3.avif',
     link: '',
   },
   {
     title: 'Hatha Yoga Programs',
-    description: 'Traditional Hatha Yoga practices taught in their full depth and dimension, under the guidance of trained teachers in consecrated spaces.',
+    description: 'Hatha Yoga Programs at GIEO GITA provide authentic yogic practices for holistic well-being, taught in a supportive environment by experienced instructors.',
     image: '/assets/images/education/prog4.avif',
     link: '',
   },

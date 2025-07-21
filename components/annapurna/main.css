@@ -41,7 +41,7 @@ body {
 }
 
 .section-title:after {
-  content: '';
+  /* content: ''; */
   position: absolute;
   bottom: -15px;
   left: 50%;

@@ -42,13 +42,13 @@ const programs = [
     title: 'Surya Kriya',
     date: '3 - 6 Jul 2025',
     language: 'English',
-    location: 'Sadhguru Sannidhi, Chattarpur, India',
+    location: 'Chattarpur, India',
   },
   {
     title: 'Inner Engineering 4 Days',
     date: '17 - 20 Jul 2025',
     language: 'English',
-    location: 'Sadhguru Sannidhi, Chattarpur, Delhi, India',
+    location: 'Chattarpur, Delhi, India',
   },
 ];
 

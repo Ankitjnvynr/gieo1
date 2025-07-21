@@ -1,6 +1,4 @@
-*{
-    box-sizing: border-box;
-}
+
 .image-container {
   position: relative;
   width: 100%;
@@ -17,8 +15,8 @@
   
   
 }
-.container {
-  max-width: 800px;
+.containar {
+  
   margin: 0 auto;
   padding: 2rem 1rem;
   text-align: center;
