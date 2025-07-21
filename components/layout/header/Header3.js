@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Menu from "../Menu";
 import MobileMenu from "../MobileMenu";
-import {Image} from "next/image";
+import Image from "next/image";
 
 export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSidebar, handlePopup, handleSidebar }) {
     return (
@@ -35,11 +35,12 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                         </div>
                                     </div>
                                     <div className="main-menu-three__btn-box">
-                                        <Link href="/contact">
-                                            <button className="main-menu-three__btn thm-btn">
+                                        <Link href="/contact" legacyBehavior>
+                                            <a className="main-menu-three__btn thm-btn">
                                                 Contact US<span className="icon-dubble-arrow-right"></span>
-                                            </button>
+                                            </a>
                                         </Link>
+
                                     </div>
                                 </div>
                             </div>
@@ -57,7 +58,12 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 <div className="main-menu-three__left">
                                     <div className="main-menu-three__logo">
                                         <Link href="/">
-                                            <img src="/assets/images/resources/logo-7.png" alt="Logo" />
+                                            <img
+  src="/assets/images/resources/logo-7.png"
+  alt="Logo"
+  style={{ height: scroll ? 50 : 70, transition: 'height 0.3s' }}
+/>
+
                                         </Link>
                                     </div>
                                     <div className="main-menu-three__main-menu-box">

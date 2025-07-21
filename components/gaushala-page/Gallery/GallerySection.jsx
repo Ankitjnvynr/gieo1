@@ -37,19 +37,19 @@ const galleryItems = [
     id: 1,
     title: "Cow Sanctuary",
     description: "Our peaceful goshala environment",
-    image: "/assets/images/backgrounds/gao/6.jpg"
+    image: "/assets/images/backgrounds/gao/cowsa.jpg"
   },
   {
     id: 2,
     title: "Daily Care",
     description: "Our team providing loving care",
-    image: "/assets/images/backgrounds/gao/5.jpg"
+    image: "/assets/images/backgrounds/gao/dailycare.jpg"
   },
   {
     id: 3,
     title: "Vedic Rituals",
     description: "Traditional worship of cows",
-    image: "/assets/images/backgrounds/gao/4.jpg"
+    image: "/assets/images/backgrounds/gao/ritual.jpg"
   },
   {
     id: 4,

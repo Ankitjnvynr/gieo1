@@ -1,0 +1,195 @@
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  background-color: #76757554; /* Fallback for image loading */
+}
+
+.backgroundContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+  z-index: 0;
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  object-fit:fill;
+  object-position: center;
+  filter: brightness(0.7);
+
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(54, 53, 53, 0.039) 0%,
+    rgba(42, 41, 41, 0.352) 100%
+  );
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 2;
+  max-width: 900px;
+  padding: 0 30px;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.237);
+}
+
+.title {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  line-height: 1.15;
+  
+  padding-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.subtitle {
+  font-size: 1.35rem;
+  font-weight: 300;
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  max-width: 650px;
+  margin: 0 auto;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+/* Particles */
+.particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.12);
+  border-radius: 50%;
+  will-change: transform;
+  backdrop-filter: blur(1px);
+}
+
+/* Scroll indicator */
+.scrollIndicator {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  mix-blend-mode: difference;
+}
+
+.scrollLine {
+  width: 1px;
+  height: 60px;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0)
+  );
+  margin-bottom: 8px;
+}
+
+.scrollText {
+  color: white;
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+
+
+
+
+
+.heading {
+  color: #efefeac7;
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .title {
+    font-size: 3.25rem;
+  }
+  
+  .subtitle {
+    font-size: 1.2rem;
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2.75rem;
+    margin-bottom: 1.25rem;
+  }
+  
+  .subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .scrollIndicator {
+    bottom: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+  }
+  
+  .subtitle {
+    font-size: 1rem;
+    padding: 0 20px;
+  }
+  
+  .scrollIndicator {
+    bottom: 30px;
+  }
+  
+  .scrollLine {
+    height: 50px;
+  }
+}
