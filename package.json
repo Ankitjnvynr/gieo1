@@ -7,14 +7,13 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
-    
   },
   "dependencies": {
     "@thednp/dommatrix": "^2.0.6",
     "aos": "^2.3.4",
     "bootstrap-touchspin": "^4.7.3",
     "circletype": "^2.3.0",
-    "framer-motion": "^12.18.1",
+    "framer-motion": "^12.23.1",
     "gsap": "^3.13.0",
     "isotope-layout": "^3.0.6",
     "jquery": "^3.7.1",
