@@ -7,7 +7,8 @@ export const Topbar = () => {
         { label: 'Contact Us', path: '/contact' },
         { label: 'Live Darshan', path: '/live-darshan' },
         { label: 'Daily Darshan', path: '/daily-darshan' },
-        { label: 'Rooms & Auditorium', path: '/auditorium-room-booking' },
+        
+        { label: 'Carrers', path: '/services/work-opportunities' },
     ];
 
     return (

@@ -25,7 +25,9 @@ const menuItems = [
             },
             { name: "GIEO Museum", path: "/gieo-gita-museum", subMenu: [] },
             { name: "GIEO Library", path: "/library", subMenu: [] },
+            { name: "Books", path: "/books", subMenu: [] },
             { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
+            { name: "Bhajan & Kirtan", path: "/bhajan-kirtan", subMenu: [] },
             { name: "How To Reach", path: "/how-to-reach", subMenu: [] },
         ]
     },
@@ -34,21 +36,30 @@ const menuItems = [
         path: "/services",
         subMenu: [
             { name: "Ashrams", path: "/services/ashrams", subMenu: [] },
+            {
+                name: "Education", path: "/services/education", subMenu: [
+                    { name: "Gita Prerna", path: "/education/gita-prerna", subMenu: [] },
+                    { name: "Bal Sanskar", path: "/education/bal-sanskar", subMenu: [] },
+                    { name: "Advance Programme", path: "/education/advance", subMenu: [] },
+                ]
+            },
             { name: "Gaushala", path: "/services/gaushala", subMenu: [] },
+            { name: "Food Distribution", path: "/services/food-distribution", subMenu: [] },
             { name: "Health", path: "/services/health/medanta", subMenu: [] },
             { name: "Nature Conservation", path: "/services/nature-conservation", subMenu: [] },
-            { name: "Work opportunities", path: "/services/work-opportunities", subMenu: [] },
-            { name: "Education", path: "/services/education", subMenu: [
-                { name: "Gita Prerna", path: "/education/gita-prerna", subMenu: [] },
-                { name: "Bal Sanskar", path: "/education/bal-sanskar", subMenu: [] },
-                { name: "Advance Programme", path: "/education/advance", subMenu: [] },
-            ] },
+
+            
+            
+            { name: 'Rooms & Auditorium', path: '/auditorium-room-booking', subMenu: [] },
         ]
     },
-    { name: "Events", path: "/events", subMenu: [
-        { name: "Monthly Events", path: "/events", subMenu: [] },
-        { name: "GIEO Festivals", path: "/festivals", subMenu: [] },
-    ] },
+    {
+        name: "Events", path: "/events", subMenu: [
+            { name: "Monthly Events", path: "/events", subMenu: [] },
+            { name: "GIEO Festivals", path: "/gieo-festivals", subMenu: [] },
+            { name: "News & Media", path: "/events/news-media", subMenu: [] },
+        ]
+    },
     { name: "Gallery", path: "/gallery", subMenu: [] },
     {
         name: "Download",
@@ -58,7 +69,7 @@ const menuItems = [
             { name: "Patrika", path: "/download/patrika", subMenu: [] },
         ]
     },
-   
+
     {
         name: "Contact",
         path: "/contact",
