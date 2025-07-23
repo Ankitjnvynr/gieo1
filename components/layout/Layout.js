@@ -19,6 +19,7 @@ import Header6 from './header/Header6';
 import Header7 from './header/Header7';
 import Header8 from "./header/Header8";
 
+
 export default function Layout({
   headerStyle,
   footerStyle,
@@ -80,6 +81,7 @@ useEffect(() => {
       case 6: return <Header6 {...headerProps} />;
       case 7: return <Header7 {...headerProps} />;
       case 8: return <Header8 {...headerProps} />;
+      
       default: return <Header1 {...headerProps} />;
     }
   };
