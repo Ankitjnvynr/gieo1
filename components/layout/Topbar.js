@@ -8,7 +8,7 @@ export const Topbar = () => {
         { label: 'Live Darshan', path: '/live-darshan' },
         { label: 'Daily Darshan', path: '/daily-darshan' },
         
-        { label: 'Carrers', path: '/services/work-opportunities' },
+        { label: 'Carrers', path: '/careers' },
     ];
 
     return (

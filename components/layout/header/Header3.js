@@ -13,7 +13,9 @@ const menuItems = [
         name: "About",
         path: "/about-us",
         subMenu: [
-            { name: "Swami ji", path: "/about-us/swami-ji", subMenu: [] },
+            { name: "Swami ji", path: "/swami-gyananand-ji", subMenu: [] },
+            { name: "Awards", path: "/swami-gyananand-ji-awards", subMenu: [] },
+            { name: "Awards", path: "/swami-gyananand-ji-biography", subMenu: [] },
             {
                 name: "History of GIEO Gita",
                 path: "/about-us/history-of-gieogita",
@@ -78,7 +80,10 @@ const menuItems = [
         ]
     },
 
-    { name: "Bal Sanskar", path: "/bal-sanskar", subMenu: [] }
+    { name: "Get Involved", path: "/", subMenu: [
+        { name: "Volunteer", path: "/volunteer", subMenu: [] },
+        { name: "Careers", path: "/careers", subMenu: [] }
+    ] }
 ];
 const renderMenuItems = (items) => {
     return items.map((item, index) => (
