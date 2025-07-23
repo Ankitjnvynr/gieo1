@@ -8,14 +8,14 @@ import { Topbar } from "../Topbar";
 // Full Menu Array with Submenus
 const menuItems = [
     { name: "GIEO GITA", path: "/", subMenu: [] },
-    { name: "Join Gieo Gita", path: "/join-gieo-gita", subMenu: [] },
+    { name: "Join GIEO Gita", path: "/join-gieo-gita", subMenu: [] },
     {
         name: "About",
         path: "/about-us",
         subMenu: [
             { name: "Swami ji", path: "/about-us/swami-ji", subMenu: [] },
             {
-                name: "History of GIEOGita",
+                name: "History of GIEO Gita",
                 path: "/about-us/history-of-gieogita",
                 subMenu: [
                     { name: "Shlokas", path: "/about-us/history-of-gieogita/shlokas", subMenu: [] },
@@ -38,7 +38,11 @@ const menuItems = [
             { name: "Health", path: "/services/health/medanta", subMenu: [] },
             { name: "Nature Conservation", path: "/services/nature-conservation", subMenu: [] },
             { name: "Work opportunities", path: "/services/work-opportunities", subMenu: [] },
-            { name: "Education", path: "/services/education", subMenu: [] },
+            { name: "Education", path: "/services/education", subMenu: [
+                { name: "Gita Prerna", path: "/education/gita-prerna", subMenu: [] },
+                { name: "Bal Sanskar", path: "/education/bal-sanskar", subMenu: [] },
+                { name: "Advance Programme", path: "/education/advance", subMenu: [] },
+            ] },
         ]
     },
     { name: "Events", path: "/events", subMenu: [
@@ -54,14 +58,7 @@ const menuItems = [
             { name: "Patrika", path: "/download/patrika", subMenu: [] },
         ]
     },
-    {
-        name: "Gyan",
-        path: "/gyan",
-        subMenu: [
-            { name: "Gita Shalokas", path: "/gitash", subMenu: [] },
-           
-        ]
-    },
+   
     {
         name: "Contact",
         path: "/contact",
