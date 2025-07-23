@@ -15,7 +15,7 @@ const menuItems = [
         subMenu: [
             { name: "Swami ji", path: "/swami-gyananand-ji", subMenu: [] },
             { name: "Awards", path: "/swami-gyananand-ji-awards", subMenu: [] },
-            { name: "Awards", path: "/swami-gyananand-ji-biography", subMenu: [] },
+            { name: "Biography", path: "/swami-gyananand-ji-biography", subMenu: [] },
             {
                 name: "History of GIEO Gita",
                 path: "/about-us/history-of-gieogita",
