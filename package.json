@@ -18,13 +18,8 @@
     "aos": "^2.3.4",
     "bootstrap-touchspin": "^4.7.3",
     "circletype": "^2.3.0",
-<<<<<<< HEAD
-    "framer-motion": "^12.23.1",
-    "gsap": "^3.13.0",
-=======
     "framer-motion": "^12.18.1",
     "graceful-fs": "^4.2.11",
->>>>>>> f755e62d5a2bb439d0c778df3dbcf480301c686e
     "isotope-layout": "^3.0.6",
     "jquery": "^3.7.1",
     "lightgallery": "^2.7.2",
