@@ -1,0 +1,95 @@
+/* src/App.css */
+:root {
+  --primary: #a59069;         /* Main theme color */
+  --primary-dark: #5a3816;    /* Darker shade for primary */
+  --secondary: #138808;
+  --light: #f9f7f2;
+  --dark: #333;
+  --gray: #777;
+  --white: #fff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: var(--dark);
+  background-color: var(--light);
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.section {
+  padding: 80px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #a59069;  /* Updated to primary-dark */
+  font-weight: 400;
+  position: relative;
+}
+
+.section-title:after {
+  /* content: ''; */
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary); 
+}
+
+.btn {
+  display: inline-block;
+  background: var(--primary);  /* Updated to primary */
+  color: var(--white);
+  padding: 12px 30px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  color: var(--white);
+  background: var(--primary-dark);  /* Updated to primary-dark */
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(90, 56, 22, 0.4); /* Updated shadow */
+}
+
+.btn-secondary {
+  background: var(--secondary);
+}
+
+.btn-secondary:hover {
+  background: #0d6e07;
+  box-shadow: 0 5px 15px rgba(19, 136, 8, 0.4);
+}
+
+.card {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}

@@ -14,6 +14,7 @@ export default function CounterTwo() {
       <section className="contact-two" id="contact">
         <div className="container">
           <div className="row">
+            {/* Left Side Info */}
             <div className="col-xl-6 col-lg-6">
               <div className="contact-two__left">
                 <div className="section-title text-left">
@@ -21,12 +22,13 @@ export default function CounterTwo() {
                     <span className="section-title__tagline">Talk to us</span>
                   </div>
                   <h2 className="section-title__title">
-                    Peak Protection Roofing Trust the experts
+                    Medanta Foundation<br /> Connect with Us
                   </h2>
                 </div>
                 <p className="contact-two__text">
-                  Construction is an essential industry that involves building
-                  and designing structures such as buildings, roads, bridges
+                  Whether you're seeking medical support, want to collaborate for community outreach, 
+                  or looking to volunteer—our team is ready to support and respond. Together, we serve 
+                  the vision that "Every Life is Precious."
                 </p>
                 <ul className="contact-two__contact-list list-unstyled">
                   <li>
@@ -35,7 +37,7 @@ export default function CounterTwo() {
                     </div>
                     <div className="content">
                       <p>Address</p>
-                      <h4>66 Broklyant, India</h4>
+                      <h4>Medanta OPD Centre, Gieo Gita Gyan Sansthanam, Kurukshetra, Haryana</h4>
                     </div>
                   </li>
                   <li>
@@ -45,7 +47,7 @@ export default function CounterTwo() {
                     <div className="content">
                       <p>Phone Number</p>
                       <h4>
-                        <a href="tel:01959701730">01959701730</a>
+                        <a href="tel:01959701730">01959 701730</a>
                       </h4>
                     </div>
                   </li>
@@ -56,20 +58,22 @@ export default function CounterTwo() {
                     <div className="content">
                       <p>Email</p>
                       <h4>
-                        <a href="mailto:abcd@gmail.com">abcd@gmail.com</a>
+                        <a href="mailto:info@medantafoundation.org">info@medantafoundation.org</a>
                       </h4>
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
+
+            {/* Right Side Form */}
             <div className="col-xl-6 col-lg-6">
               <div
                 className="contact-two__right wow slideInRight"
                 data-wow-delay="100ms"
                 data-wow-duration="2500ms"
               >
-                <h3 className="contact-two__right-title">Contact</h3>
+                <h3 className="contact-two__right-title">Request Assistance</h3>
                 <form
                   className="contact-form-validated contact-two__form"
                   action="/api/sendemail" // Update this to your actual API route
@@ -102,7 +106,7 @@ export default function CounterTwo() {
                         <input
                           type="text"
                           name="Phone"
-                          placeholder="Your Number"
+                          placeholder="Your Phone"
                           required
                         />
                       </div>
@@ -114,29 +118,31 @@ export default function CounterTwo() {
                             className="selectmenu wide"
                             value={selectedOption}
                             onChange={handleChange}
+                            required
                           >
                             <option value="" disabled>
-                              Choose an Option
+                              Select a Purpose
                             </option>
-                            <option value="service1">Type Of Service 01</option>
-                            <option value="service2">Type Of Service 02</option>
-                            <option value="service3">Type Of Service 03</option>
-                            <option value="service4">Type Of Service 04</option>
-                            <option value="service5">Type Of Service 05</option>
+                            <option value="inquiry">General Inquiry</option>
+                            <option value="consultation">OPD Consultation Request</option>
+                            <option value="diagnostics">Diagnostic Services</option>
+                            <option value="telemedicine">Telemedicine Help</option>
+                            <option value="volunteer">Volunteer With Us</option>
+                            <option value="csr">Partnership / CSR Collaboration</option>
                           </select>
                         </div>
                       </div>
                     </div>
                     <div className="col-xl-12">
                       <div className="contact-two__input-box text-message-box">
-                        <textarea name="message" placeholder="Message here.."></textarea>
+                        <textarea name="message" placeholder="Write your message here..."></textarea>
                       </div>
                       <div className="contact-two__btn-box">
                         <button
                           type="submit"
                           className="thm-btn-two contact-two__btn"
                         >
-                          Appointment Now
+                          Submit Now
                           <span className="icon-dubble-arrow-right"></span>
                         </button>
                       </div>

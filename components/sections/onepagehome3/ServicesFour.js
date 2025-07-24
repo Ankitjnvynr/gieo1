@@ -8,14 +8,13 @@ import 'swiper/css/autoplay';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
-// Swiper options
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
   slidesPerView: 2,
   spaceBetween: 30,
-  speed: 2000,
+  speed: 1000,
   autoplay: {
-    delay: 9000,
+    delay: 5000,
     disableOnInteraction: false,
   },
   loop: true,
@@ -29,102 +28,67 @@ const swiperOptions = {
     clickable: true,
   },
   breakpoints: {
-    0: {
-      spaceBetween: 0,
-      slidesPerView: 1,
-    },
-    375: {
-      spaceBetween: 30,
-      slidesPerView: 1,
-    },
-    575: {
-      spaceBetween: 30,
-      slidesPerView: 1,
-    },
-    768: {
-      spaceBetween: 30,
-      slidesPerView: 1,
-    },
-    992: {
-      spaceBetween: 30,
-      slidesPerView: 2,
-    },
-    1200: {
-      spaceBetween: 30,
-      slidesPerView: 3,
-    },
-    1320: {
-      spaceBetween: 30,
-      slidesPerView: 3,
-    },
+    0: { slidesPerView: 1 },
+    375: { slidesPerView: 1 },
+    575: { slidesPerView: 1 },
+    768: { slidesPerView: 1 },
+    992: { slidesPerView: 2 },
+    1200: { slidesPerView: 3 },
+    1320: { slidesPerView: 3 },
   },
 };
 
-// Sample service data
+// ✅ Medanta OPD Services with Original Image Paths
 const services = [
   {
-    imgSrc: 'assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-paint',
-    title: 'Reliable Roofing Pros',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
+    imgSrc: '/assets/images/medanta/service-health-emergency copy.jpg',
+    iconClass: 'icon-stethoscope',
+    title: 'Cardiac Consultation & emergency',
+    description: 'Heart health evaluation, risk assessment, and lifestyle guidance by expert cardiologists.',
+    link: 'cardiac-consultation',
   },
   {
-    imgSrc: 'assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-crane',
-    title: 'Roof service involves',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'sure-guard-roofing-services'
+    imgSrc: '/assets/images/medanta/service-health-general copy.jpg',
+    iconClass: 'icon-doctor',
+    title: 'General Medical Consultation',
+    description: 'Comprehensive health check-ups and treatment plans by experienced physicians.',
+    link: 'general-consultation',
   },
   {
-    imgSrc: 'assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-crane-3',
-    title: 'roofs for the residential',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'skyline-roofing-solutions'
+    imgSrc: '/assets/images/medanta/service-health-dental copy.jpg',
+    iconClass: 'icon-tooth',
+    title: 'Dental Consultation',
+    description: 'Oral exams, scaling, and upcoming services like fillings, RCT, and extractions.',
+    link: 'dental-consultation',
   },
   {
-    imgSrc: 'assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-paint',
-    title: 'Reliable Roofing Pros',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
+    imgSrc: '/assets/images/medanta/service-health-digno copy.jpg',
+    iconClass: 'icon-diagnosis',
+    title: 'Diagnostic Services',
+    description: 'Digital X-ray, ECG, ECHO, TMT, and PFT available for accurate diagnosis.',
+    link: 'diagnostic-services',
   },
   {
-    imgSrc: 'assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-crane',
-    title: 'Roof service involves',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'skyline-roofing-solutions'
+    imgSrc: '/assets/images/medanta/service-health-pft copy.jpg',
+    iconClass: 'icon-lungs',
+    title: 'Pulmonary Function Test (PFT)',
+    description: 'Essential test for assessing lung capacity and diagnosing asthma and COPD.',
+    link: 'pulmonary-function',
   },
   {
-    imgSrc: 'assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-crane-3',
-    title: 'roofs for the residential',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'top-notch-roofing-restoration'
+    imgSrc: '/assets/images/medanta/service-health-tele copy.jpg',
+    iconClass: 'icon-telemedicine',
+    title: 'Telemedicine Consultation',
+    description: 'Online consultation services for remote, elderly, and immobile patients.',
+    link: 'telemedicine',
   },
   {
-    imgSrc: 'assets/images/services/services-4-1.jpg',
-    iconClass: 'icon-paint',
-    title: 'Reliable Roofing Pros',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
+    imgSrc: '/assets/images/medanta/service-health-ultrasound copy.jpg',
+    iconClass: 'icon-ultrasound',
+    title: 'Ultrasound (Coming Soon)',
+    description: 'Future service for soft tissue, abdominal, and pelvic imaging.',
+    link: 'ultrasound',
   },
-  {
-    imgSrc: 'assets/images/services/services-4-2.jpg',
-    iconClass: 'icon-crane',
-    title: 'Roof service involves',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'skyline-roofing-solutions'
-  },
-  {
-    imgSrc: 'assets/images/services/services-4-3.jpg',
-    iconClass: 'icon-crane-3',
-    title: 'roofs for the residential',
-    description: 'Roof service involves maintenance and repair of residential',
-    link: 'reliable-roof-repair'
-  }
 ];
 
 export default function ServicesFour() {
@@ -134,40 +98,41 @@ export default function ServicesFour() {
         <div className="container">
           <div className="section-title text-center">
             <div className="section-title__tagline-box">
-              <span className="section-title__tagline">latest service</span>
+              <span className="section-title__tagline">Our Healthcare Offerings</span>
             </div>
-            <h2 className="section-title__title">Quality roofing <span>solutions</span><br /> every time</h2>
+            <h2 className="section-title__title">
+              Compassionate <span>Medical Care</span><br /> for Every Individual
+            </h2>
           </div>
           <Swiper {...swiperOptions}>
             {services.map((service, index) => (
               <SwiperSlide key={index} className="item">
-                <div className="services-four__single">
+                <div className="services-four__single" style={{ height: '100%', display: 'flex', flexDirection: 'column' }}>
                   <div className="services-four__img-box">
                     <div className="services-four__img">
                       <img src={service.imgSrc} alt={service.title} />
                     </div>
                   </div>
-                  <div className="services-four__content">
-                    <div className="services-four__icon">
-                      <span className={service.iconClass}></span>
-                    </div>
+                  <div
+                    className="services-four__content"
+                    style={{
+                      flexGrow: 1,
+                      display: 'flex',
+                      flexDirection: 'column',
+                      justifyContent: 'space-between',
+                      minHeight: '220px',
+                      paddingTop: '20px',
+                    }}
+                  >
                     <h4 className="services-four__title">
                       <Link href={`/${service.link}`}>{service.title}</Link>
                     </h4>
                     <p className="services-four__text">{service.description}</p>
-                    <div className="services-four__btn-box">
-                      <Link href={`/${service.link}`} className="services-four__btn thm-btn">
-                        Read more<span className="icon-dubble-arrow-right"></span>
-                      </Link>
-                    </div>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
-          {/* Navigation buttons */}
-          {/* Pagination bullets */}
-          
         </div>
       </div>
     </section>

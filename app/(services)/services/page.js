@@ -53,20 +53,20 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Services">
+            <Layout headerStyle={3} footerStyle={4} breadcrumbTitle="Services">
             <div>
                 {/*Services Page Start*/}
                 <ServicesPage services={servicesData} />
                 {/*Services Page End*/}
                 {/* Other components and sections */}
-                <CTASection
+                {/* <CTASection
                     backgroundImage="assets/images/backgrounds/cta-two-bg.jpg"
                     imgSrc="assets/images/resources/cta-two-img-1.png"
                     title="One Shingle at a Time"
                     text="Roof service involves the installation, maintenance, and repair of roofs for residential and commercial buildings."
                     buttonText="Contact Us"
                     buttonLink="/contact"
-                    />
+                    /> */}
                 {/* Other components and sections */}
             </div>
             </Layout>

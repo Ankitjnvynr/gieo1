@@ -1,0 +1,164 @@
+[
+  {
+    "id": 1,
+    "chapter": 1,
+    "verse": "1.1",
+    "sanskrit": "धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥",
+    "hindiMeaning": "श्रीमद्भगवद्गीता का प्रथम श्लोक! चेतावनी और प्रेरणा साथ-साथ। भेद बुद्धि, पक्षपात पूर्ण संकीर्ण सोच ही वैर, द्वेष, कलह-क्लेश का मूल कारण हैं! समबुद्धि - उदार सोच कर्म को ही धर्म बना सकती है! 'धर्मक्षेत्रे-कुरुक्षेत्रे' का लाक्षणिक अभिप्राय यही है।",
+    "englishMeaning": "This is the first verse of the Bhagavad Gita! It is both a warning and an inspiration. Discriminatory thinking and narrow-minded partiality are the root causes of enmity, hatred, and conflict. Only an even-minded and broad outlook can turn action into true righteousness. The symbolic meaning of 'Dharmakshetra-Kurukshetra' is exactly this.",
+    "audio": "/assets/images/backgrounds/1-1.mp3"
+  },
+  {
+    "id": 2,
+    "chapter": 2,
+    "verse": "2.47",
+    "sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥",
+    "hindiMeaning": "अपने कर्तव्य के प्रति पूर्ण समर्पण, प्रगति, कोताही, लापरवाही नहीं! मुझे क्या मिलेगा यह सोच कृपण, संकीर्ण बनाती है, क्षमताओं को कमजोर करती है! मैं क्या दे सकता हूँ- यह भाव बनाकर कर्तव्य पथ पर आगे बढ़ें, अनुभव करें मानसिक संतोष, क्षमताओं का विकास, सामाजिक सम्मान एवं ईश्वरीय कृपा।",
+    "englishMeaning": "Dedicate yourself fully to your duty—no negligence or carelessness! Thinking only of what you will get makes you narrow-minded and weakens your abilities. Move forward on the path of duty with the attitude of what you can give, not what you will receive. This brings mental satisfaction, development of abilities, social respect, and divine grace.",
+    "audio":"/assets/images/backgrounds/2-47.mp3"
+},
+  {
+    "id": 3,
+    "chapter": 3,
+    "verse": "3.20",
+    "sanskrit": "कर्मणैव हि संसिद्धिमास्थिता जनकादयः । लोकसंग्रहमेवापि सम्पश्यन्कर्तुमर्हसि ॥",
+    "hindiMeaning": "कर्तव्य पथ पर आगे बढ़ते हुए आदर्श प्रस्तुत करना आवश्यक है। कार्यों में लोकहित की भावना हो, आसक्ति या व्यक्तिगत लाभ के लिए न हो। दूसरों, समाज एवं राष्ट्र के कल्याण के लिए व्यापक दृष्टिकोण विकसित करें! राजा जनक का उदाहरण इस संदर्भ में दिया गया है। यह श्लोक, विशेषकर 'लोक संग्रहम्' (सभी का कल्याण) शब्द सामाजिक विभाजन को मिटाने, समानता, सद्भावना, सद्भावना एवं राष्ट्रीय गर्व को बढ़ाने के लिए बहुत महत्वपूर्ण है।",
+    "englishMeaning": "While progressing on the path of duty, it is essential to set a good example. Actions should be performed with the spirit of public welfare, not out of attachment or merely for personal gain. Develop a broad outlook for the benefit of others, society, and the nation! The example of King Janaka is given in this context. This verse, especially the term 'Lok Sangrah' (welfare of all), is very important for removing social divisions, bringing equality, harmony, goodwill, and enhancing national pride.",
+    "audio": "/assets/images/backgrounds/3-20.mp3"
+},
+ {
+    "id": 4,
+    "chapter": 4,
+    "verse": "4.15",
+    "sanskrit": "एवं ज्ञात्वा कृतं कर्म पूर्वैरपि मुमुक्षुभिः । कुरु कर्मैव तस्मात्त्वं पूर्वैः पूर्वतरं कृतम् ॥",
+    "hindiMeaning": "अपने-अपने क्षेत्र का समृद्ध अतीत देखें। जिन्होंने अच्छे संकल्प, अच्छी कर्तव्यनिष्ठा के साथ अच्छे आदर्श प्रस्तुत किए, अपने कार्य क्षेत्र के साथ-साथ समाज एवं राष्ट्र का सम्मान बढ़ाया, आदर्श, प्रेरणा के रूप में अपना नाम बनाया — यह गीता मंत्र अनूठी प्रेरणा है — अपने कर्म एवं जीवन यात्रा को उसी पथ पर आगे बढ़ाने के लिए।",
+    "englishMeaning": "Look at the rich past of your own field. Those who set good examples with strong resolve and dedication to duty, who brought honor to their field as well as to society and the nation, and who made their name as ideals and inspirations—this Gita mantra is a unique inspiration to advance your actions and life journey on the same path.",
+    "audio": "/assets/images/backgrounds/4-15.mp3"
+},
+{
+    "id": 5,
+    "chapter": 5,
+    "verse": "5.10",
+    "sanskrit": "ब्रह्मण्याधाय कर्माणि सङ्गं त्यक्त्वा करोति यः । लिप्यते न स पापेन पद्मपत्रमिवाम्भसा ॥",
+    "hindiMeaning": "कर्म करते हुए अहंकार बुद्धि नहीं! ईश्वरीय कृपा का आधार, ईश्वरीय कृपा से मुझे इस पद या दायित्व के रूप में समाज, राष्ट्र एवं मानवता की सेवा का सौभाग्य मिला है — ऐसा भाव रखें। किसी व्यक्तिगत अथवा बाह्य वातावरण की बुराई का प्रभाव अपने ऊपर न पड़ने दें, अपनी अच्छाई की सुगंध वातावरण में फैलाएं — ठीक वैसे ही जैसे पानी या कीचड़ में रहते हुए कमल।",
+    "englishMeaning": "While performing your duties, do not let ego dominate. Consider your responsibilities as a blessing of divine grace, and serve society, nation, and humanity with this attitude. Do not let the negativity of others or the environment affect you; instead, spread your own goodness—just as the lotus remains untouched by water or mud, spread your fragrance wherever you are.",
+    "audio": "/assets/images/backgrounds/5-10.mp3"
+  },
+  {
+    "id": 6,
+    "chapter": 6,
+    "verse": "6.32",
+    "sanskrit": "आत्मौपम्येन सर्वत्र समं पश्यति योऽर्जुन । सुखं वा यदि वा दुःखं स योगी परमो मतः ॥",
+    "hindiMeaning": "सुख-दुख में समानता का भाव रखने वाला ही सच्चा योगी है। ईश्वरीय चेतना सब में व्याप्त है, इस दृष्टि से सबके साथ अपनापन रखना चाहिए। किसी को सुखी देखकर प्रसन्नता और दुखी देखकर स्वयं को पीड़ा अनुभव करना ही योगी की पहचान है।",
+    "englishMeaning": "The true yogi is one who remains even-minded in happiness and sorrow. Divine consciousness pervades all, so one should feel a sense of oneness with everyone. Feeling joy at others' happiness and pain at others' sorrow is the mark of a yogi.",
+    "audio": "/assets/images/backgrounds/6-32.mp3"
+  },
+  {
+    "id": 7,
+    "chapter": 7,
+    "verse": "7.7",
+    "sanskrit": "मत्तः परतरं नान्यत्किञ्चिदस्ति धनञ्जय । मयि सर्वमिदं प्रोतं सूत्रे मणिगणा इव ॥",
+    "hindiMeaning": "जाति, वय, वर्ण, रूप, रंग अनेक हैं, अपने-अपने प्रारब्ध अनुसार कोई धनवान, पदाधिकारी या कर्मचारी हो सकते हैं, लेकिन ईश्वरीय चेतना सबमें एक है, ठीक वैसे ही जैसे माला में मणियाँ; मणियाँ अनेक, लेकिन सूत्र एक। मानसिक शांति, पारिवारिक सद्भावना, सामाजिक समरसता, राष्ट्रीय एकता एवं विश्व बन्धुत्व की दिव्यता छिपी हुई है इस गीता भाव में।",
+    "englishMeaning": "There are many castes, ages, colors, forms, and statuses—some may be wealthy, officials, or workers according to their destiny. But the divine consciousness is one in all, just as there are many beads in a necklace but only one thread. This Gita teaching contains the essence of mental peace, family harmony, social unity, national integration, and universal brotherhood.",
+    "audio": "/assets/images/backgrounds/7-7.mp3"
+  },
+{
+    "id": 8,
+    "chapter": 8,
+    "verse": "8.7",
+    "sanskrit": "तस्मात्सर्वेषु कालेषु मामनुस्मर युध्य च । मय्यर्पितमनोबुद्धिर्मामेवैष्यस्यसंशयम् ॥",
+    "hindiMeaning": "संघर्ष में भी भगवान को स्मरण करते हुए कर्म करो, यही सफलता का मार्ग है। जीवन है तो संघर्ष साथ रहेंगे ही। संघर्षों में न घबराएँ, न उकताएँ, मनोबल मजबूत रहे—इसी के लिए है यह गीता प्रेरणा। जीवन संघर्षों में भगवान का स्मरण बना रहे। ईश्वरीय ध्यान, स्मरण जीवन की ऊर्जा, शक्ति, शांति और बल—मजबूत सम्बल है। मन, बुद्धि भगवान को समर्पित अर्थात् 'साथी' एवं जीवन रथ के सारथी भगवान! धैर्य बढ़ेगा, सफलता मिलेगी।",
+    "englishMeaning": "Even in struggles, perform your duties while remembering God—this is the path to success. As long as there is life, challenges will remain. Do not be afraid or discouraged in difficulties; keep your morale strong—this is the inspiration of the Gita. Remembering God during life's struggles brings energy, strength, peace, and support. Dedicating your mind and intellect to God means making Him your companion and the charioteer of your life. Patience will increase, and success will follow.",
+    "audio": "/assets/images/backgrounds/8-7.mp3"
+  },
+  {
+    "id": 9,
+    "chapter": 9,
+    "verse": "9.10",
+    "sanskrit": "मयाध्यक्षेण प्रकृतिः सूयते सचराचरम् । हेतुनानेन कौन्तेय जगद्विपरिवर्तते ॥",
+    "hindiMeaning": "प्रकृति ईश्वर द्वारा संचालित है। प्रकृति के साथ ईश्वरीय आस्था जुड़ने से प्रकृति समृद्धि पाएगी, प्रदूषण कम होगा। प्रकृति या संपूर्ण सृष्टि परिवर्तन के चक्र में है, लेकिन ईश्वरीय सत्ता अधिष्ठान है। वैज्ञानिक प्रमाणिकता का ग्रंथ है भगवद्गीता। बिना किसी स्थिर सत्ता के परिवर्तन का चक्र चल ही नहीं सकता - यह सर्वमान्य तथ्य है।",
+    "englishMeaning": "Nature is governed by God. When faith in God is connected with nature, nature will prosper and pollution will decrease. The entire creation is in a cycle of change, but the divine power is the foundation. The Bhagavad Gita is a scripture of scientific authenticity. Without a stable foundation, the cycle of change cannot continue—this is a universally accepted fact.",
+    "audio": "/assets/images/backgrounds/9-10.mp3"
+},
+  {
+    "id": 10,
+    "chapter": 10,
+    "verse": "10.6",
+    "sanskrit": "महर्षयः सप्त पूर्वे चत्वारो मनवस्तथा । मद्भावा मानसा जाता येषां लोक इमाः प्रजाः ॥",
+    "hindiMeaning": "कितना प्रेरक भावार्थ है इस गीता श्लोक में — बिना भेदभाव के सृजन, सृष्टि, प्रजा ईश्वरीय भाव संकल्प से अर्थात् सब एक ही ईश्वर के हैं, उसी से हैं! सृष्टि के प्रारम्भ में ऋषि, मनु — फिर आगे प्रजा! इसका अभिप्राय ऋषियों की त्याग, तप, परहित की परम्परा जीवन का आधार बने और मानव हैं, मानव बनकर रहें, मानवता का सम्मान करें!",
+    "englishMeaning": "The seven great sages and the four ancient Manus, endowed with My divine nature, were born of My mind, and from them, all these beings in the world have descended.",
+    "audio": "/assets/images/backgrounds/10-6.mp3"
+  },
+{
+    "id": 11,
+    "chapter": 11,
+    "verse": "11.12",
+    "sanskrit": "दिवि सूर्यसहस्रस्य भवेद्युगपदुत्थिता । यदि भाः सदृशी सा स्याद्भासस्तस्य महात्मनः ॥",
+    "hindiMeaning": "ईश्वरीय सत्ता अपार प्रकाशरूप है। इस गीता श्लोक के अनुसार, हजार सूर्य भी एक साथ मिलकर ईश्वरीय प्रकाश की तुलना नहीं कर सकते। ईश्वर का अंश होने से जीव का स्वरूप भी प्रकाशमय है। इसलिए अंधकार से प्रकाश की ओर बढ़ना हमारी स्वाभाविक परंपरा है। अज्ञानता के अंधकार में ही जीव बुराइयों में प्रवृत्त होता है, विवेक और ज्ञान का प्रकाश सही मार्ग दिखाता है और बुराइयों से बचाता है। आओ, अंधकार से प्रकाश की ओर बढ़ें!",
+    "englishMeaning": "The divine power is of infinite radiance. According to this Gita verse, even a thousand suns shining together cannot compare to the light of the Supreme. As a part of God, the soul is also luminous by nature. Therefore, moving from darkness to light is our natural tradition. It is only in the darkness of ignorance that one is drawn to wrongdoing; the light of wisdom and knowledge shows the right path and protects from evil. Let us move from darkness to light!",
+    "audio": "/assets/images/backgrounds/11-12.mp3"
+  },
+  {
+    "id": 12,
+    "chapter": 12,
+    "verse": "12.4",
+    "sanskrit": "सन्नियम्येन्द्रियग्रामं सर्वत्र समबुद्धयः । ते प्राप्नुवन्ति मामेव सर्वभूतहिते रताः ॥",
+    "hindiMeaning": "व्यष्क्तत्व विकास में अद्भुत् व्यापक विस्तार का मूल मंत्र है यह गीता श्लोक | खाने-पीने, बोलने, देखने आदि में संयम की स्थिति । प्राणी, पदार्थ, परिस्थितियों में समता एवं विशेष रूप से समस्त प्राणियों के प्रति हित चिंतन । 'सर्वभूतहिते रताः' जैसे आदर्श गीता वाक्य सिद्ध करते हैं कि यह ग्रंथ हिन्दुओं की आस्था तो है, लेकिन केवल हिन्दुओं के भले के लिए नहीं, समस्त प्राणी जगत के कल्याण की अनूठी वैश्विक प्रेरणा है।",
+    "englishMeaning": "This Gita verse is a mantra for extraordinary and expansive personal development. It teaches self-control in eating, speaking, seeing, etc. It emphasizes equality among all beings, things, and situations, and especially the welfare of all living creatures. Ideals like 'engaged in the welfare of all beings' show that while the Gita is a scripture of Hindu faith, its inspiration is not limited to Hindus alone, but is a unique global message for the welfare of all living beings.",
+    "audio": "/assets/images/backgrounds/12-4.mp3"
+  },
+  {
+    "id": 13,
+    "chapter": 13,
+    "verse": "13.15",
+    "sanskrit": "बाह्यं चान्तरमपि च भूतानां अचरं चरम् । सूक्ष्मत्वात्तदविज्ञेयं दूरस्थं चान्तिके च तत् ॥",
+    "hindiMeaning": "परमात्मा हर कण में है, हर क्षण में है। भीतर है, बाहर है! दूर से दूर एवं निकट से निकट वही है। हम जो हैं, जहाँ हैं, जैसे हैं—परमात्मा की निकटता का, उनके अपनत्व का अनुभव कर सकते हैं। कहीं, किसी प्रकार का भेदभाव नहीं। एक विशेष अति उपयोगी प्रेरणा—'बाहर' 'सर्वव्यापी' रूप से परमात्मा हमारे कर्मों का साक्षी है, 'भीतर' 'अन्तर्यामी' रूप से हमारे विचारों-भावों का! शुद्ध भाव एवं सत्कर्मों की अनूठी प्रेरणा!",
+    "englishMeaning": "The Supreme Lord is present in every particle and every moment—within and without, farthest and nearest. Wherever we are, however we are, we can experience His closeness and belonging. There is no discrimination of any kind. A very useful inspiration: outwardly, as the all-pervading witness, the Lord observes our actions; inwardly, as the indwelling soul, He knows our thoughts and feelings. This verse inspires us towards pure intentions and noble deeds.",
+    "audio": "/assets/images/backgrounds/13-15.mp3"
+  },
+  {
+    "id": 14,
+    "chapter": 14,
+    "verse": "14.16",
+    "sanskrit": "कर्मणः सुकृतस्याहुः सात्त्विकं निर्मलं फलम् । रजसस्तु फलं दुःखं अज्ञानं तमसः फलम् ॥",
+    "hindiMeaning": "सतोगुण, रजोगुण, तमोगुण, जीवन यात्रा में स्वाभाविक हैं। सत्त्वगुण सत्कर्मों में प्रेरित करता है, सत्कर्मों का परिणाम अन्तःकरण की निर्मलता और सुख होता ही है। रजोगुण लोभ, अहंकार, कामनाओं आदि की अधिकता से कर्मों में प्रवृत्त करता है। जहां ये वृत्तियां हावी होंगी, परिणाम मानसिक विक्षेपता एवं दुःख की स्थिति। तमोगुण, प्रमाद, आलस्य, अतिनिद्रा आदि में ही लगाये रखकर जीवन में जड़ता की सी स्थिति बनाता है। बढ़ें प्रमाद से पुरुषार्थ तथा स्वार्थ से परमार्थ की ओर!",
+    "englishMeaning": "Sattva, rajas, and tamas are natural qualities in the journey of life. Sattva inspires good deeds, resulting in purity of heart and happiness. Rajas, driven by greed, ego, and desires, leads to restless actions and ultimately to mental agitation and sorrow. Tamas keeps one absorbed in negligence, laziness, and excessive sleep, creating inertia in life. Move from negligence to effort, and from selfishness to selflessness.",
+    "audio": "/assets/images/backgrounds/14-16.mp3"
+  },
+  {
+    "id": 15,
+    "chapter": 15,
+    "verse": "15.8",
+    "sanskrit": "शरीरं यदवाप्नोति यच्चाप्युत्क्रामतीश्वरः । गृहीत्वैतानि संयाति वायुर् गन्धानिवाशयात् ॥",
+    "hindiMeaning":  "शरीर की मृत्यु और उसके साथ यह भी तत्त्व स्पष्ट कि यहाँ का सब यही छूटना है। लाए नहीं थे, ले जाएँगे नहीं। यहीं भला है, यहीं के भले भला है। साथ जाती है शुभ-अशुभ कर्मों की सुगंध या दुर्गंध। गीता के इस श्लोक के अनुसार वैसे ही जैसे वायु फूलों के स्पर्श से सुगंध तथा गंदगी के ढेर से छूकर दुर्गंध लेकर आगे बढ़ती है।",
+    "englishMeaning": "With the death of the body, it becomes clear that everything here must be left behind. We did not bring anything with us, nor will we take anything away. What is good here, is good for those here. Only the fragrance or stench of our good or bad deeds goes with us. According to this verse of the Gita, just as the wind carries fragrance from flowers or stench from garbage, so do our actions follow us.",
+    "audio": "/assets/images/backgrounds/15-8.mp3"  
+  }, 
+  {
+    "id": 16,
+    "chapter": 16,
+    "verse": "16.5",
+    "sanskrit": "दैवी संपद्विमोक्षाय निबन्धायासुरी मता । मा शुचः संपदं दैवीमभिजातोऽसि पाण्डव ॥",
+    "hindiMeaning": "सीढ़ी छत की ऊँचाई पर भी ले जाती है, लेकिन संभल कर नहीं चले तो नीचे भी गिरा देती है। मनुष्य जीवन की भी यही स्थिति है। दैवी सद्गुणों के आश्रय से मानव देवत्व की ऊँचाई तथा उस माध्यम से चिंता, भय, शोक एवं सब प्रकार के कर्म बंधन से मोक्ष पा सकता है, लेकिन अज्ञानतावश दुष्वृत्तियों विकारों में फँसकर पतन में भी गिर सकता है। गीता का यह भाव प्रेरित कर रहा है- ऐ मानव! चिंता त्यागकर, स्वभाव से तू देवत्व के लिए ही उत्पन्न हुआ है, अपने भीतर के देवत्व को पहचान।",
+    "englishMeaning": "Just as a ladder can take you to the roof but can also cause you to fall if you are not careful, so is human life. By embracing divine qualities, a person can rise to spiritual heights and attain liberation from worries, fears, sorrows, and all kinds of bondage. However, due to ignorance, one may fall into negative tendencies and degradation. This teaching of the Gita inspires: O human, let go of worries, for you are born for divinity by nature—recognize the divinity within yourself.",
+    "audio":"/assets/images/backgrounds/16-5.mp3"
+ },
+  {
+    "id": 17,
+    "chapter": 17,
+    "verse": "17.26",
+    "sanskrit": "सद्भावे साधुभावे च सदित्येतत्प्रयुज्यते । प्रशस्ते कर्मणि तथा सच्छब्दः पार्थ युज्यते ॥",
+    "hindiMeaning": "परमार्थ रूपी सत्य को स्वीकार करो। 'सत्' की सुन्दर मंगलमय परम्परा जीवन की अनूठी प्रेरणा बन जायेगी। सत् के आधार से बुद्धि-सद्बुद्धि, विचार-सद्विचार, भाव-सद्भाव और आगे सद्गुण, सत्कर्म, सदाचार आदि की स्थिति स्वतः जीवन में आयेगी, जिसकी आज प्रबल आवश्यकता है। सत् अर्थात् परमार्थ को न स्वीकारने से ही जीवन दुर्बुद्धि, दुष्विचार, दुष्कर्म, दुभाव, दुराचार रूपी पतन में गिरता है।",
+    "englishMeaning": "Accept the truth in the form of selflessness. The beautiful and auspicious tradition of 'Sat' will become a unique inspiration in life. With the foundation of 'Sat', wisdom, good thoughts, noble feelings, virtues, good deeds, and good conduct will naturally come into life, which is greatly needed today. Not accepting 'Sat', that is, selflessness, leads life into ignorance, negative thoughts, bad deeds, ill will, and moral decline.",
+    "audio": "/assets/images/backgrounds/17-26.mp3"
+  },
+  {
+    "id": 18,
+    "chapter": 18,
+    "verse": "18.78",
+    "sanskrit": "यत्र योगेश्वरः कृष्णो यत्र पार्थो धनुर्धरः । तत्र श्रीर्विजयो भूतिर्ध्रुवा नीतिर्मतिर्मम ॥",
+    "hindiMeaning": "भगवद्गीता के प्रथम श्लोक में धृतराष्ट्र ने संजय से युद्ध परिणाम को लेकर प्रश्न किया था। सम्पूर्ण गीता उपदेश हो जाने पर अंतिम श्लोक में संजय स्पष्ट कहते हैं- राजन्! विजय तो सत्य की ही होगी। सत्य के पक्ष, सत्य कहने की अद्भुत स्थिति जहाँ योगेश्वर कृष्ण हैं अर्थात जहाँ केवल भोगवाद-भौतिकवाद नहीं, 'अध्यात्म', 'योग' का आधार है तथा जहाँ अर्जुन अर्थात कर्तव्य के प्रति सर्वप्रथम निष्ठा है, वहीं श्री, विजय, विभूति और अचल नीति है। सार रूप में सीधी बात- 'कर्म' के साथ 'धर्म', भौतिकवाद के साथ अध्यात्म, पुरुषार्थ के साथ 'परमार्थ' का समन्वय ही सफलता का मूल मंत्र है।",
+    "englishMeaning": "In the first verse of the Bhagavad Gita, Dhritarashtra asked Sanjaya about the outcome of the war. After the entire discourse, in the final verse, Sanjaya clearly states: O King! Victory will always be on the side of truth. Where there is Lord Krishna, the master of yoga, and Arjuna, the supreme archer devoted to duty, there will be prosperity, victory, glory, and unwavering morality. In essence: Success comes from the union of action with righteousness, materialism with spirituality, and effort with selflessness.",
+    "audio": "/assets/images/backgrounds/18-78.mp3"
+}
+]

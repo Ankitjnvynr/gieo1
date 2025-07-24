@@ -119,6 +119,20 @@ export default function Menu() {
                 </li>
                 </ul> */}
             </li>
+
+             <li>
+                <a href="#">Festivals</a>
+                {/* <ul>
+                <li>
+                    <Link href="/festivals">Festivals</Link>
+                </li>
+                <li>
+                    <Link href="/festivals-details">Festival Details</Link>
+                </li>
+                </ul> */}
+            </li>
+
+            
             <li >
                 <a href="#">Blog</a>
                 {/* <ul>

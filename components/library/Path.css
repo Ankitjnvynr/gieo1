@@ -1,0 +1,679 @@
+
+
+:root {
+  --gold: #c5a467;
+  --dark-gold: #a78b5a;
+  --light-gold: #e6d0a8;
+  --dark-brown: #3a2615;
+  --light-cream: #f9f5ee;
+  --medium-cream: #f0e6d8;
+  --dark-cream: #e8dcc9;
+  --text-dark: #333;
+  --text-medium: #555;
+  --text-light: #777;
+  --shadow: 0 15px 50px rgba(90, 56, 22, 0.1);
+  --transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+.spiritual-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Floating particles */
+.floating-particles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  color: rgba(197, 164, 103, 0.1);
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-size: 1.8rem;
+  animation: float 15s infinite linear;
+  opacity: 0.1;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100vh) rotate(360deg);
+  }
+}
+
+/* Animation classes for section entrance */
+.shloka-section,
+.benefits-section,
+.quotes-section {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.shloka-section.visible,
+.benefits-section.visible,
+.quotes-section.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.shloka-section {
+  transition-delay: 0.1s;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.benefits-section {
+  transition-delay: 0.3s;
+  margin-bottom: 60px;
+}
+
+.quotes-section {
+  transition-delay: 0.5s;
+  margin-top: 40px;
+}
+
+/* Shloka Section */
+.shloka-card {
+  background: linear-gradient(135deg, #f9f5ec 0%, #f1e9d8 100%);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: var(--shadow);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: perspective(1000px) rotateX(0deg) rotateY(0deg);
+  transition: var(--transition);
+}
+
+.shloka-card:hover {
+  transform: perspective(1000px) rotateX(1deg) rotateY(1deg);
+  box-shadow: 0 20px 60px rgba(90, 56, 22, 0.15);
+}
+
+.shloka-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(197, 164, 103, 0.05) 0%, transparent 20%),
+    radial-gradient(circle at 80% 70%, rgba(197, 164, 103, 0.05) 0%, transparent 20%);
+  z-index: -1;
+  animation: pulse 8s infinite alternate;
+}
+
+@keyframes pulse {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 150% 150%;
+  }
+}
+
+.shloka-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.sanskrit-symbol {
+  font-size: 3.5rem;
+  color: var(--gold);
+  margin-right: 20px;
+  position: relative;
+}
+
+.sanskrit-symbol.floating {
+  animation: floatSymbol 6s ease-in-out infinite;
+}
+
+@keyframes floatSymbol {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.shloka-header h3 {
+  font-size: 1.5rem;
+  color: var(--dark-brown);
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.shloka-header h3::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), transparent);
+  border-radius: 2px;
+}
+
+.shloka-content {
+  display: flex;
+  gap: 40px;
+}
+
+.sanskrit-text {
+  flex: 1;
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--dark-brown);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transform: translateY(0);
+  transition: var(--transition);
+}
+
+.sanskrit-text:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.translation {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-medium);
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  transform: translateY(0);
+  transition: var(--transition);
+}
+
+.translation:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.translation::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -20px;
+  width: 4px;
+  height: calc(100% - 40px);
+  background: linear-gradient(to bottom, var(--gold), var(--dark-gold));
+  border-radius: 2px;
+}
+
+.decorative-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  border-radius: 3px;
+  animation: borderGlow 3s infinite alternate;
+}
+
+@keyframes borderGlow {
+  0% {
+    box-shadow: 0 0 5px rgba(197, 164, 103, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(197, 164, 103, 0.8);
+  }
+}
+
+.mandala-decoration {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  background-image: radial-gradient(circle, var(--gold) 1px, transparent 1px);
+  background-size: 15px 15px;
+  opacity: 0.1;
+  animation: rotate 60s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Benefits Section */
+.benefits-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-brown);
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.benefits-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--dark-gold));
+  border-radius: 2px;
+  animation: widthPulse 3s infinite alternate;
+}
+
+@keyframes widthPulse {
+  0% {
+    width: 80px;
+  }
+  100% {
+    width: 120px;
+  }
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transform: translateY(0) scale(1);
+}
+
+.benefit-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(to bottom, rgba(197, 164, 103, 0.1), transparent);
+  z-index: -1;
+  transition: height 0.4s ease;
+}
+
+.benefit-card:hover::before {
+  height: 100%;
+}
+
+.benefit-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.icon-wrapper {
+  margin: 0 auto 20px;
+  transition: var(--transition);
+}
+
+.icon-circle {
+  width: 80px;
+  height: 80px;
+  background: rgba(197, 164, 103, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-circle::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(255,255,255,0.2), transparent);
+  border-radius: 50%;
+  transform: scale(0);
+  transition: transform 0.4s ease;
+}
+
+.benefit-card:hover .icon-circle {
+  background: rgba(197, 164, 103, 0.2);
+  transform: scale(1.1);
+}
+
+.benefit-card:hover .icon-circle::after {
+  transform: scale(1.5);
+  opacity: 0;
+}
+
+.icon-wrapper i {
+  font-size: 2.2rem;
+  color: #a59069;
+  transition: var(--transition);
+}
+
+.benefit-card:hover .icon-wrapper i {
+  transform: scale(1.2);
+  color: var(--dark-gold);
+}
+
+.benefit-card h3 {
+  font-size: 1.3rem;
+  color: var(--dark-brown);
+  margin-bottom: 15px;
+  font-weight: 600;
+  transition: var(--transition);
+}
+
+.benefit-card:hover h3 {
+  color: var(--gold);
+}
+
+.benefit-card p {
+  font-size: 1rem;
+  color: var(--text-medium);
+  line-height: 1.6;
+}
+
+/* Quotes Section */
+.quotes-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  color: var(--dark-brown);
+  margin-bottom: 40px;
+  font-weight: 700;
+  position: relative;
+}
+
+.quotes-section h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, var(--gold), var(--dark-gold));
+  border-radius: 2px;
+}
+
+.quotes-container {
+  background: linear-gradient(135deg, #f9f5ec 0%, #f1e9d8 100%);
+  border-radius: 20px;
+  padding: 50px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transform: perspective(1000px);
+  transition: var(--transition);
+}
+
+.quotes-container:hover {
+  transform: perspective(1000px) rotateX(1deg) rotateY(1deg);
+}
+
+.quote-display {
+  min-height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.quote-content {
+  position: absolute;
+  width: 100%;
+  padding: 20px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.quote-content.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.quote-text {
+  font-size: 1.8rem;
+  line-height: 1.6;
+  color: var(--dark-brown);
+  font-style: italic;
+  margin-bottom: 20px;
+  font-weight: 500;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.quote-text::before,
+.quote-text::after {
+  content: '"';
+  font-size: 3rem;
+  color: var(--gold);
+  position: absolute;
+  opacity: 0.3;
+}
+
+.quote-text::before {
+  top: -20px;
+  left: -30px;
+}
+
+.quote-text::after {
+  bottom: -40px;
+  right: -30px;
+}
+
+.quote-source {
+  font-size: 1.3rem;
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.quote-controls {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.quote-btn {
+  background: none;
+  border: none;
+  width: 40px;
+  height: 8px;
+  padding: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.quote-indicator {
+  width: 100%;
+  height: 100%;
+  background: var(--light-gold);
+  border-radius: 4px;
+  transition: var(--transition);
+}
+
+.quote-btn.active .quote-indicator {
+  background: var(--dark-gold);
+  transform: scale(1.1);
+}
+
+.quote-btn:hover .quote-indicator {
+  background: var(--gold);
+}
+
+.decorative-element {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 80px;
+  height: 80px;
+  border: 2px solid var(--gold);
+  border-radius: 50%;
+  opacity: 0.2;
+  animation: rotate 30s linear infinite;
+}
+
+.lotus-flower {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60px;
+  height: 60px;
+  background: radial-gradient(circle, var(--gold) 20%, transparent 20%);
+  border-radius: 50%;
+  opacity: 0.3;
+}
+
+.lotus-flower::before,
+.lotus-flower::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: radial-gradient(circle, var(--gold) 20%, transparent 20%);
+}
+
+.lotus-flower::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.lotus-flower::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .shloka-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .sanskrit-text {
+    font-size: 1.6rem;
+  }
+  
+  .quote-text {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .spiritual-container {
+    padding: 40px 15px;
+  }
+  
+  .shloka-card {
+    padding: 30px 20px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .quotes-container {
+    padding: 30px 20px;
+  }
+  
+  .quote-text {
+    font-size: 1.3rem;
+  }
+  
+  .quote-text::before {
+    top: -15px;
+    left: -15px;
+  }
+  
+  .quote-text::after {
+    bottom: -30px;
+    right: -15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .shloka-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .sanskrit-symbol {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+  
+  .sanskrit-text {
+    font-size: 1.4rem;
+    padding: 15px;
+  }
+  
+  .translation {
+    padding: 15px;
+  }
+  
+  .translation::before {
+    display: none;
+  }
+  
+  .quote-text {
+    font-size: 1.2rem;
+  }
+  
+  .quote-source {
+    font-size: 1.1rem;
+  }
+}

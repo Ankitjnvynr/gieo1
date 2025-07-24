@@ -1,0 +1,381 @@
+/* src/components/InitiativeOverview.css */
+.initiative-overview {
+  background-color: #f9f7f4;
+  position: relative;
+  overflow: hidden;
+  padding: 100px 0;
+}
+
+.initiative-overview::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-image: 
+    radial-gradient(#5a318622 2px, transparent 2px),
+    radial-gradient(#a5906911 2px, transparent 2px); */
+  background-size: 40px 40px;
+  background-position: 0 0, 20px 20px;
+  z-index: 0;
+}
+
+.container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  padding: 0 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 60px;
+  display:flex;
+  flex-direction: column;
+}
+
+.title-decoration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.decoration-line {
+  height: 2px;
+  width: 80px;
+  background: linear-gradient(to right, transparent, #5a3816, transparent);
+}
+
+.decoration-icon {
+  margin: 0 15px;
+  font-size: 24px;
+  color: #a59069;
+}
+
+.section-title h2 {
+  font-size: 2.5rem;
+  color: #5a3816;
+  margin-bottom: 15px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #5a3186, #a59069);
+  border-radius: 2px;
+}
+
+.title-subtext {
+  font-size: 1.1rem;
+  color: #a59069;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  margin-top: 25px;
+  opacity: 0.8;
+}
+
+.overview-content {
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+.overview-text {
+  flex: 1;
+}
+
+.lead-text {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 30px;
+  color: #333;
+  position: relative;
+  padding-left: 20px;
+}
+
+.lead-text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 8px;
+  height: 80%;
+  width: 4px;
+  background: linear-gradient(to bottom, #5a3816, #a59069);
+  border-radius: 2px;
+}
+
+.highlight {
+  background: linear-gradient(120deg, #a59069, #a5906922);
+  padding: 0 5px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: #5a3816;
+}
+
+.sacred-list {
+  margin: 30px 0;
+}
+
+.sacred-list li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-left: 4px solid #a59069;
+}
+
+.sacred-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(90, 49, 134, 0.1);
+}
+
+.list-icon {
+  font-size: 24px;
+  margin-right: 15px;
+  color: #5a3816;
+  min-width: 40px;
+  text-align: center;
+}
+
+.list-content {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.spiritual-note {
+  background: linear-gradient(to right, #fff4f3, #fff4f3);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 40px 0;
+  display: flex;
+  border: 1px solid #e8e1d5;
+}
+
+.note-icon {
+  font-size: 32px;
+  margin-right: 15px;
+  color: #a59069;
+}
+
+.spiritual-note p {
+  margin: 0;
+  font-style: italic;
+  color: #5A3816;
+  line-height: 1.7;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.stat-item {
+  text-align: center;
+  flex: 1;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  border-top: 4px solid #5a3816;
+  transition: transform 0.3s ease;
+}
+
+.stat-item:hover {
+  transform: translateY(-10px);
+}
+
+.stat-value {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #5a3816;
+  margin-bottom: 10px;
+  font-family: 'Arial', sans-serif;
+}
+
+.stat-label {
+  font-size: 1rem;
+  color: #666;
+  font-weight: 500;
+}
+
+.overview-image {
+  flex: 1;
+  position: relative;
+}
+
+.image-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(90, 49, 134, 0.2);
+  transform: perspective(1000px) rotateY(-5deg);
+  transition: transform 0.5s ease;
+}
+
+.image-card:hover {
+  transform: perspective(1000px) rotateY(0deg);
+}
+
+.image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.main-image {
+  width: 100%;
+  height: 1000px;
+  display: block;
+  transition: transform 0.5s ease;
+}
+
+.image-card:hover .main-image {
+  transform: scale(1.05);
+}
+
+.frame-decoration {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+  border: 2px solid #a59069;
+  border-radius: 10px;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.image-tag {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 2;
+  backdrop-filter: blur(4px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.tag-icon {
+  color: #5a3816;
+}
+
+.tag-text {
+  font-weight: 600;
+  color: #5a3816;
+  font-size: 0.9rem;
+}
+
+.floating-element {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(90, 49, 134, 0.2);
+  z-index: 3;
+  animation: float 6s ease-in-out infinite;
+}
+
+.element-icon {
+  font-size: 24px;
+  color: #5a3816;
+}
+
+.floating-1 {
+  top: -30px;
+  right: -30px;
+  animation-delay: 0s;
+}
+
+.floating-2 {
+  bottom: -30px;
+  left: -30px;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  50% { transform: translateY(-20px) rotate(10deg); }
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .overview-content {
+    flex-direction: column;
+  }
+  
+  .image-card {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+  
+  .stats {
+    flex-direction: column;
+  }
+  
+  .floating-element {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .floating-1 {
+    top: -20px;
+    right: -20px;
+  }
+  
+  .floating-2 {
+    bottom: -20px;
+    left: -20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .initiative-overview {
+    padding: 60px 0;
+  }
+  
+  .section-title h2 {
+    font-size: 1.8rem;
+  }
+  
+  .sacred-list li {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .list-icon {
+    margin-bottom: 10px;
+  }
+}

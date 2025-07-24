@@ -1,0 +1,254 @@
+/* src/components/FinalCTA.css */
+.final-cta {
+  background: #f9f6f2; /* Light cream background */
+  padding: 5rem 1.5rem;
+  position: relative;
+  overflow: hidden;
+  border-top: 3px solid #5a3816; /* Coordinating with footer */
+}
+
+.cta-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cta-content {
+  text-align: center;
+}
+
+.impact-statement h2 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #5a3816; /* Dark brown */
+  margin-bottom: 1.2rem;
+  line-height: 1.3;
+}
+
+.cta-subtitle {
+  font-size: 1.3rem;
+  color: #7a6a52;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+  line-height: 1.6;
+}
+
+.impact-stats {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-bottom: 3.5rem;
+  flex-wrap: wrap;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.8rem 2.5rem;
+  box-shadow: 0 5px 25px rgba(90, 56, 22, 0.08);
+  border: 1px solid rgba(90, 56, 22, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 30px rgba(90, 56, 22, 0.15);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #a59069; /* Light gold accent */
+  line-height: 1;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.1rem;
+  color: #5a3816;
+  font-weight: 500;
+}
+
+.donation-options {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.donation-card {
+  background: white;
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 300px;
+  box-shadow: 0 7px 30px rgba(90, 56, 22, 0.1);
+  position: relative;
+  border-top: 4px solid #a59069;
+  transition: all 0.3s ease;
+}
+
+.donation-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 35px rgba(90, 56, 22, 0.15);
+}
+
+.donation-card.featured {
+  border-top: 4px solid #5a3816;
+  transform: scale(1.05);
+  z-index: 2;
+}
+
+.donation-card.featured:hover {
+  transform: scale(1.08);
+}
+
+.popular-tag {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #5a3816;
+  color: white;
+  padding: 0.4rem 1.5rem;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.donation-card h3 {
+  font-size: 1.5rem;
+  color: #5a3816;
+  margin-bottom: 1.2rem;
+}
+
+.donation-amount {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #a59069;
+  margin-bottom: 1.5rem;
+}
+
+.donation-card p {
+  color: #7a6a52;
+  margin-bottom: 1.8rem;
+  line-height: 1.6;
+}
+
+.donate-btn {
+  display: inline-block;
+  background: #5a3816;
+  color: white;
+  padding: 0.9rem 2.2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+  border: 2px solid #5a3816;
+}
+
+.donate-btn:hover {
+  background: white;
+  color: #5a3816;
+  box-shadow: 0 5px 15px rgba(90, 56, 22, 0.2);
+}
+
+.trust-assurance {
+  display: flex;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.trust-item {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  background: rgba(165, 144, 105, 0.1);
+  padding: 0.8rem 1.5rem;
+  border-radius: 50px;
+  color: #5a3816;
+  font-weight: 500;
+}
+
+.trust-icon {
+  background: #5a3816;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .donation-card.featured {
+    transform: scale(1);
+  }
+  
+  .donation-card.featured:hover {
+    transform: scale(1.03);
+  }
+}
+
+@media (max-width: 768px) {
+  .impact-statement h2 {
+    font-size: 2.3rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1.15rem;
+  }
+  
+  .impact-stats {
+    gap: 1.5rem;
+  }
+  
+  .stat-card {
+    padding: 1.5rem 2rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
+  }
+  
+  .donation-options {
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .final-cta {
+    padding: 3.5rem 1rem;
+  }
+  
+  .impact-statement h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-subtitle {
+    font-size: 1.05rem;
+    margin-bottom: 2rem;
+  }
+  
+  .impact-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+  }
+  
+  .stat-card {
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .trust-assurance {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}
