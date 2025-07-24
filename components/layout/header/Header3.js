@@ -21,7 +21,7 @@ const menuItems = [
                 path: "/about-us/history-of-gieogita",
                 subMenu: [
                     { name: "Shlokas", path: "/about-us/history-of-gieogita/shlokas", subMenu: [] },
-                    { name: "Mission & Vision", path: "/about-us/history-of-gieogita/mission-vision", subMenu: [] },
+                    { name: "Mission & Vision", path: "/about/vision-mission", subMenu: [] },
                     { name: "Aims & Objectives", path: "/about-us/history-of-gieogita/aims-objectives", subMenu: [] },
                 ]
             },
