@@ -1,0 +1,247 @@
+.seminars-section {
+  padding: 5rem 1rem;
+  background: #f9f9f9;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.section-title span {
+  color: #b68a3a;
+  position: relative;
+}
+
+.section-title span::after {
+  content: '';
+  position: absolute;
+  bottom: 5px;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: rgba(182, 138, 58, 0.2);
+  z-index: -1;
+  border-radius: 3px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+.seminars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.seminar-card {
+  background: white;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.seminar-card.featured {
+  border-top: 4px solid #b68a3a;
+}
+
+.image-container {
+  position: relative;
+  height: 220px;
+  overflow: hidden;
+}
+
+.seminar-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.seminar-card:hover .seminar-image {
+  transform: scale(1.1);
+}
+
+.featured-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: #b68a3a;
+  color: white;
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  z-index: 2;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.seminar-card:hover .image-overlay {
+  opacity: 1;
+}
+
+.play-button {
+  width: 60px;
+  height: 60px;
+  background: rgba(255,255,255,0.9);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #b68a3a;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.play-button:hover {
+  transform: scale(1.1);
+}
+
+.seminar-content {
+  padding: 1.5rem;
+}
+
+.seminar-date {
+  font-size: 0.85rem;
+  color: #b68a3a;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.seminar-content h3 {
+  font-size: 1.4rem;
+  margin: 0 0 1rem;
+  color: #333;
+  line-height: 1.3;
+}
+
+.seminar-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.9rem;
+  gap: 1rem;
+}
+
+.speaker, .duration {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #666;
+}
+
+.seminar-content p {
+  color: #555;
+  line-height: 1.6;
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+
+.register-btn {
+  background: #b68a3a;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #9a732e;
+}
+
+.view-more-container {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.view-more-btn {
+  background: transparent;
+  color: #b68a3a;
+  border: 2px solid #b68a3a;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0 auto;
+  transition: all 0.3s ease;
+}
+
+.view-more-btn:hover {
+  background: #f5f0e6;
+}
+
+@media (max-width: 1024px) {
+  .seminars-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .seminars-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .image-container {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .seminar-content h3 {
+    font-size: 1.25rem;
+  }
+  
+  .seminar-meta {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}

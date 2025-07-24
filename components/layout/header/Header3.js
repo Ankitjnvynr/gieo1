@@ -133,11 +133,12 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 <div className="main-menu-three__call-and-btn-box">
 
                                     <div className="main-menu-three__btn-box">
-                                        <Link href="/donate">
+                                        <Link href="/contact">
                                             <button className="main-menu-three__btn thm-btn">
-                                                Pledge<span className="icon-dubble-arrow-right"></span>
+                                                Contact US<span className="icon-dubble-arrow-right"></span>
                                             </button>
                                         </Link>
+
                                     </div>
                                 </div>
                             </div>
@@ -155,7 +156,7 @@ export default function Header3({ scroll, isMobileMenu, handleMobileMenu, isSide
                                 <div className="main-menu-three__left">
                                     <div className="main-menu-three__logo">
                                         <Link href="/">
-                                            <img height={70} src="/assets/logos/logo.png" alt="Logo" />
+                                            <img src="/assets/images/resources/logo-7.png" alt="Logo" />
                                         </Link>
                                     </div>
                                     <div className="main-menu-three__main-menu-box">
