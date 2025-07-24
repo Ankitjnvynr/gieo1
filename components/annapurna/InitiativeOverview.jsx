@@ -4,7 +4,7 @@ import './InitiativeOverview.css';
 
 const InitiativeOverview = () => {
   const [stats, setStats] = useState([
-    { id: 1, value: 0, target: 50000, label: "Students Fed Annually", prefix: "+" },
+    { id: 1, value: 0, target: 50000, label: "Persons Fed Annually", prefix: "+" },
     { id: 2, value: 0, target: 1000, label: "Schools Reached", prefix: "+" },
     { id: 3, value: 0, target: 10, label: "Meals Served", suffix: " Million+" }
   ]);
@@ -40,7 +40,7 @@ const InitiativeOverview = () => {
         
         <div className="overview-content">
           <div className="overview-text">
-            <p className="lead-text">In the sacred tradition of <span className="highlight">Annapurna Annadana</span>, ISKCON Bangalore combines spiritual nourishment with physical sustenance through our <span className="highlight">Prasadam for Gita Gieo</span> initiative. This program provides students across India with:</p>
+            <p className="lead-text">In the sacred tradition of <span className="highlight">Annapurna Annadana</span>, It combines spiritual nourishment with physical sustenance through our <span className="highlight">Prasadam for Gita Gieo</span> initiative. This program provides students across India with:</p>
             
             <ul className="sacred-list">
               <li>

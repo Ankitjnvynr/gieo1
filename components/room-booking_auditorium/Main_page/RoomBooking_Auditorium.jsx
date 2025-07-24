@@ -1,4 +1,4 @@
-
+"use client";
 import Image from "next/image";
 import "./RoomBooking_Auditorium.css";
 import AuditoriumDetails from "../Auditorium/AuditoriumDetails";

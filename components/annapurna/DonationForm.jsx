@@ -19,10 +19,10 @@ const DonationForm = () => {
 
   // Preset donation amounts
   const presetAmounts = [
-    { amount: 50, label: '1 Student' },
-    { amount: 500, label: '10 Students' },
-    { amount: 2500, label: '1 Classroom' },
-    { amount: 10000, label: '1 School' }
+    { amount: 50, label: '1 Person' },
+    { amount: 100, label: '5 person' },
+    { amount: 500, label: '10 Person' },
+    { amount: 1000, label: '25 Person' }
   ];
 
   // Handle form input changes
@@ -74,7 +74,7 @@ const DonationForm = () => {
           <div className={`students-impact ${animation ? 'pulse' : ''}`}>
             <div className="students-count">
               <span className="number">{studentsFed}</span>
-              <span className="label">Students Nourished</span>
+              <span className="label">Person Nourished</span>
             </div>
             <div className="gita-icon">📖</div>
           </div>
@@ -185,7 +185,7 @@ const DonationForm = () => {
                     value={formData.name} 
                     onChange={handleChange} 
                     required 
-                    placeholder="Enter your full name"
+                    placeholder="Enter your full name" style={{fontWeight: "100" , color:"grey"}}
                   />
                 </div>
                 <div className="form-field">
@@ -199,7 +199,7 @@ const DonationForm = () => {
                     value={formData.email} 
                     onChange={handleChange} 
                     required 
-                    placeholder="Enter your email"
+                    placeholder="Enter your email" style={{fontWeight: "100" , color:"grey"}}
                   />
                 </div>
               </div>
@@ -216,7 +216,7 @@ const DonationForm = () => {
                     value={formData.phone} 
                     onChange={handleChange} 
                     required 
-                    placeholder="Enter your phone number"
+                    placeholder="Enter your phone number" style={{fontWeight: "100" , color:"grey"}}
                   />
                 </div>
                 <div className="form-field">
@@ -229,7 +229,7 @@ const DonationForm = () => {
                     name="pan" 
                     value={formData.pan} 
                     onChange={handleChange} 
-                    placeholder="Enter PAN number"
+                    placeholder="Enter PAN number" style={{fontWeight: "100" , color:"grey"}}
                   />
                 </div>
               </div>
@@ -244,7 +244,7 @@ const DonationForm = () => {
                   value={formData.address} 
                   onChange={handleChange} 
                   rows="3"
-                  placeholder="Enter your full address"
+                  placeholder="Enter your full address" style={{fontWeight: "100" , color:"grey"}}
                 ></textarea>
               </div>
               
@@ -257,7 +257,7 @@ const DonationForm = () => {
                   name="dedication" 
                   value={formData.dedication} 
                   onChange={handleChange} 
-                  placeholder="In memory of..."
+                  placeholder="In memory of..." style={{fontWeight: "100" , color:"grey"}}
                   rows="2"
                 ></textarea>
               </div>

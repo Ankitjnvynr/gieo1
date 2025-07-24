@@ -121,43 +121,41 @@
 
 // export default FestivalHeader;
 "use client";
-import React, { useState } from 'react';
-import './FestivalHeading.css';
+import React, { useState } from "react";
+import "./FestivalHeading.css";
 
 const CompactSpiritualHero = () => {
   const [activeTab, setActiveTab] = useState(0);
-  
+
   const spiritualTabs = [
     {
       title: "Divine Wisdom",
       text: "Immerse in the eternal knowledge of Bhagavad Gita",
       image: "/assets/festival_images/Gita_image (2).jpg",
       symbol: "🕉️",
-      verse: "The soul is eternal, indestructible"
+      verse: "The soul is eternal, indestructible",
     },
     {
-      title: "Sacred Community", 
+      title: "Sacred Community",
       text: "Join satsangs and spiritual gatherings",
       image: "/assets/festival_images/satsang.jpg",
       symbol: "🪷",
-      verse: " Devotees meditate on Me with great faith"
+      verse: "Devotees meditate on Me with great faith",
     },
     {
       title: "Selfless Service",
-      text: "Practice karma yoga through seva initiatives", 
+      text: "Practice karma yoga through seva initiatives",
       image: "/assets/festival_images/image1.jpg",
       symbol: "🙏",
-      verse: " Work done as sacrifice leads to spiritual freedom"
-    }
+      verse: "Work done as sacrifice leads to spiritual freedom",
+    },
   ];
 
   return (
     <section className="spiritual-compact-hero">
-      {/* Floating sacred elements */}
       <div className="floating-om">ॐ</div>
       <div className="floating-lotus">🪷</div>
-      
-      {/* Compact header */}
+
       <div className="spiritual-header">
         <div className="title-container">
           <h1>
@@ -167,12 +165,14 @@ const CompactSpiritualHero = () => {
           </h1>
           <div className="sacred-divider"></div>
         </div>
-        
+
         <div className="spiritual-tabs">
           {spiritualTabs.map((tab, index) => (
             <button
               key={index}
-              className={`spiritual-tab ${activeTab === index ? 'active' : ''}`}
+              className={`spiritual-tab ${
+                activeTab === index ? "active" : ""
+              }`}
               onClick={() => setActiveTab(index)}
             >
               <span className="tab-symbol">{tab.symbol}</span>
@@ -182,7 +182,6 @@ const CompactSpiritualHero = () => {
         </div>
       </div>
 
-      {/* Interactive content area */}
       <div className="spiritual-content">
         <div className="sacred-text-content">
           <div className="verse-highlight">
@@ -190,15 +189,14 @@ const CompactSpiritualHero = () => {
             <p>{spiritualTabs[activeTab].verse}</p>
           </div>
           <h2>{spiritualTabs[activeTab].title}</h2>
-          <p className="sacred-description">{spiritualTabs[activeTab].text}</p>
-          {/* <button className="sacred-cta">
-            Discover More <span className="cta-arrow">→</span>
-          </button> */}
+          <p className="sacred-description">
+            {spiritualTabs[activeTab].text}
+          </p>
         </div>
-        
+
         <div className="sacred-image-container">
-          <img 
-            src={spiritualTabs[activeTab].image} 
+          <img
+            src={spiritualTabs[activeTab].image}
             alt={spiritualTabs[activeTab].title}
             className="sacred-image"
           />

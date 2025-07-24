@@ -16,7 +16,7 @@ const FAQ = () => {
     },
     {
       question: "Can I donate groceries instead of money?",
-      answer: "Yes! We accept donations of rice, dal, vegetables, and other cooking essentials. Please contact our donation coordinator at annadana@iskconbangalore.org to arrange a donation."
+      answer: "Yes! We accept donations of rice, dal, vegetables, and other cooking essentials. Please contact our donation coordinator at gieogita to arrange a donation."
     },
     {
       question: "How do I get my 80G tax exemption receipt?",
