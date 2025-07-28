@@ -21,7 +21,6 @@ const DonationBanner = () => {
       display: "flex",
       alignItems: "center",
       justifyContent: "center",
-      fontFamily: "Crimson Text, serif",
     },
     bgImage: {
       position: "absolute",
@@ -126,7 +125,7 @@ const DonationBanner = () => {
       color: "white",
       textAlign: "center",
       zIndex: 15,
-      fontFamily: "Crimson Text, serif",
+
       animation: "bounce 2s infinite",
     },
     arrow: {

@@ -80,7 +80,7 @@ const QRSection = () => {
         position: "relative",
         minHeight: "100vh",
         overflow: "hidden",
-        fontFamily: "Crimson Text, serif",
+
         background: " linear-gradient(135deg, #FFF8DC 0%, #F5F5DC 100%)",
         transition: "background 0.3s ease",
       }}
@@ -369,7 +369,7 @@ const QRSection = () => {
                         <div
                           style={{
                             color: "white",
-                            fontFamily: "monospace",
+
                             fontSize: "1.05rem",
                             fontWeight: 600,
                             wordBreak: "break-all",

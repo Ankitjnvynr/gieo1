@@ -79,7 +79,6 @@ const SelectiveDonations = () => {
   return (
     <div
       style={{
-        fontFamily: "'Georgia', 'Times New Roman', serif",
         background: "#A59069",
         minHeight: "100vh",
         position: "relative",
