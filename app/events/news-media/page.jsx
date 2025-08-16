@@ -3,8 +3,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Layout from "../../components/layout/Layout";
-import Mainpage from '../../components/news-media/Mainpage';
+import Layout from "@/components/layout/Layout";
+import Mainpage from '@/components/news-media/Mainpage';
 
 export default function Page() {
   return (

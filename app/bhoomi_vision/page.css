@@ -1,8 +1,0 @@
-/* app/vision-mission/page.css OR global.css */
-
-.vision-mission-app-wrapper {
-  background-color: #fffaf0;
-  padding-top: 4rem; /* Optional if you have a fixed navbar */
-  min-height: 100vh;
-  scroll-behavior: smooth;
-}
