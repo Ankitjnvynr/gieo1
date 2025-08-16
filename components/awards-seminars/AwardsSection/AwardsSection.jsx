@@ -100,7 +100,7 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Award, ChevronDown, ChevronUp } from 'lucide-react';
+import {  ChevronDown, ChevronUp } from 'lucide-react';
 import styles from './AwardsSection.module.css';
 
 const allAwards = [
