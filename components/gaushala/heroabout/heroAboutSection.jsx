@@ -258,7 +258,7 @@ export default function HeroAboutSectionEnhanced() {
             <div className={styles.aboutMedia}>
               <div className={styles.aboutImage}>
                 <Image
-                  src="/assets/images/backgrounds/gpic.jpg"
+                  src="/assets/images/backgrounds/gao/head1.jpg"
                   alt="Cows grazing peacefully in the goshala sanctuary"
                   width={600}
                   height={400}

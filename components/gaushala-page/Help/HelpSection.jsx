@@ -37,7 +37,7 @@ const cardVariants = {
 
 const helpOptions = [
   { 
-    image: '/assets/images/backgrounds/gao/1.jpg', 
+    image: '/assets/images/backgrounds/gao/goseva.png', 
     title: 'Gosheva', 
     description: "Help Cows in your own way", 
     buttonText: 'Learn More',
@@ -49,7 +49,7 @@ const helpOptions = [
     buttonText: 'Apply Now',
   },
   { 
-    image: '/assets/images/backgrounds/gao/3.jpg', 
+    image: '/assets/images/backgrounds/gao/organic-products.jpg', 
     title: 'Organic Products', 
     description: 'Support by purchasing our organic milk, ghee, and fertilizers', 
     buttonText: 'Our Products',
