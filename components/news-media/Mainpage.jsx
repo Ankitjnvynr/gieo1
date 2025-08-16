@@ -7,7 +7,7 @@ import HeroSection from "./herosection/herosection";
 import TopButtons from "./topbuttons/topbuttons";
 import OnlineMedia from "./onlinemedia/onlinemedia";
 import PrintMedia from "./printmedia/printmedia";
-import PressRelease from "./pressRelease/pressRelease";
+import PressRelease from "./pressrelease/pressrelease";
 
 export default function Mainpage() {
   return (
