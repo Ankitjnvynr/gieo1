@@ -1,7 +1,16 @@
+import AwardsSection from '@/components/awards-seminars/AwardsSection/AwardsSection'
+import Layout from '@/components/layout/Layout'
 import React from 'react'
 
-export const page = () => {
+const page = () => {
   return (
-    <div>page</div>
+    <>
+     <Layout headerStyle={3} footerStyle={4}>
+    <AwardsSection />
+     </Layout>
+    
+    </>
   )
 }
+
+export default page

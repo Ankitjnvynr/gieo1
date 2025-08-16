@@ -1,3 +1,5 @@
+"use client"
+
 // import React from 'react';
 // import { motion } from 'framer-motion';
 // import { Award } from 'lucide-react';
@@ -193,6 +195,7 @@ const AwardsSection = () => {
 
   return (
     <section className={styles.section}>
+ 
       <div className={styles.sectionHeader}>
         <motion.h2 
           className={styles.sectionTitle}
