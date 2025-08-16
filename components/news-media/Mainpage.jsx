@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import HeroSection from "./herosection/herosection";
 import TopButtons from "./topbuttons/topbuttons";
 import OnlineMedia from "./onlinemedia/onlinemedia";
-import PrintMedia from "./printmedia/PrintMedia";
+import PrintMedia from "./printmedia/printmedia";
 import PressRelease from "./pressRelease/pressRelease";
 
 export default function Mainpage() {
