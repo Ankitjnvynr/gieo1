@@ -82,7 +82,7 @@ const handleVolunteerClick = () => {
   const containerStyle = {
     minHeight: '80vh',
     background: "#fff1e0",
-    fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+
     padding: '40px 20px'
   };
 

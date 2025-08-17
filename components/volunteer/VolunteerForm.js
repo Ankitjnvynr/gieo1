@@ -107,7 +107,7 @@ export default function VolunteerForm() {
     <div style={{
       margin: 0,
       padding: '20px',
-      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
+   
       background: ' #ebd5b4ff',
       minHeight: '100vh'
     }}>

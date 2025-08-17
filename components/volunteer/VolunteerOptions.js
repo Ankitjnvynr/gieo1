@@ -35,7 +35,7 @@ const VolunteerOptions = () => {
     position: 'relative',
     overflow: 'hidden',
     color: '#5e3e20',
-    fontFamily: `'Segoe UI', sans-serif`,
+   
   };
  const handleVolunteerClick = () => {
     router.push("/volunteer/volunteerform");
