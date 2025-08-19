@@ -1,0 +1,355 @@
+/*--------------------------------------------------------------
+# Why We Are
+--------------------------------------------------------------*/
+.why-we-are {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.why-we-are__wrap {
+    position: relative;
+    display: block;
+    max-width: 1760px;
+    margin: 0 auto;
+    background-color: var(--maroof-primary);
+    border-radius: 20px;
+    padding: 120px 0 120px;
+}
+
+.why-we-are__left {
+    position: relative;
+    display: block;
+    margin-top: 23px;
+}
+
+.why-we-are__left .section-title {
+    margin-bottom: 29px;
+}
+
+.why-we-are__list {
+    position: relative;
+    display: block;
+    margin-right: 170px;
+}
+
+.why-we-are__list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid var(--maroof-bdr-color);
+    border-radius: 20px;
+    background-color: var(--maroof-white);
+    padding: 17px 30px 20px;
+}
+
+.why-we-are__list li+li {
+    margin-top: 20px;
+}
+
+.why-we-are__list-content {
+    position: relative;
+    display: block;
+}
+
+.why-we-are__list-content h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+}
+
+.why-we-are__list-content h3 a {
+    color: var(--maroof-black);
+}
+
+.why-we-are__list-content h3 a:hover {
+    color: var(--maroof-base);
+}
+
+.why-we-are__list-content p {
+    margin-top: 6px;
+}
+
+.why-we-are__list-arrow {
+    position: relative;
+    display: inline-block;
+}
+
+.why-we-are__list-arrow a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border: 1px solid var(--maroof-bdr-color);
+    border-radius: 50%;
+    font-size: 20px;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--maroof-base);
+}
+
+.why-we-are__list-arrow a:hover {
+    background-color: var(--maroof-base);
+    color: var(--maroof-white);
+    -webkit-text-stroke: none;
+    border: 1px solid var(--maroof-base);
+}
+
+.why-we-are__list-arrow a span {
+    transform: rotate(-45deg);
+}
+
+.why-we-are__right {
+    position: relative;
+    display: block;
+    margin-left: 42px;
+}
+
+.why-we-are__img-box {
+    position: relative;
+    display: block;
+}
+
+.why-we-are__img {
+    position: relative;
+    display: block;
+}
+
+.why-we-are__img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.why-we-are__img-2 {
+    position: absolute;
+    left: -86px;
+    bottom: 39px;
+}
+
+.why-we-are__img-2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 12px solid var(--maroof-white);
+    border-radius: 20px;
+}
+
+.why-we-are__img-2 img {
+    width: auto;
+    border-radius: 20px;
+}
+
+/*--------------------------------------------------------------
+# Why We Are Two
+--------------------------------------------------------------*/
+.why-we-are-two {
+    position: relative;
+    display: block;
+    counter-reset: count;
+    z-index: 1;
+}
+
+.why-we-are-two__wrap {
+    position: relative;
+    display: block;
+    max-width: 1760px;
+    margin: 0 auto;
+    background-color: var(--maroof-black);
+    border-radius: 20px;
+    padding: 120px 0 350px;
+}
+
+.why-we-are-two__left {
+    position: relative;
+    display: block;
+    margin-left: 63px;
+    margin-right: 102px;
+}
+
+.why-we-are-two__img-box {
+    position: relative;
+    display: block;
+}
+
+.why-we-are-two__img {
+    position: relative;
+    display: block;
+    z-index: 1;
+}
+
+.why-we-are-two__img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.why-we-are-two__shape-1 {
+    position: absolute;
+    top: 66px;
+    left: -64px;
+}
+
+.why-we-are-two__shape-1 img {
+    width: auto;
+}
+
+.why-we-are-two__count-box {
+    position: absolute;
+    left: -63px;
+    bottom: 72px;
+    max-width: 191px;
+    width: 100%;
+    background-color: var(--maroof-base);
+    border-radius: 20px;
+    text-align: center;
+    padding: 22px 20px 22px;
+    z-index: 2;
+}
+
+.why-we-are-two__count-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(var(--maroof-white-rgb), .10);
+    border-radius: 50%;
+    margin: 0 auto;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease
+}
+
+.why-we-are-two__count-box:hover .why-we-are-two__count-icon {
+    background-color: var(--maroof-black);
+}
+
+.why-we-are-two__count-icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 32px;
+    color: var(--maroof-white);
+}
+
+.why-we-are-two__count-inner {
+    position: relative;
+    display: block;
+}
+
+.why-we-are-two__count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.why-we-are-two__count h3 {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.94px;
+    color: var(--maroof-white);
+}
+
+.why-we-are-two__count-plus {
+    font-size: 46px;
+    font-weight: 700;
+    line-height: 44px;
+    letter-spacing: -0.94px;
+    color: var(--maroof-white);
+}
+
+.why-we-are-two__count-text {
+    font-size: 12px;
+    line-height: 23px;
+    color: var(--maroof-white);
+}
+
+.why-we-are-two__right {
+    position: relative;
+    display: block;
+    margin-left: -23px;
+}
+
+.why-we-are-two__right .section-title {
+    margin-bottom: 30px;
+}
+
+.why-we-are-two__right .section-title__title {
+    color: var(--maroof-white);
+}
+
+.why-we-are-two__list {
+    position: relative;
+    display: block;
+}
+
+.why-we-are-two__list li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgba(var(--maroof-white-rgb), .20);
+    border-radius: 20px;
+    padding: 20px 30px 18px;
+}
+
+.why-we-are-two__list li+li {
+    margin-top: 20px;
+}
+
+.why-we-are-two__list li h3 {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 30px;
+    color: var(--maroof-white);
+}
+
+.why-we-are-two__list li p {
+    font-size: 16px;
+    color: var(--maroof-white);
+    margin-top: 10px;
+}
+
+.why-we-are-two__list-count {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border: 1px solid #20202D;
+    border-radius: 50%;
+}
+
+.why-we-are-two__list-count:before {
+    position: relative;
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: var(--maroof-white);
+    border-radius: 50%;
+    counter-increment: count;
+    content: "0"counter(count);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

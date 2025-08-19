@@ -1,0 +1,127 @@
+/*--------------------------------------------------------------
+# Work Process
+--------------------------------------------------------------*/
+.work-process {
+    position: relative;
+    display: block;
+    margin-top: -243px;
+    z-index: 1;
+}
+
+.work-process__inner {
+    position: relative;
+    display: block;
+    max-width: 1760px;
+    padding: 323px 0 90px;
+    background: linear-gradient(180deg, #a59069 0%, #a59069 100%);
+    border-radius: 20px;
+    margin: 0 auto;
+}
+
+.work-process__single {
+    position: relative;
+    display: block;
+    border: 1px solid rgba(var(--maroof-white-rgb), .20);
+    border-radius: 20px;
+    padding: 39px 39px 39px;
+    margin-bottom: 30px;
+}
+
+.work-process__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: var(--maroof-base);
+    border-radius: 20px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.work-process__icon::before {
+    transition-duration: 800ms;
+    position: absolute;
+    width: 200%;
+    height: 200%;
+    content: "";
+    top: 110%;
+    left: 50%;
+    background-color: var(--maroof-white);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.work-process__single:hover .work-process__icon::before {
+    top: -40%;
+}
+
+.work-process__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 46px;
+    color: var(--maroof-white);
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+}
+
+.work-process__single:hover .work-process__icon span {
+    transform: scale(0.9);
+    color: var(--maroof-black);
+}
+
+.work-process__text {
+    color: var(--maroof-white);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.work-process__btn-box {
+    position: relative;
+    display: block;
+}
+
+.work-process__btn {
+    padding: 14px 29px 14px !important;
+    color: var(--maroof-white) !important;
+    border: 1px solid var(--maroof-white);
+    background-color: transparent !important;
+}
+
+.work-process__btn:hover {
+    border: 1px solid var(--maroof-black);
+}
+
+.work-process__btn span {
+    color: var(--maroof-white) !important;
+}
+
+.work-process__count {
+    position: absolute;
+    top: 62px;
+    right: 38px;
+}
+
+.work-process__count:before {
+    position: relative;
+    display: block;
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+    color: rgba(var(--maroof-white-rgb), .60);
+    counter-increment: count;
+    content: "0"counter(count);
+    transition: all 200ms linear;
+    transition-delay: 0.1s;
+}
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

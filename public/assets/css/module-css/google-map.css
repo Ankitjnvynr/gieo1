@@ -1,0 +1,23 @@
+/*--------------------------------------------------------------
+# Google Map
+--------------------------------------------------------------*/
+.google-map-one {
+    position: relative;
+    display: block;
+    background-color: var(--sinace-primary);
+}
+
+.google-map__one {
+    position: relative;
+    display: block;
+    border: none;
+    height: 735px;
+    width: 100%;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

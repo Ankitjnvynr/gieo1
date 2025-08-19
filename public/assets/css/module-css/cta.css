@@ -1,0 +1,367 @@
+/*--------------------------------------------------------------
+# CTA One
+--------------------------------------------------------------*/
+.cta-one {
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+
+.cta-one__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--maroof-base);
+    border-radius: 20px;
+    margin-top: -125px;
+    padding: 80px 60px 76px;
+    z-index: 1;
+}
+
+.cta-one__img-one {
+    position: absolute;
+    right: 356px;
+    top: -56px;
+    animation: leftRight 4s ease-in-out infinite;
+    z-index: -1;
+}
+
+.cta-one__img-one img {
+    width: auto;
+}
+
+.cta-one__shape-1 {
+    position: absolute;
+    right: 313px;
+    top: 0;
+    opacity: .30;
+    z-index: -1;
+}
+
+.cta-one__shape-1 img {
+    width: auto;
+}
+
+.cta-one__content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.cta-one__icon {
+    position: relative;
+    display: inline-block;
+}
+
+.cta-one__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 75px;
+    color: var(--maroof-white);
+}
+
+.cta-one__title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--maroof-white);
+}
+
+.cta-one__btn-box {
+    position: relative;
+    display: block;
+}
+
+.cta-one__btn {
+    color: var(--maroof-white) !important;
+    border: 1px solid var(--maroof-white);
+    padding: 14px 29px 14px !important;
+}
+
+.cta-one__btn span {
+    color: var(--maroof-white) !important;
+}
+
+.cta-one__btn:hover {
+    border: 1px solid transparent;
+}
+
+/*--------------------------------------------------------------
+# CTA Two
+--------------------------------------------------------------*/
+.cta-two {
+    position: relative;
+    display: block;
+    z-index: 2;
+}
+
+.cta-two__inner {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 19px 100px 17px;
+    padding-right: 150px;
+    z-index: 1;
+}
+
+.cta-two__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.cta-two__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .90;
+    background: linear-gradient(180deg, #E63A27 0%, #7E0D00 100%);
+    border-radius: 30px;
+    z-index: -1;
+}
+
+.cta-two__img-and-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 145px;
+}
+
+.cta-two__img {
+    position: relative;
+    display: block;
+    max-width: 324px;
+    width: 100%;
+}
+
+.cta-two__img img {
+    width: 100%;
+}
+
+.cta-two__content {
+    position: relative;
+    display: block;
+}
+
+.cta-two__title {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 59px;
+    letter-spacing: -1.2px;
+    color: var(--maroof-white);
+}
+
+.cta-two__text {
+    color: var(--maroof-white);
+    margin-top: 9px;
+    margin-bottom: 22px;
+}
+
+.cta-two__btn-box {
+    position: relative;
+    display: block;
+}
+
+.cta-two__btn {
+    color: var(--maroof-white) !important;
+    border: 1px solid var(--maroof-white);
+    background-color: transparent !important;
+    padding: 14px 30px 14px !important;
+}
+
+.cta-two__btn:hover {
+    border: 1px solid var(--maroof-black);
+}
+
+.cta-two__btn span {
+    color: var(--maroof-white) !important;
+}
+
+/*--------------------------------------------------------------
+# CTA Three
+--------------------------------------------------------------*/
+.cta-three {
+    position: relative;
+    display: block;
+    margin-top: -140px;
+    z-index: 2;
+}
+
+.cta-three__inner {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--maroof-base);
+    border-radius: 20px;
+    padding: 60px 70px 56px;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.cta-three__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.cta-three__bg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(var(--maroof-base-rgb), .80);
+    z-index: -1;
+}
+
+.cta-three__left {
+    position: relative;
+    display: block;
+}
+
+.cta-three__left-shape {
+    position: absolute;
+    right: -105px;
+    top: -47px;
+    opacity: .70;
+    z-index: -1;
+}
+
+.cta-three__left-shape img {
+    width: auto;
+}
+
+.cta-three__title {
+    font-size: 59px;
+    font-weight: 700;
+    line-height: 58px;
+    letter-spacing: -1.2px;
+    color: var(--maroof-white);
+    margin-bottom: 18px;
+}
+
+.cta-three__contact-number {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    gap: 52px;
+    z-index: 1;
+}
+
+.cta-three__contact-number a {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 36px;
+    color: var(--maroof-white);
+}
+
+.cta-three__contact-number a:hover {
+    color: var(--maroof-black);
+}
+
+.cta-three__right {
+    position: relative;
+    display: block;
+}
+
+.cta-three__icon-and-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 159px;
+}
+
+.cta-three__icon-box {
+    position: relative;
+    display: block;
+}
+
+.cta-three__icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    background-color: var(--maroof-base);
+    border-radius: 50%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
+    z-index: 1;
+}
+
+.cta-three__icon:hover {
+    background-color: var(--maroof-black);
+}
+
+.cta-three__icon-shape {
+    position: absolute;
+    top: -7px;
+    left: -7px;
+    width: 65px;
+    height: 65px;
+    background-color: var(--maroof-white);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.cta-three__icon span {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: var(--maroof-white);
+}
+
+.cta-three__btn-box {
+    position: relative;
+    ;
+    display: block;
+}
+
+.cta-three__btn {
+    background-color: transparent !important;
+    border: 1px solid var(--maroof-white);
+    color: var(--maroof-white) !important;
+    padding: 14px 30px 14px;
+}
+
+.cta-three__btn:hover {
+    border: 1px solid var(--maroof-black);
+}
+
+.cta-three__btn span {
+    color: var(--maroof-white) !important;
+}
+
+/*--------------------------------------------------------------
+# CTA Four
+--------------------------------------------------------------*/
+.cta-four {
+    background-color: var(--maroof-primary);
+}
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/
