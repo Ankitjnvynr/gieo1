@@ -1,0 +1,32 @@
+.cta-section {
+  background-color: #5a3816;
+  color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+}
+
+.cta-container h2 {
+  color: #a59069;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.cta-container p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta-button {
+  background-color: #a59069;
+  color: #5a3816;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #8a784e;
+}

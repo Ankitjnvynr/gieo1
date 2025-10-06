@@ -1,0 +1,266 @@
+/*--------------------------------------------------------------
+# Video One
+--------------------------------------------------------------*/
+.video-one {
+    position: relative;
+    display: block;
+    padding: 120px 0 0;
+    z-index: 2;
+}
+
+.video-one__inner {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 203px 0 203px;
+    z-index: 1;
+}
+
+.video-one__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+    z-index: -1;
+}
+
+.video-one__video-link {
+    position: relative;
+    display: block;
+}
+
+.video-one__video-icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--maroof-white);
+    background-color: var(--maroof-base);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.video-one__video-icon:hover {
+    background-color: var(--maroof-white);
+    color: var(--maroof-base);
+}
+
+.video-one__video-icon:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid rgba(var(--maroof-base-rgb), .40);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.video-one__video-icon:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid rgba(var(--maroof-white-rgb), .50);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.video-one__video-link .ripple,
+.video-one__video-icon .ripple:before,
+.video-one__video-icon .ripple:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    -o-box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    -webkit-box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+}
+
+.video-one__video-icon .ripple:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+}
+
+.video-one__video-icon .ripple:after {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+}
+
+/*--------------------------------------------------------------
+# Video Two
+--------------------------------------------------------------*/
+.video-two {
+    position: relative;
+    display: block;
+    margin-top: -230px;
+    z-index: 2;
+}
+
+.video-two__inner {
+    position: relative;
+    display: block;
+    text-align: center;
+    padding: 203px 0 203px;
+    z-index: 1;
+}
+
+.video-two__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.video-two__video-link {
+    position: relative;
+    display: block;
+}
+
+.video-two__video-icon {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 24px;
+    color: var(--maroof-white);
+    background-color: var(--maroof-base);
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+.video-two__video-icon:hover {
+    background-color: var(--maroof-white);
+    color: var(--maroof-base);
+}
+
+.video-two__video-icon:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 5px solid rgba(var(--maroof-base-rgb), .60);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.video-two__video-icon:after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 5px solid rgba(var(--maroof-white-rgb), .50);
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.video-two__video-link .ripple,
+.video-two__video-icon .ripple:before,
+.video-two__video-icon .ripple:after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -ms-box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    -o-box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    -webkit-box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    box-shadow: 0 0 0 0 rgba(var(--maroof-base-rgb), 0.6);
+    -webkit-animation: ripple 3s infinite;
+    animation: ripple 3s infinite;
+}
+
+.video-two__video-icon .ripple:before {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+    content: "";
+    position: absolute;
+}
+
+.video-two__video-icon .ripple:after {
+    -webkit-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+    content: "";
+    position: absolute;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# End
+--------------------------------------------------------------*/

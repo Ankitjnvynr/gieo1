@@ -1,0 +1,7 @@
+/* VisionMissionPage.css */
+.vision-mission-container {
+  background: linear-gradient(to bottom, #fffaf0, #f4ede2);
+  font-family: 'Georgia', serif;
+  color: #5a3816;
+  overflow-x: hidden;
+}

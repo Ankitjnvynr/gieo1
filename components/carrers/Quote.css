@@ -1,0 +1,47 @@
+
+.career-quote {
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:  1rem;
+    background: linear-gradient(15deg, #f8fafc 60%, #5a3816 ),
+                linear-gradient(-135deg, #f8fafc 60%, #5a3816 );
+    min-height: 220px;
+    margin-bottom: 10rem;
+}
+
+.career-quote blockquote {
+    background: rgba(255, 255, 255, 0.85);
+    border-left: 6px solid #5a3816;
+    border-radius: 24px 60px 24px 60px/60px 24px 60px 24px;
+    box-shadow: 0 4px 24px rgba(142, 68, 173, 0.08);
+    padding: 2rem 2.5rem;
+    font-size: 1.5rem;
+    font-style: italic;
+    color: #5a3816;
+    max-width: 700px;
+    margin: 0 auto;
+    transition: box-shadow 0.3s;
+}
+
+.career-quote blockquote:hover {
+    box-shadow: 0 8px 32px #a59060;
+}
+
+.career-quote__author {
+    display: block;
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #5a3816;
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+@media (max-width: 600px) {
+    .career-quote blockquote {
+        padding: 1.2rem 1rem;
+        font-size: 1.1rem;
+    }}

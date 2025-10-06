@@ -1,16 +1,16 @@
 import Layout from "@/components/layout/Layout"
-import Banner from "@/components/sections/onepagehome3/Banner"
-import AboutThree from "@/components/sections/onepagehome3/AboutThree"
-import ServicesFour from "@/components/sections/onepagehome3/ServicesFour"
-import CTAThree from "@/components/sections/onepagehome3/CTAThree"
-import ProjectThree from "@/components/sections/onepagehome3/ProjectThree"
-import CounterTwo from "@/components/sections/onepagehome3/CounterTwo"
-import SlidingText from "@/components/sections/onepagehome3/SlidingText"
-import TestimonialThree from "@/components/sections/onepagehome3/TestimonialThree"
-import WhyWe from "@/components/sections/onepagehome3/WhyWe"
-import VideoOne from "@/components/sections/onepagehome3/VideoOne"
-import WorkProcess from "@/components/sections/onepagehome3/WorkProcess"
-import BlogThree from "@/components/sections/onepagehome3/BlogThree"
+import Banner from "@/components/sections/medanta/Banner"
+import AboutThree from "@/components/sections/medanta/AboutThree"
+import ServicesFour from "@/components/sections/medanta/ServicesFour"
+import CTAThree from "@/components/sections/medanta/CTAThree"
+import ProjectThree from "@/components/sections/medanta/ProjectThree"
+import CounterTwo from "@/components/sections/medanta/CounterTwo"
+import SlidingText from "@/components/sections/medanta/SlidingText"
+import TestimonialThree from "@/components/sections/medanta/TestimonialThree"
+import WhyWe from "@/components/sections/medanta/WhyWe"
+import VideoOne from "@/components/sections/medanta/VideoOne"
+import WorkProcess from "@/components/sections/medanta/WorkProcess"
+import BlogThree from "@/components/sections/medanta/BlogThree"
 
 
 export default function Home() {
@@ -22,11 +22,11 @@ export default function Home() {
                 {/* <AboutThree /> */}
                 <ServicesFour />
                 <CTAThree />
-                <ProjectThree />
+                {/* <ProjectThree /> */}
                 <CounterTwo />
                 {/* <SlidingText /> */}
                 <TestimonialThree />
-                <WhyWe />
+                {/* <WhyWe /> */}
                 <VideoOne />
                 <WorkProcess />
                 <BlogThree />

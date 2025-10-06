@@ -1,0 +1,30 @@
+/* MissionSection.css */
+.mission-section {
+  padding: 5rem 2rem;
+  background: #fff;
+  text-align: left;
+}
+
+.mission-content h2 {
+  color: #5a3816;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-left: 6px solid #a59069;
+  padding-left: 1rem;
+}
+
+.mission-content ul {
+  padding-left: 2rem;
+  list-style-type: square;
+}
+
+.mission-content li {
+  margin: 0.75rem 0;
+  font-size: 1.2rem;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
