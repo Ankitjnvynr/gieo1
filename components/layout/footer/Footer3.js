@@ -3,7 +3,7 @@ import Link from 'next/link';
 // Example footer data (replace with actual dynamic data)
 const footerData = {
   newsletterTitle: 'Subscribe to Our',
-  newsletterSubtitle: 'GIEO Gita Newsletter',
+  newsletterSubtitle: 'GIEO Gita Patrika',
   emailPlaceholder: 'Enter your email',
   subscribeButtonText: 'Join Now',
   footerLogo: '/assets/logos/gieogita-logo.png',
