@@ -6,7 +6,7 @@ const footerData = {
   newsletterSubtitle: 'GIEO Gita Patrika',
   emailPlaceholder: 'Enter your email',
   subscribeButtonText: 'Join Now',
-  footerLogo: '/assets/logos/gieogita-logo.png',
+  footerLogo: '/assets/logos/logo.png',
   aboutText: 'GIEO Gita is dedicated to spreading the wisdom of the Bhagavad Gita through education, seva, and spiritual upliftment.',
   
   socialLinks: [
