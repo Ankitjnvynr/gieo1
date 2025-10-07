@@ -25,8 +25,9 @@ export default function Home() {
                 <Banner />
                 <ServicesFive />
                 <AboutFour />
-                <BrandTwo />
-                <Banner2/>
+                {/* <BrandTwo /> */}
+                {/* <Banner2/> */}
+                <div className="my-5"></div>
                 <ProjectFour />
                 <SlidingText />
                 <AboutThree/>

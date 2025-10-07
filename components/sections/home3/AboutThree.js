@@ -55,25 +55,25 @@ export default function AboutThree() {
                 <ul className="about-three__icon-list list-unstyled">
                   <li>
                     <div className="about-three__icon-and-title">
-                      <div className="about-three__icon">
+                      {/* <div className="about-three__icon">
                         <span className="icon-paint"></span>
-                      </div>
+                      </div> */}
                       <h3 className="about-three__title">Gita Classes</h3>
                     </div>
                   </li>
                   <li>
                     <div className="about-three__icon-and-title">
-                      <div className="about-three__icon">
+                      {/* <div className="about-three__icon">
                         <span className="icon-tools"></span>
-                      </div>
-                      <h3 className="about-three__title">Bal Sanskar Programs</h3>
+                      </div> */}
+                      <h3 className="about-three__title">Bal Sanskar </h3>
                     </div>
                   </li>
                   <li>
                     <div className="about-three__icon-and-title">
-                      <div className="about-three__icon">
+                      {/* <div className="about-three__icon">
                         <span className="icon-robotic-arm"></span>
-                      </div>
+                      </div> */}
                       <h3 className="about-three__title">Spiritual Workshops</h3>
                     </div>
                   </li>

@@ -7,83 +7,104 @@ import { Topbar } from "../Topbar";
 
 // Full Menu Array with Submenus
 const menuItems = [
-    { name: "GIEO GITA", path: "/", subMenu: [] },
-    { name: "Join GIEO Gita", path: "/join-gieo-gita", subMenu: [] },
+    { name: "Home", path: "/", subMenu: [] },
     {
         name: "About",
         path: "/about-us",
         subMenu: [
-            { name: "Swami ji", path: "/swami-gyananand-ji", subMenu: [] },
-            { name: "Awards", path: "/swami-gyananand-ji-awards", subMenu: [] },
-            { name: "Biography", path: "/swami-gyananand-ji-biography", subMenu: [] },
-            {
-                name: "History of GIEO Gita",
-                path: "/about-us/history-of-gieogita",
-                subMenu: [
-                    { name: "Shlokas", path: "/about-us/history-of-gieogita/shlokas", subMenu: [] },
-                    { name: "Mission & Vision", path: "/about/vision-mission", subMenu: [] },
-                    { name: "Aims & Objectives", path: "/about-us/history-of-gieogita/aims-objectives", subMenu: [] },
-                ]
-            },
-            { name: "GIEO Museum", path: "/gieo-gita-museum", subMenu: [] },
-            { name: "GIEO Library", path: "/library", subMenu: [] },
-            { name: "Books", path: "/books", subMenu: [] },
-            { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
-            { name: "Bhajan & Kirtan", path: "/bhajan-kirtan", subMenu: [] },
-            { name: "How To Reach", path: "/how-to-reach", subMenu: [] },
+            { name: "Mission & Vision", path: "/about/vision-mission", subMenu: [] },
+            { name: "Our Founder (Swami Gyananand Ji Maharaj)", path: "/swami-gyananand-ji", subMenu: [] },
+            { name: "Our Journey", path: "/about-us/history-of-gieogita", subMenu: [] },
         ]
     },
     {
-        name: "Services",
+        name: "IGM",
+        path: "/gieo-festivals",
+        subMenu: [
+            { name: "Past Highlights", path: "/gieo-festivals/past-highlights", subMenu: [] },
+            { name: "Media", path: "/events/news-media", subMenu: [] },
+            { name: "Registration Info", path: "/gieo-festivals/registration", subMenu: [] },
+        ]
+    },
+    {
+        name: "GGS",
+        path: "/gita-gyan-sansthanam",
+        subMenu: [
+            { name: "Overview", path: "/gita-gyan-sansthanam/overview", subMenu: [] },
+            { name: "Museum", path: "/gieo-gita-museum", subMenu: [] },
+            { name: "Auditorium", path: "/auditorium-room-booking", subMenu: [] },
+            { name: "Wellness Centre & Hospital", path: "/services/health/medanta", subMenu: [] },
+            { name: "Mandir & Jal Kund", path: "/gita-gyan-sansthanam/mandir", subMenu: [] },
+            { name: "Pillar of 700 Verses", path: "/gita-gyan-sansthanam/pillar", subMenu: [] },
+            { name: "Gaushalas", path: "/services/gaushala", subMenu: [] },
+            { name: "Future Retreats", path: "/gita-gyan-sansthanam/retreats", subMenu: [] },
+        ]
+    },
+    {
+        name: "Initiatives",
         path: "/services",
         subMenu: [
-            { name: "Ashrams", path: "/services/ashrams", subMenu: [] },
-            {
-                name: "Education", path: "/services/education", subMenu: [
+            { 
+                name: "Education", 
+                path: "/services/education", 
+                subMenu: [
                     { name: "Gita Prerna", path: "/education/gita-prerna", subMenu: [] },
                     { name: "Bal Sanskar", path: "/education/bal-sanskar", subMenu: [] },
                     { name: "Advance Programme", path: "/education/advance", subMenu: [] },
                 ]
             },
-            { name: "Gaushala", path: "/services/gaushala", subMenu: [] },
-            { name: "Food Distribution", path: "/services/food-distribution", subMenu: [] },
             { name: "Health", path: "/services/health/medanta", subMenu: [] },
             { name: "Nature Conservation", path: "/services/nature-conservation", subMenu: [] },
-
-            
-            
-            { name: 'Rooms & Auditorium', path: '/auditorium-room-booking', subMenu: [] },
+            { name: "Gau Seva", path: "/services/gaushala", subMenu: [] },
         ]
     },
     {
-        name: "Events", path: "/events", subMenu: [
-            { name: "Monthly Events", path: "/events", subMenu: [] },
-            { name: "GIEO Festivals", path: "/gieo-festivals", subMenu: [] },
-            { name: "News & Media", path: "/events/news-media", subMenu: [] },
+        name: "Events",
+        path: "/events",
+        subMenu: [
+            { name: "Upcoming Events", path: "/events/upcoming", subMenu: [] },
+            { name: "Past Events", path: "/events/past", subMenu: [] },
+            { name: "International Engagement", path: "/events/international", subMenu: [] },
         ]
     },
-    { name: "Gallery", path: "/gallery", subMenu: [] },
     {
-        name: "Download",
+        name: "Chapters",
+        path: "/chapters",
+        subMenu: [
+            { name: "India", path: "/chapters/india", subMenu: [] },
+            { name: "United Kingdom", path: "https://www.gieogita.org.uk", subMenu: [], external: true },
+        ]
+    },
+    {
+        name: "Community",
+        path: "/community",
+        subMenu: [
+            { name: "Testimonials & Stories", path: "/community/testimonials", subMenu: [] },
+            { name: "Shloka Learning Tools", path: "/about-us/history-of-gieogita/shlokas", subMenu: [] },
+            { name: "Submit Photos/Videos", path: "/community/submit", subMenu: [] },
+            { name: "Volunteer Sign-Up", path: "/volunteer", subMenu: [] },
+        ]
+    },
+    {
+        name: "Resources",
         path: "/download",
         subMenu: [
-            { name: "E-book", path: "/download/e-book", subMenu: [] },
-            { name: "Patrika", path: "/download/patrika", subMenu: [] },
+            { name: "E-books", path: "/download/e-book", subMenu: [] },
+            { name: "Shloka Library", path: "/library", subMenu: [] },
+            { name: "Blog/News", path: "/contact/blog", subMenu: [] },
+            { name: "Gallery", path: "/gallery", subMenu: [] },
+            { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
         ]
     },
-
     {
-        name: "Contact",
-        path: "/contact",
+        name: "Get Involved",
+        path: "/get-involved",
         subMenu: [
-            { name: "Blog", path: "/contact/blog", subMenu: [] }
+            { name: "Membership", path: "/join-gieo-gita", subMenu: [] },
+            { name: "Donate", path: "/donate", subMenu: [] },
+            { name: "Contact", path: "/contact", subMenu: [] },
         ]
     },
-
-    { name: "Get Involved", path: "/", subMenu: [
-        { name: "Volunteer", path: "/volunteer", subMenu: [] },
-        { name: "Careers", path: "/careers", subMenu: [] }
-    ] }
 ];
 const renderMenuItems = (items) => {
     return items.map((item, index) => (

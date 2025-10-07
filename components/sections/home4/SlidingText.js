@@ -71,7 +71,7 @@ export default function SlidingText() {
             <SwiperSlide>
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
-              <h2 data-hover="ApexGuard" className="sliding-text__title">
+              <h2 data-hover="GIEO" className="sliding-text__title">
                 GIEO
               </h2>
             </li>
@@ -81,7 +81,7 @@ export default function SlidingText() {
             <SwiperSlide>
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
-              <h2 data-hover="Crestview" className="sliding-text__title">
+              <h2 data-hover="Gita" className="sliding-text__title">
                 Gita
               </h2>
             </li>
@@ -91,7 +91,7 @@ export default function SlidingText() {
             <SwiperSlide>
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
-              <h2 data-hover="Summit" className="sliding-text__title">
+              <h2 data-hover="GIEO" className="sliding-text__title">
                 GIEO
               </h2>
             </li>
@@ -101,7 +101,7 @@ export default function SlidingText() {
             <SwiperSlide>
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
-              <h2 data-hover="Elite Roof Care" className="sliding-text__title">
+              <h2 data-hover="Gita" className="sliding-text__title">
                Gita
               </h2>
             </li>
@@ -111,7 +111,7 @@ export default function SlidingText() {
             <SwiperSlide>
             <ul className="sliding-text__list list-unstyled marquee_mode">
             <li>
-              <h2 data-hover="Elite Roof" className="sliding-text__title">
+              <h2 data-hover="Gita" className="sliding-text__title">
                 Gita
               </h2>
             </li>

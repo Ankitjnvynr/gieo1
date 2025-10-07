@@ -63,14 +63,14 @@ const swiperOptions = {
 // Sample service data
 const services = [
   {
-    imgSrc: '/assets/images/services/services-4-1.jpg',
+    imgSrc: '/assets/images/services/bal sanskar.jpg',
     iconClass: 'icon-child',
     title: 'Bal Sanskar',
     description: 'Instilling spiritual values in children through Vedic teachings and cultural education.',
     link: 'bal-sanskar'
   },
   {
-    imgSrc: '/assets/images/services/services-4-2.jpg',
+    imgSrc: '/assets/images/services/join gieo gita.jpg',
     iconClass: 'icon-group',
     title: 'Join GIEO Gita',
     description: 'Be a part of our mission to spread the wisdom of the Bhagavad Gita across the globe.',
@@ -91,7 +91,7 @@ const services = [
     link: 'gieo-gurukul'
   },
   {
-    imgSrc: '/assets/images/services/services-4-2.jpg',
+    imgSrc: '/assets/images/services/dhyanam.jpg',
     iconClass: 'icon-lotus',
     title: 'Dhyanam',
     description: 'Experience peace through meditation and mindful practices guided by scriptures.',
