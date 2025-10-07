@@ -3,49 +3,55 @@ import Link from 'next/link';
 // Example footer data (replace with actual dynamic data)
 const footerData = {
   newsletterTitle: 'Subscribe to Our',
-  newsletterSubtitle: 'Newsletter',
+  newsletterSubtitle: 'GIEO Gita Newsletter',
   emailPlaceholder: 'Enter your email',
-  subscribeButtonText: 'Subscribe Now',
-  footerLogo: '/assets/images/resources/footer-logo-3.png',
-  aboutText: 'It is a long established fact that a Empowering Communities',
+  subscribeButtonText: 'Join Now',
+  footerLogo: '/assets/logos/gieogita-logo.png',
+  aboutText: 'GIEO Gita is dedicated to spreading the wisdom of the Bhagavad Gita through education, seva, and spiritual upliftment.',
+  
   socialLinks: [
-    { href: '#', icon: 'icon-facebook-f' },
-    { href: '#', icon: 'icon-Vector' },
-    { href: '#', icon: 'icon-instagram' },
-    { href: '#', icon: 'icon-pinterest' },
+    { href: 'https://www.facebook.com/gieogita', icon: 'icon-facebook-f' },
+    { href: 'https://x.com/gieogita', icon: 'icon-twitter' },
+    { href: 'https://www.instagram.com/gieogita', icon: 'icon-instagram' },
+    { href: 'https://www.youtube.com/@gieogita', icon: 'icon-youtube' },
   ],
+  
   services: [
-    { href: 'reliable-roof-repair', text: 'Roof Renewal' },
-    { href: 'peak-performance-roofing', text: 'Peak Protection' },
-    { href: 'skyline-roofing-solutions', text: 'Skyline Roof Care' },
-    { href: 'sure-guard-roofing-services', text: 'Guardian Roof' },
-    { href: 'top-notch-roofing-restoration', text: 'Top Notch Roof' },
+    { href: 'education', text: 'Education Programs' },
+    { href: 'gau-seva', text: 'Gau Seva' },
+    { href: 'healthcare', text: 'Health & Wellness' },
+    { href: 'nature', text: 'Environment & Nature' },
+    { href: 'publications', text: 'Publications & Media' },
   ],
+  
   pages: [
     { href: 'about', text: 'About Us' },
-    { href: 'services', text: 'Service' },
-    { href: 'project', text: 'Portfolio' },
+    { href: 'events', text: 'Events' },
+    { href: 'gallery', text: 'Gallery' },
     { href: 'contact', text: 'Contact' },
-    { href: 'testimonials', text: 'Testimonial' },
+    { href: 'donate', text: 'Donate' },
   ],
+  
   contact: {
-    email: 'debra.holt@example.com',
-    address: '3891 Ranchview Dr. Richardson',
+    email: 'info@gieogita.org',
     address: (
       <>
-        3891 Ranchview Dr.<br />
-        Richardson
+        GIEO Gita, KDB Road<br />
+        Kurukshetra, Haryana, India
       </>
     ),
-    phone: ['01245789321','012457895146'],
+    phone: ['+91 99999 99999', '+91 88888 88888'], // replace with real official numbers if available
   },
-  bottomText: '© themehealer 2024 | All Rights Reserved',
+  
+  bottomText: '© 2024 GIEO Gita | All Rights Reserved',
+  
   bottomLinks: [
-    { href: 'terms', text: 'Terms & Condition' },
+    { href: 'terms', text: 'Terms & Conditions' },
     { href: 'privacy', text: 'Privacy Policy' },
     { href: 'contact', text: 'Contact Us' },
   ],
 };
+
 
 export default function Footer3() {
   return (
@@ -67,7 +73,7 @@ export default function Footer3() {
                 <span>{footerData.newsletterSubtitle}</span>
               </h3>
               <div className="site-footer-three__from-box">
-                <form className="footer-widget-three__form mc-form" data-url="MC_FORM_URL" noValidate>
+                <form onSubmit={(e)=>{e.preventDefault()}} className="footer-widget-three__form mc-form" data-url="MC_FORM_URL" noValidate>
                   <div className="footer-widget-three__form-input-box">
                     <input type="email" placeholder={footerData.emailPlaceholder} name="EMAIL" />
                     <button type="submit" className="footer-widget-three__newsletter-btn thm-btn-two">
@@ -88,7 +94,7 @@ export default function Footer3() {
                   <div className="footer-widget-three__column footer-widget-three__about">
                     <div className="footer-widget-three__logo">
                       <Link href="/">
-                        <img src={footerData.footerLogo} alt="Footer Logo" />
+                        <img height={100} src={footerData.footerLogo} alt="Footer Logo" />
                       </Link>
                     </div>
                     <p className="footer-widget-three__about-text">{footerData.aboutText}</p>
