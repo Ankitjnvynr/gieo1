@@ -1,15 +1,13 @@
-import Layout from '@/components/layout/Layout'
-import React from 'react'
+"use client";
 
-const page = () => {
+import React from "react";
+import Layout from "@/components/layout/Layout";
+import MainPage from "@/components/about-swamiji/mainPage";
+
+export default function Page() {
   return (
-    <>
-     <Layout headerStyle={3} footerStyle={4}>
-
-     </Layout>
-    
-    </>
-  )
-}
-
-export default page
+    <Layout headerStyle={3} footerStyle={3}>
+      <MainPage />
+    </Layout>
+  );
+} 
