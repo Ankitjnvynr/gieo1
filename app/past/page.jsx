@@ -5,9 +5,9 @@ import React from 'react'
 const page = () => {
   return (
     <>
-       <Layout headerStyle={3} footerStyle={3}>
+       <Layout breadcrumbTitle={"IGM Past events"} headerStyle={3} footerStyle={3}>
       
-<Past/>
+       <Past/>
        </Layout>
     </>
   )

@@ -51,7 +51,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={1} footerStyle={2} breadcrumbTitle="Past Highlights">
+          
                 <div>
                     {/* Service Details Start */}
                     <section className="service-details">
@@ -154,7 +154,7 @@ export default function Home() {
                         />
                     {/* CTA Two End */}
                 </div>
-            </Layout>
+          
         </>
     )
 }
