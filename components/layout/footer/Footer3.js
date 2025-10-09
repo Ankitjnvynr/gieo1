@@ -40,7 +40,7 @@ const footerData = {
         Kurukshetra, Haryana, India
       </>
     ),
-    phone: ['+91 99999 99999', '+91 88888 88888'], // replace with real official numbers if available
+    phone: ['+91 9996551615'], // replace with real official numbers if available
   },
   
   bottomText: '© 2024 GIEO Gita | All Rights Reserved',
