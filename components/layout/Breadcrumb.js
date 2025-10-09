@@ -4,11 +4,14 @@ export default function Breadcrumb({ breadcrumbTitle }) {
     return (
         <>
             {/*Page Header Start*/}
-            <section className="page-header">
+            <section className="page-header" style={{
+             paddingTop: '180px', paddingBottom: '150px'
+            }}>
                 <div
                 className="page-header__bg"
                 style={{
-                    backgroundImage: "url(assets/images/backgrounds/page-header-bg2.png)"
+                    backgroundImage: "url(assets/images/backgrounds/page-header-bg2.png)",
+                    // aspectRatio: '1920/542',
                 }}
                 ></div>
                 <div className="container">
