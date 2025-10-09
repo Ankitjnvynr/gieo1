@@ -100,7 +100,7 @@ const menuItems = [
         name: "Get Involved",
         path: "/get-involved",
         subMenu: [
-            { name: "Membership", path: "/join-gieo-gita", subMenu: [] },
+            { name: "Membership", path: "/membership", subMenu: [] },
             { name: "Donate", path: "/donate", subMenu: [] },
             { name: "Contact", path: "/contact", subMenu: [] },
         ]
