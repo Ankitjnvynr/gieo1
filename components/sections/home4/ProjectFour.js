@@ -64,7 +64,7 @@ export default function ProjectFour() {
           </div>
          <h2 className="section-title__title">
   Empowering <span>Spiritual Growth</span>
-  <br /> with Gieogita
+  <br /> with GIEO Gita
 </h2>
 
         </div>

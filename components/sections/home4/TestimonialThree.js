@@ -19,7 +19,7 @@ export const testimonials = [
   },
   {
     id: 2,
-    text: 'Working with Gieogita was a delight. Their team brought our vision to life flawlessly.',
+    text: 'Working with GIEO Gita was a delight. Their team brought our vision to life flawlessly.',
     clientName: 'Rahul Mehta',
     clientTitle: 'CEO, Fusion Tech',
     clientImg: '/assets/images/testimonial/gieogita-2.jpg'

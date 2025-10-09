@@ -6,7 +6,7 @@ const examplePosts = [
     id: '1',
     slug: 'gieogita-event-success-tips',
     image: '/assets/images/blog/blog-3-1.jpg',
-    title: 'Top Tips for a Successful Event with Gieogita',
+    title: 'Top Tips for a Successful Event with GIEO Gita',
     author: 'admin',
     date: '12 April 2024',
     excerpt: 'Learn how Gieogita transforms ordinary events into extraordinary experiences with expert planning.',
@@ -43,7 +43,7 @@ export default function BlogThree() {
           </div>
           <h2 className="section-title__title">
             Inspiring <span>Events & Creativity</span>
-            <br /> with Gieogita’s Expertise
+            <br /> with GIEO Gita’s Expertise
           </h2>
         </div>
         <div className="row">
