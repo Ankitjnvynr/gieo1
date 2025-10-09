@@ -21,7 +21,7 @@ const menuItems = [
         name: "IGM",
         path: "/gieo-festivals",
         subMenu: [
-            { name: "Past Highlights", path: "/gieo-festivals/past-highlights", subMenu: [] },
+            { name: "Past Highlights", path: "/past", subMenu: [] },
             { name: "Media", path: "/events/news-media", subMenu: [] },
             { name: "Registration Info", path: "/gieo-festivals/registration", subMenu: [] },
         ]
