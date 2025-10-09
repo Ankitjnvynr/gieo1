@@ -5,14 +5,14 @@ import Link from "next/link";
 export default function Home() {
     const contactInfo = {
         phone: [
-            { number: "012 345 678 9101", link: "tel:0123456789101" },
-            { number: "(208) 555-0112", link: "tel:2085550112" }
+            { number: "99965 51615", link: "tel:99965 51615" },
+            // { number: "(208) 555-0112", link: "tel:2085550112" }
         ],
         email: [
-            { address: "sarazbhuiyan0214@gmail.com", link: "mailto:sarazbhuiyan0214@gmail.com" },
-            { address: "saiyam@gmail.com", link: "mailto:saiyam@gmail.com" }
+            { address: "info@gieogita.org", link: "mailto:info@gieogita.org" },
+            { address: "gieogita@gmail.com", link: "mailto:gieogita@gmail.com" }
         ],
-        location: "Mirpur 10 road Apon Bhobon, Dhaka, Bangladesh"
+        location: "GIEO Gita, KDB Road, Kurukshetra, Haryana, India"
     };
 
 
@@ -140,14 +140,14 @@ export default function Home() {
                     {/* Contact Page End */}
 
                     {/* CTA Two Start */}
-                    <CTASection
+                    {/* <CTASection
                         backgroundImage="assets/images/backgrounds/cta-two-bg.jpg"
                         imgSrc="assets/images/resources/cta-two-img-1.png"
                         title="One Shingle at a Time"
                         text="Roof service involves the installation, maintenance, and repair of roofs for residential and commercial buildings."
                         buttonText="Contact Us"
                         buttonLink="/contact"
-                    />
+                    /> */}
                     {/* CTA Two End */}
                 </div>
             </Layout>
