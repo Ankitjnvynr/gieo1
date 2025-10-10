@@ -79,8 +79,8 @@ const menuItems = [
         name: "Community",
         path: "/community",
         subMenu: [
-            { name: "Testimonials & Stories", path: "/community/testimonials", subMenu: [] },
-            { name: "Shloka Learning Tools", path: "/about-us/history-of-gieogita/shlokas", subMenu: [] },
+            { name: "Testimonials & Stories", path: "/testimonials", subMenu: [] },
+            { name: "Shloka Learning Tools", path: "/education/gita-prerna", subMenu: [] },
             { name: "Submit Photos/Videos", path: "/community/submit", subMenu: [] },
             { name: "Volunteer Sign-Up", path: "/volunteer", subMenu: [] },
         ]
@@ -90,7 +90,7 @@ const menuItems = [
         path: "/download",
         subMenu: [
             { name: "E-books", path: "/download/e-book", subMenu: [] },
-            { name: "Shloka Library", path: "/library", subMenu: [] },
+            { name: "Shloka Library", path: "/education/gita-prerna", subMenu: [] },
             { name: "Blog/News", path: "/blog", subMenu: [] },
             { name: "Gallery", path: "/gallery", subMenu: [] },
             { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
