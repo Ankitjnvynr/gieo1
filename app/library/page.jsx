@@ -2,8 +2,9 @@
 "use client";
 import React, { useState, useEffect } from 'react';
 import './index.css';
+import Layout from '@/components/layout/Layout';
 
-const App = () => {
+const page = () => {
   const [activeCategory, setActiveCategory] = useState(null);
   const [showTranslation, setShowTranslation] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -67,41 +68,9 @@ const App = () => {
   };
 
   return (
-    <div className="gieo-gita-library">
-      {/* Header */}
-      <header className={`header ${scrolled ? 'scrolled' : ''}`}>
-        <div className="header-container">
-          <div className="logo">
-            <div className="lotus-icon">
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="center"></div>
-            </div>
-            <h1>GIEÓ Gita Vedic Library</h1>
-          </div>
-          
-          <nav className={`nav ${isMenuOpen ? 'open' : ''}`}>
-            <a href="#home">Home</a>
-            <a href="#books">Scriptures</a>
-            <a href="#categories">Categories</a>
-            <a href="#daily-verse">Daily Verse</a>
-            <a href="#journey">Journey</a>
-            <a href="#contact">Contact</a>
-          </nav>
-          
-          <button 
-            className={`menu-toggle ${isMenuOpen ? 'open' : ''}`} 
-            onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-      </header>
+    <Layout headerStyle={3} footerStyle={3} >
+          <div className="gieo-gita-library">
+  
 
       {/* Hero Section */}
       <section className="hero" id="home">
@@ -279,60 +248,9 @@ const App = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="footer">
-        <div className="footer-content">
-          <div className="footer-logo">
-            <div className="lotus-icon">
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="petal"></div>
-              <div className="center"></div>
-            </div>
-            <h3>GIEÓ Gita Vedic Library</h3>
-            <p>Preserving and sharing eternal wisdom</p>
-          </div>
-          
-          <div className="footer-links">
-            <div className="link-group">
-              <h4>Explore</h4>
-              <a href="#books">Sacred Texts</a>
-              <a href="#categories">Categories</a>
-              <a href="#daily-verse">Daily Verse</a>
-              <a href="#journey">Reading Journey</a>
-            </div>
-            
-            <div className="link-group">
-              <h4>Resources</h4>
-              <a href="#">Study Guides</a>
-              <a href="#">Audio Library</a>
-              <a href="#">Meditation Resources</a>
-              <a href="#">Events Calendar</a>
-            </div>
-            
-            <div className="link-group">
-              <h4>Connect</h4>
-              <a href="#">Contact Us</a>
-              <a href="#">Donate</a>
-              <a href="#">Volunteer</a>
-              <a href="#">Community Forum</a>
-            </div>
-          </div>
-        </div>
-        
-        <div className="footer-bottom">
-          <p>© {new Date().getFullYear()} GIEÓ Gita Vedic Library. All rights reserved.</p>
-          <div className="social-icons">
-            <a href="#" className="social-icon">f</a>
-            <a href="#" className="social-icon">t</a>
-            <a href="#" className="social-icon">in</a>
-            <a href="#" className="social-icon">ig</a>
-          </div>
-        </div>
-      </footer>
+
     </div>
+      </Layout>
   );
 };
 
@@ -376,4 +294,4 @@ const BookCard = ({ book, index }) => {
   );
 };
 
-export default App;
+export default page;

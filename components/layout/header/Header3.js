@@ -91,7 +91,7 @@ const menuItems = [
         subMenu: [
             { name: "E-books", path: "/download/e-book", subMenu: [] },
             { name: "Shloka Library", path: "/library", subMenu: [] },
-            { name: "Blog/News", path: "/contact/blog", subMenu: [] },
+            { name: "Blog/News", path: "/blog", subMenu: [] },
             { name: "Gallery", path: "/gallery", subMenu: [] },
             { name: "Virtual Tour", path: "/virtual-tour", subMenu: [] },
         ]
