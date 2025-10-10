@@ -5,7 +5,7 @@ import Careers from "./Center.jsx"
 export default function App() {
     return (
         <>
-            <Layout headerStyle={3} footerStyle={4} >
+            <Layout headerStyle={3} footerStyle={3} >
                 <div className="main">
                     <Careers />
                 </div>

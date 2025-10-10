@@ -12,7 +12,7 @@ import ClientLayout from '@/components/museum/ClientLayout';
 import '@/components/museum/page.css';
 export default function MuseumPage() {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
     <ClientLayout>
       <main>
         <HeroSection />

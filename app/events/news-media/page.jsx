@@ -8,7 +8,7 @@ import Mainpage from '@/components/news-media/Mainpage';
 
 export default function Page() {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}

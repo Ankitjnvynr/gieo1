@@ -6,7 +6,7 @@ import Careers from "@/components/Careers/Careers.jsx"
 export default function page() {
     return (
         <>
-            <Layout headerStyle={3} footerStyle={4} >
+            <Layout headerStyle={3} footerStyle={3} >
                 <div className="main">
                     <Careers />
                 </div></Layout>

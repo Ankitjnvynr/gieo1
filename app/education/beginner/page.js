@@ -6,7 +6,7 @@ import "@/components/Education/beginner.css"
 export default function page() {
     return (
         <>
-            <Layout headerStyle={3} footerStyle={4} >
+            <Layout headerStyle={3} footerStyle={3} >
                 <div className="text-image-container">
 
                     <div className="image-container">

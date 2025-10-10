@@ -8,7 +8,7 @@ import LastSection from "@/components/Center/LastSection";
 
 export default function page() {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
       <div style={{
         width: "100%",
         display: "flex",

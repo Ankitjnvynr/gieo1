@@ -5,7 +5,7 @@ import GaushalaPage from "../../../components/gaushala/gaushala";
 
 export default function Gaushala() {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
       <motion.div
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}

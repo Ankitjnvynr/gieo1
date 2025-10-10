@@ -8,7 +8,7 @@ import "./Festival.css";
 
 function FestivalPage() {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
     <div className="festival-container">
       <FestivalHeading />
       <FestivalPicker />

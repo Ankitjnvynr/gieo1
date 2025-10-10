@@ -12,7 +12,7 @@ const Page = () => {
   const [language, setLanguage] = useState('hindi');
 
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
     <main>
       <HeroSection />
       <AboutSection />

@@ -7,7 +7,7 @@ import VisionMissionPage from '@/components/vision/VisionMission';
 
 const VisionMission = () => {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
     <main className="vision-mission-app-wrapper">
       <VisionMissionPage />
     </main>

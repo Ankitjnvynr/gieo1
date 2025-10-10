@@ -5,7 +5,7 @@ import React from 'react'
 const page = () => {
   return (
     <>
-     <Layout headerStyle={3} footerStyle={4}>
+     <Layout headerStyle={3} footerStyle={3}>
     
      </Layout>
     

@@ -8,7 +8,7 @@ import Education from "@/components/Education/Education"
 export default function page() {
     return (
         <>
-            <Layout headerStyle={3} footerStyle={4} >
+            <Layout headerStyle={3} footerStyle={3} >
                 <div className="main">
                     <Education />
                 </div></Layout>

@@ -16,7 +16,7 @@ function Page() {
   };
 
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
       <DonationBanner onDonateNowClick={handleDonateClick} />
       <SelectiveDonation onDonateNowClick={handleDonateClick} />
       <DonationCards onDonateNowClick={handleDonateClick} />

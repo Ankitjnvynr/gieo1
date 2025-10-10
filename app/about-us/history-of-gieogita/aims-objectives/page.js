@@ -6,7 +6,7 @@ import MainPage from "@/components/aims-objectives/mainPage";
 
 export default function Page() {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
       <MainPage />
     </Layout>
   );

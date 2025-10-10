@@ -53,7 +53,7 @@ export default function Home() {
 
     return (
         <>
-            <Layout headerStyle={3} footerStyle={4} breadcrumbTitle="Events">
+            <Layout headerStyle={3} footerStyle={3} breadcrumbTitle="Events">
             <div>
                 {/*Services Page Start*/}
                 <ServicesPage services={servicesData} />

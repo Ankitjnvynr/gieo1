@@ -19,7 +19,7 @@ import { useRouter } from "next/navigation";
   };
 
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
     <VolunteerBanner onJoinNowClick={handleVolunteerClick} />
     <WhyVolunteer  />
     <VolunteerOptions onJoinNowClick={handleVolunteerClick}/>

@@ -3,7 +3,7 @@ import RoomBooking_Auditorium from "../../components/room-booking_auditorium/Mai
 
 export default function RoomBookingPage() {
   return (
-    <Layout headerStyle={3} footerStyle={4}>
+    <Layout headerStyle={3} footerStyle={3}>
       <RoomBooking_Auditorium />
     </Layout>
   );
