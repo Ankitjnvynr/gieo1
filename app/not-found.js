@@ -34,16 +34,7 @@ export default function Error404() {
                     </section>
                     {/* Error Page End */}
 
-                    {/* CTA Two Start */}
-                    <CTASection
-                        backgroundImage="/assets/images/backgrounds/cta-two-bg.jpg"
-                        imgSrc="/assets/images/resources/cta-two-img-1.png"
-                        title="One Shingle at a Time"
-                        text="Roof service involves the installation, maintenance, and repair of roofs for residential and commercial buildings."
-                        buttonText="Contact Us"
-                        buttonLink="/contact"
-                    />
-                    {/* CTA Two End */}
+                    
                 </div>
             </Layout>
         </>
