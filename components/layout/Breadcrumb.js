@@ -10,7 +10,7 @@ export default function Breadcrumb({ breadcrumbTitle }) {
                 <div
                 className="page-header__bg"
                 style={{
-                    backgroundImage: "url(assets/images/backgrounds/page-header-bg2.png)",
+                    backgroundImage: "url(/assets/images/backgrounds/page-header-bg2.png)",
                     // aspectRatio: '1920/542',
                 }}
                 ></div>
