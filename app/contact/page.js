@@ -5,14 +5,18 @@ import Link from "next/link";
 export default function Home() {
     const contactInfo = {
         phone: [
-            { number: "99965 51615", link: "tel:99965 51615" },
+            { number: "99965 51615 (Kurukshetra)", link: "tel:99965 51615" },
+            { number: "88993 63611 (Varindavan)", link: "tel:08899363611" },
+            { number: "94101 72013 (Haridwar)", link: "tel:094101 72013" },
             // { number: "(208) 555-0112", link: "tel:2085550112" }
         ],
         email: [
             { address: "info@gieogita.org", link: "mailto:info@gieogita.org" },
             { address: "gieogita@gmail.com", link: "mailto:gieogita@gmail.com" }
         ],
-        location: "GIEO Gita, KDB Road, Kurukshetra, Haryana, India"
+        Kurukshetra: "GIEO Gita, KDB Road, Kurukshetra, Haryana, India",
+        Varindavan: "Shri Krishan Kripa Dham, Vrindavan, UP, India",
+        Haridwar: "Shri Krishan Kripa Dham, Haridwar, India",
     };
 
 
@@ -23,7 +27,7 @@ export default function Home() {
                     {/* Google Map Start */}
                     <section className="google-map-one">
                         <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.7691961171713!2d76.83602171139937!3d29.957316774863315!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390e47537dfa49f1%3A0xa3e7fcd06ccf3d37!2sGita%20Gyan%20Sansthanam%2C%20Kurukshetra!5e0!3m2!1sen!2sin!4v1759905187104!5m2!1sen!2sin"
+                            src="https://www.google.com/maps/d/u/0/embed?mid=1331AdslevaFWwhqDqr7nfc_ljydWlCE&ehbc=2E312F"
                             className="google-map__one"
                             allowFullScreen
                         />
