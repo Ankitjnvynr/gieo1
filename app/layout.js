@@ -7,7 +7,7 @@ import "swiper/css/pagination";
 import "swiper/css/free-mode";
 import { yantramanav } from "@/lib/font";
 export const metadata = {
-  title: "GIEO Gita Template",
+  title: "GIEO Gita",
   description: "Official website template for GIEO Gita, promoting spiritual education and values.",
 };
 
