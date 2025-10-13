@@ -1,3 +1,5 @@
+
+
 import Layout from "@/components/layout/Layout";
 import CTASection from '@/components/common/CTASection';
 import Link from "next/link";
@@ -18,6 +20,7 @@ export default function Home() {
         Varindavan: "Shri Krishan Kripa Dham, Vrindavan, UP, India",
         Haridwar: "Shri Krishan Kripa Dham, Haridwar, India",
     };
+
 
 
     return (
@@ -41,6 +44,7 @@ export default function Home() {
                                 <p className="contact-page__sub-title">Contact Us</p>
                                 <h3 className="contact-page__title">Get In Touch</h3>
                                 <form
+                               
                                     className="contact-form-validated contact-page__form"
                                     action="assets/inc/sendemail.php"
                                     method="post"

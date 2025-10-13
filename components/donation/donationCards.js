@@ -17,128 +17,156 @@ const DonationCards = () => {
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  const donationCategories = [
-    {
-      id: 1,
-      title: "Temple Seva",
-      subtitle: "Sacred Rituals & Divine Worship",
-      description:
-        "Illuminate the path to divinity through daily aarti,sacred ceremonies,and awaken souls by temple sanctification.",
-      image: "/assets/images/donation/templeSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Sparkles,
-    },
-    {
-      id: 2,
-      title: "Anna Seva",
-      subtitle: "Blessed Nourishment for All",
-      description:
-        "Transform hunger into gratitude by serving divine prasadam to devotees, pilgrims, and the underprivileged community.",
-      image: "/assets/images/donation/annaSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Heart,
-    },
-    {
-      id: 3,
-      title: "Vidya Seva",
-      subtitle: "Wisdom & Sacred Knowledge",
-      description:
-        "Kindle the flame of divine wisdom through spiritual education, scripture study, and enlightenment programs.",
-      image: "/assets/images/donation/vidyaSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Star,
-    },
-    {
-      id: 4,
-      title: "Sangh Seva",
-      subtitle: "Divine Community Harmony",
-      description:
-        "Weave bonds of brotherhood through festivals, celebrations, and community gatherings that unite hearts in devotion.",
-      image: "/assets/images/donation/sanghSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Zap,
-    },
-    {
-      id: 5,
-      title: "Chikitsa Seva",
-      subtitle: "Healing Touch of Compassion",
-      description:
-        "Channel divine healing energy through medical camps, healthcare support, and wellness programs for the community.",
-      image: "/assets/images/donation/chikitsaSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Heart,
-    },
-    {
-      id: 6,
-      title: "Ashray Seva",
-      subtitle: "Sacred Shelter & Refuge",
-      description:
-        "Provide divine sanctuary for pilgrims and spiritual seekers on their journey to enlightenment and self-discovery.",
-      image: "/assets/images/donation/ashraySeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Sparkles,
-    },
-    {
-      id: 7,
-      title: "Prakriti Seva",
-      subtitle: "Mother Nature's Blessing",
-      description:
-        "Nurture the divine creation through tree plantation, garden maintenance, and environmental conservation initiatives.",
-      image: "/assets/images/donation/prakritiSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Star,
-    },
-    {
-      id: 8,
-      title: "Jal Seva",
-      subtitle: "Pure Water, Pure Life",
-      description:
-        "Ensure the flow of pure, blessed water for drinking, ritual purposes, and community welfare through sustainable initiatives.",
-      image: "/assets/images/donation/jalSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Zap,
-    },
-    {
-      id: 9,
-      title: "Utsav Seva",
-      subtitle: "Divine Celebrations & Joy",
-      description:
-        "Amplify the divine vibrations through grand festivals, cultural programs, and spiritual celebrations that uplift souls.",
-      image: "/assets/images/donation/utsavSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Sparkles,
-    },
-    {
-      id: 10,
-      title: "Samarpan Seva",
-      subtitle: "Universal Divine Service",
-      description:
-        "Surrender to the divine will through flexible contributions that support all temple activities and community welfare.",
-      image: "/assets/images/donation/samarpanSeva.jpg",
-      gradient: "#a59069",
-      glowColor: "rgba(245, 198, 9, 0.5)",
-      particleColor: "#fde047",
-      icon: Heart,
-    },
-  ];
+const donationCategories = [
+  {
+    id: 1,
+    title: "Shringaar Seva",
+    subtitle: "Divine Adornment & Decoration",
+    description:
+      "Decorate the deity with beautiful clothes, ornaments, and flowers, enhancing the divine aura and spreading devotion in the temple.",
+    image: "/assets/images/donation/shringaarSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Sparkles,
+  },
+  {
+    id: 2,
+    title: "Aarti Seva",
+    subtitle: "Sacred Worship & Light",
+    description:
+      "Participate in aarti rituals, spreading spiritual light, devotion, and blessings throughout the temple and in the hearts of all devotees.",
+    image: "/assets/images/donation/aartiSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Star,
+  },
+  {
+    id: 3,
+    title: "Anna Seva",
+    subtitle: "Blessed Nourishment for All",
+    description:
+      "Serve meals and prasad to devotees and pilgrims, sharing divine blessings and spreading love and nourishment to all within the community.",
+    image: "/assets/images/donation/annaSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Heart,
+  },
+  {
+    id: 4,
+    title: "Gaushala Seva",
+    subtitle: "Divine Care for Cows",
+    description:
+      "Care for sacred cows by providing food, shelter, and medical support, promoting compassion and upholding traditions of kindness and respect.",
+    image: "/assets/images/donation/gaushalaSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Zap,
+  },
+  {
+    id: 5,
+    title: "Vidya Seva",
+    subtitle: "Wisdom & Spiritual Education",
+    description:
+      "Promote spiritual learning through teaching, classes, and workshops, sharing knowledge and enlightening the community with divine wisdom.",
+    image: "/assets/images/donation/vidyaSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Star,
+  },
+  {
+    id: 6,
+    title: "Chikitsa Seva",
+    subtitle: "Healing & Wellness Support",
+    description:
+      "Provide medical aid and wellness services to devotees and the community, ensuring health, care, and spiritual support for all who seek help.",
+    image: "/assets/images/donation/chikitsaSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Heart,
+  },
+  {
+    id: 7,
+    title: "Prakriti Seva",
+    subtitle: "Nature & Environment Care",
+    description:
+      "Protect the environment through tree plantations, gardening, and eco-friendly practices, preserving nature and promoting sustainability within the temple.",
+    image: "/assets/images/donation/prakritiSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Star,
+  },
+  {
+    id: 8,
+    title: "Jal Seva",
+    subtitle: "Pure Water & Community Welfare",
+    description:
+      "Provide clean water to devotees and local communities, ensuring health, spiritual wellbeing, and sustainable water practices for everyone involved.",
+    image: "/assets/images/donation/jalSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Zap,
+  },
+  {
+    id: 12,
+    title: "Kirtan & Bhajan Seva",
+    subtitle: "Devotional Music & Singing",
+    description:
+      "Organize kirtans and bhajan sessions, spreading devotional music, uplifting souls, and sharing spiritual vibrations throughout the temple community.",
+    image: "/assets/images/donation/kirtanBhajanSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Sparkles,
+  },
+  {
+    id: 13,
+    title: "Seva for Elderly (Vriddha Seva)",
+    subtitle: "Care & Support for Senior Devotees",
+    description:
+      "Provide care and support to elderly devotees, ensuring their comfort, health, and spiritual wellbeing while honoring their dignity and devotion.",
+    image: "/assets/images/donation/vriddhaSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Heart,
+  },
+  {
+    id: 14,
+    title: "Prasadam Distribution Seva",
+    subtitle: "Sacred Offerings & Sharing",
+    description:
+      "Prepare and distribute prasadam to devotees, pilgrims, and the needy, spreading divine blessings and sharing nourishment with love and devotion.",
+    image: "/assets/images/donation/prasadamSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Zap,
+  },
+  {
+    id: 15,
+    title: "Bal Vikas Seva",
+    subtitle: "Spiritual Growth for Children",
+    description:
+      "Engage children in spiritual activities, workshops, and learning sessions, nurturing their awareness, moral values, and divine consciousness.",
+    image: "/assets/images/donation/balVikasSeva.jpg",
+    gradient: "#a59069",
+    glowColor: "rgba(245, 198, 9, 0.5)",
+    particleColor: "#fde047",
+    icon: Star,
+  },
+];
+
+
+
+
   const handleDonateClick = () => {
     router.push("/donate/payment");
   };

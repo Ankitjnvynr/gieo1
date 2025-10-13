@@ -90,27 +90,11 @@ export default function Footer3() {
           <div className="container">
             <div className="site-footer-three__middle-inner">
               <div className="row">
-                <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="100ms">
-                  <div className="footer-widget-three__column footer-widget-three__about">
-                    <div className="footer-widget-three__logo">
-                      <Link href="/">
-                        <img height={100} src={footerData.footerLogo} alt="Footer Logo" />
-                      </Link>
-                    </div>
-                    <p className="footer-widget-three__about-text">{footerData.aboutText}</p>
-                    <div className="footer-widget-three__social">
-                      {footerData.socialLinks.map((link, index) => (
-                        <Link key={index} href={link.href}>
-                          <span className={link.icon}></span>
-                        </Link>
-                      ))}
-                    </div>
-                  </div>
-                </div>
-                <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                
+                <div className="col-xl-4 col-lg-4 col-md-4 wow fadeInUp" data-wow-delay="200ms">
                   <div className="footer-widget-three__column footer-widget-three__services">
                     <div className="footer-widget-three__title-box">
-                      <h3 className="footer-widget-three__title">Services</h3>
+                      <h3 className="footer-widget-three__title">Quick Links</h3>
                     </div>
                     <ul className="footer-widget-three__services-list list-unstyled">
                       {footerData.services.map((service, index) => (
@@ -124,7 +108,32 @@ export default function Footer3() {
                     </ul>
                   </div>
                 </div>
-                <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
+                <div className="col-xl-4 col-lg-4 col-md-4 wow fadeInUp text-center " data-wow-delay="100ms">
+                  <div className="footer-widget-three__column footer-widget-three__about">
+                    <div className="footer-widget-three__logo">
+                      <Link href="/">
+                        <img height={100} src={footerData.footerLogo} alt="Footer Logo" />
+                      </Link>
+                    </div>
+                    <p className="footer-widget-three__about-text">{footerData.aboutText}</p>
+                    <div className="footer-widget-three__social ">
+                      <div style={{
+                        display:'flex',
+                        justifyContent:'center',
+                        gap:'10px',
+                        alignItems:'center',
+                        width:'100%'
+                      }} >
+                        {footerData.socialLinks.map((link, index) => (
+                        <Link key={index} href={link.href}>
+                          <span className={link.icon}></span>
+                        </Link>
+                      ))}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {/* <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="200ms">
                   <div className="footer-widget-three__column footer-widget-three__page">
                     <div className="footer-widget-three__title-box">
                       <h3 className="footer-widget-three__title">Page</h3>
@@ -137,15 +146,15 @@ export default function Footer3() {
                       ))}
                     </ul>
                   </div>
-                </div>
-                <div className="col-xl-3 col-lg-6 col-md-6 wow fadeInUp" data-wow-delay="300ms">
+                </div> */}
+                <div className="col-xl-4 col-lg-6 col-md-6 wow fadeInUp " data-wow-delay="300ms">
                   <div className="footer-widget-three__column footer-widget-three__contact">
                     <div className="footer-widget-three__title-box">
                       <h3 className="footer-widget-three__title">Contact</h3>
                     </div>
                     <div className="footer-widget-three__contact-inner">
-                      <ul className="footer-widget-three__contact-list list-unstyled">
-                        <li>
+                      <ul className="footer-widget-three__contact-list list-unstyled ">
+                        <li >
                           <div className="icon">
                             <span className="icon-envelope"></span>
                           </div>
@@ -167,7 +176,7 @@ export default function Footer3() {
                           <div className="icon">
                             <span className="icon-call"></span>
                           </div>
-                          <div className="text">
+                          <div className="text ">
                             {footerData.contact.phone.map((phone, index) => (
                               <p key={index}>
                                 <a href={`tel:${phone}`}>{phone}</a>
